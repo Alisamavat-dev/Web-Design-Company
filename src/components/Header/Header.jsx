@@ -22,10 +22,7 @@ const Header = () => {
     },
   });
 
-  // استخراج لوگو و منوها از داده دریافتی
-  const logoItem = Header?.find((item) => item.logo) || {
-    logo: "https://rayanita.com/assets/img/rayanita/logo.png",
-  };
+  const logoItem = Header?.find((item) => item.logo);
   const menuItems = Header?.filter((item) => item.title && item.href);
 
   if (isPending) {
@@ -50,7 +47,7 @@ const Header = () => {
   return (
     <>
       {/* Desktop Header */}
-      <header className="hidden xl:flex justify-center items-center py-3 relative z-30 m-2 w-full">
+      <header className="hidden xl:flex justify-center items-center py-3 relative z-30 w-full">
         <div className="container mx-auto w-full max-w-screen-xl bg-gray-800/90 rounded-3xl shadow-2xl px-4 md:px-8 py-4 flex items-center justify-between border border-gray-700">
           <div className="flex items-center gap-3 min-w-[80px] ml-10">
             <img
@@ -102,7 +99,7 @@ const Header = () => {
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
-        {/* Mobile menu dropdown (fixed, full width, rounded, shadow) */}
+
         <div
           className={`fixed left-0 right-0 top-[72px] w-full max-w-3xl mx-auto transition-all duration-400 overflow-hidden z-50 ${
             menuOpen
@@ -123,13 +120,13 @@ const Header = () => {
                 {item.title}
               </a>
             ))}
-            {/* درخواست مشاور دکمه برای موبایل */}
+
             <button className="mt-2 flex items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white font-bold py-3 px-7 rounded-2xl shadow-lg transition-all duration-200 min-w-[160px] text-base tracking-wide mx-auto">
               درخواست مشاور
             </button>
           </div>
         </div>
-        {/* Spacer for fixed header */}
+
         <div className="h-[60px] w-full" />
       </header>
     </>
