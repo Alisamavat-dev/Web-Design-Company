@@ -1,0 +1,18 @@
+{
+  "Header": [
+    {
+      "logo": "https://rayanita.com/assets/img/rayanita/logo.png",
+      "title": "طراحی وبسایت",
+      "href": "/"
+    },
+    {
+      "title": "طراحی اپلیکیشن",
+      "href": "/products"
+    },
+    { "title": "دیجیتال مارکتینگ", "href": "/marketing" },
+    { "title": "ثبت سفارش", "href": "/order" },
+    { "title": "نمونه کارها", "href": "/portfolio" },
+    { "title": "آکادمی", "href": "/academy" },
+    { "title": "ارتباط با ما", "href": "/contact" }
+  ]
+}
