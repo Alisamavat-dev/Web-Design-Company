@@ -8,10 +8,10 @@ const Home = () => {
       <div className="">
         <Header />
       </div>
-      <div className="pt-15 xl:py-0">
+      <div className="pt-15 lg:pt-8">
         <Baner />
       </div>
-      <div className="">
+      <div className="lg:pt-10">
         <Card />
       </div>
     </>

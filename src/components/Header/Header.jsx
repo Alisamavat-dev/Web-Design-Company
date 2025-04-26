@@ -48,7 +48,7 @@ const Header = () => {
     <>
       {/* Desktop Header */}
       <header className="hidden xl:flex justify-center items-center py-3 relative z-30 w-full">
-        <div className="container mx-auto w-full max-w-screen-xl bg-gray-800/90 rounded-3xl shadow-2xl px-4 md:px-8 py-4 flex items-center justify-between border border-gray-700">
+        <div className="container mx-auto w-full max-w-screen-xl bg-gray-800/80 rounded-3xl shadow-2xl px-4 md:px-8 py-4 flex items-center justify-between border border-gray-700">
           <div className="flex items-center gap-3 min-w-[80px] ml-10">
             <img
               src={logoItem.logo}
