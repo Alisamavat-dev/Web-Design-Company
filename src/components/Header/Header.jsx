@@ -14,13 +14,15 @@ const Header = () => {
   } = useQuery({
     queryKey: ["Header"],
     queryFn: async () => {
-      const response = await fetch(`https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`, {
-      });
-      
+      const response = await fetch(
+        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
+        {}
+      );
+
       if (!response.ok) {
         throw new Error("خطا در دریافت اطلاعات هدر");
       }
-      
+
       const data = await response.json();
       return data.record.Header;
     },
@@ -118,13 +120,13 @@ const Header = () => {
           <div className="bg-gray-800/90 rounded-3xl shadow-2xl p-6 mx-4 mt-3 w-auto flex flex-col gap-4 text-center border-x border-b border-gray-700">
             {menuItems?.map((item) => (
               <a
-                key={item.href}
                 href={item.href}
                 title={item.title}
                 className="text-base font-semibold text-gray-100 hover:text-blue-400 transition-colors duration-200 px-4 py-3 rounded-xl hover:bg-blue-900/30 shadow-sm tracking-wide mx-2"
                 style={{ boxShadow: "0 1px 4px 0 rgba(0,0,0,0.08)" }}
                 onClick={() => setMenuOpen(false)}
               >
+                {item.title}
               </a>
             ))}
 
