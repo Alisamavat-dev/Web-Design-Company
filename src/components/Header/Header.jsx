@@ -14,19 +14,13 @@ const Header = () => {
   } = useQuery({
     queryKey: ["Header"],
     queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
-        {
-          headers: {
-            "X-Access-Key": import.meta.env.VITE_JSONBIN_API_KEY,
-          },
-        }
-      );
-
+      const response = await fetch(`https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`, {
+      });
+      
       if (!response.ok) {
         throw new Error("خطا در دریافت اطلاعات هدر");
       }
-
+      
       const data = await response.json();
       return data.record.Header;
     },
@@ -62,7 +56,8 @@ const Header = () => {
           <div className="flex items-center gap-3 min-w-[80px] ml-10">
             <img
               src={logoItem.logo}
-              alt="لوگو"
+              alt={logoItem.title}
+              title={logoItem.title}
               className="h-10 w-auto transition-transform duration-200 hover:scale-105 hover:drop-shadow-lg cursor-pointer"
               loading="lazy"
             />
@@ -73,6 +68,7 @@ const Header = () => {
                 <li key={item.href} className="truncate max-w-[120px]">
                   <a
                     href={item.href}
+                    title={item.title}
                     className="whitespace-nowrap hover:text-blue-300 transition-colors duration-200 px-2 md:px-3 py-1 rounded-lg hover:bg-gray-700/60 block text-ellipsis  text-sm"
                   >
                     {item.title}
@@ -95,7 +91,8 @@ const Header = () => {
           <div className="flex items-center gap-2 min-w-[60px]">
             <img
               src={logoItem.logo}
-              alt="لوگو"
+              alt={logoItem.title}
+              title={logoItem.title}
               className="h-9 w-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-lg cursor-pointer"
               loading="lazy"
             />
@@ -123,11 +120,11 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
+                title={item.title}
                 className="text-base font-semibold text-gray-100 hover:text-blue-400 transition-colors duration-200 px-4 py-3 rounded-xl hover:bg-blue-900/30 shadow-sm tracking-wide mx-2"
                 style={{ boxShadow: "0 1px 4px 0 rgba(0,0,0,0.08)" }}
                 onClick={() => setMenuOpen(false)}
               >
-                {item.title}
               </a>
             ))}
 

@@ -12,19 +12,13 @@ const Banner = () => {
   } = useQuery({
     queryKey: ["Baner"],
     queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
-        {
-          headers: {
-            "X-Access-Key": import.meta.env.VITE_JSONBIN_API_KEY,
-          },
-        }
-      );
-
+      const response = await fetch(`https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`, {
+      });
+      
       if (!response.ok) {
         throw new Error("خطا در دریافت اطلاعات بنر");
       }
-
+      
       const data = await response.json();
       return data.record.Baner;
     },
@@ -76,7 +70,8 @@ const Banner = () => {
             </div>
 
             <a
-              href="#order"
+              href="order"
+              title="سفارش طراحی سایت"
               className="self-end lg:self-start mt-2 sm:mt-4 bg-gradient-to-r from-yellow-400 to-yellow-300 text-slate-900 px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-extrabold shadow-lg hover:shadow-2xl transition-all hover:scale-[1.04] hover:from-yellow-300 hover:to-yellow-400 border-2 border-white/80 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2"
             >
               سفارش طراحی سایت
@@ -90,6 +85,7 @@ const Banner = () => {
                 <img
                   src={baner[0].image}
                   alt="مدال افتخار"
+                  title="مدال افتخار"
                   className="w-full rounded-2xl shadow-2xl object-cover border-4 border-white transform rotate-1 hover:rotate-0 transition-transform duration-300 max-h-[400px] object-center"
                   loading="lazy"
                 />

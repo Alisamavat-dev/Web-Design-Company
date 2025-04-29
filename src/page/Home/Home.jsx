@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <>
       <div className="">
-        <SEO />
         <Header />
       </div>
       <div className="pt-15 lg:pt-8">
@@ -16,6 +15,7 @@ const Home = () => {
       <div className="lg:pt-10">
         <Card />
       </div>
+      <SEO />
     </>
   );
 };
