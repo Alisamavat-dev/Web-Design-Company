@@ -7,23 +7,33 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const {
-    data: Header,
+    data: header,
     isPending,
     isError,
     error,
   } = useQuery({
     queryKey: ["Header"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:3000/Header");
+      const response = await fetch(
+        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
+        {
+          headers: {
+            "X-Access-Key": import.meta.env.VITE_JSONBIN_API_KEY,
+          },
+        }
+      );
+
       if (!response.ok) {
-        throw new Error("خطا در دریافت اطلاعات برندها");
+        throw new Error("خطا در دریافت اطلاعات هدر");
       }
-      return response.json();
+
+      const data = await response.json();
+      return data.record.Header;
     },
   });
 
-  const logoItem = Header?.find((item) => item.logo);
-  const menuItems = Header?.filter((item) => item.title && item.href);
+  const logoItem = header?.find((item) => item.logo);
+  const menuItems = header?.filter((item) => item.title && item.href);
 
   if (isPending) {
     return (

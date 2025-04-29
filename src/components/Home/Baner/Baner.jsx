@@ -5,18 +5,28 @@ import { useQuery } from "@tanstack/react-query";
 
 const Banner = () => {
   const {
-    data: Baner,
+    data: baner,
     isPending,
     isError,
     error,
   } = useQuery({
     queryKey: ["Baner"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:3000/Baner");
+      const response = await fetch(
+        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
+        {
+          headers: {
+            "X-Access-Key": import.meta.env.VITE_JSONBIN_API_KEY,
+          },
+        }
+      );
+
       if (!response.ok) {
-        throw new Error("خطا در دریافت اطلاعات برندها");
+        throw new Error("خطا در دریافت اطلاعات بنر");
       }
-      return response.json();
+
+      const data = await response.json();
+      return data.record.Baner;
     },
   });
 
@@ -76,9 +86,9 @@ const Banner = () => {
           <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2 animate-slide-in-left">
             <div className="relative w-full max-w-md lg:max-w-none">
               <div className="absolute -inset-2 sm:-inset-3 bg-yellow-400/20 rounded-2xl -z-10 blur-sm"></div>
-              {Baner && Baner[0]?.image && (
+              {baner && baner[0]?.image && (
                 <img
-                  src={Baner[0].image}
+                  src={baner[0].image}
                   alt="مدال افتخار"
                   className="w-full rounded-2xl shadow-2xl object-cover border-4 border-white transform rotate-1 hover:rotate-0 transition-transform duration-300 max-h-[400px] object-center"
                   loading="lazy"

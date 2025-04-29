@@ -3,6 +3,10 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useQuery } from "@tanstack/react-query";
 
 const Card = () => {
+
+  const JSONBIN_BIN_ID = import.meta.env.VITE_JSONBIN_BIN_ID;
+  const JSONBIN_API_KEY = import.meta.env.VITE_JSONBIN_API_KEY;
+
   const {
     data: cards,
     isPending,
@@ -11,11 +15,21 @@ const Card = () => {
   } = useQuery({
     queryKey: ["Card"],
     queryFn: async () => {
-      const response = await fetch("http://localhost:3000/Card");
+      const response = await fetch(
+        `https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}`,
+        {
+          headers: {
+            "X-Access-Key": JSONBIN_API_KEY,
+          },
+        }
+      );
+
       if (!response.ok) {
         throw new Error("خطا در دریافت اطلاعات کارت‌ها");
       }
-      return response.json();
+
+      const data = await response.json();
+      return data.record.Card;
     },
   });
 
