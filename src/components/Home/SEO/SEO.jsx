@@ -50,6 +50,8 @@ const SEO = () => {
       updateMetaTag("author", seoData.author);
       updateMetaTag("robots", seoData.robots);
       updateMetaTag("viewport", seoData.viewport);
+      updateMetaTag("og:title", seoData.ogTitle);
+      updateMetaTag("icon", seoData.icon);
     }
   }, [seoData]);
 
