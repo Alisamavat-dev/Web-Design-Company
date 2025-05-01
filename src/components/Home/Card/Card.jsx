@@ -21,62 +21,81 @@ const Card = () => {
       }
 
       const data = await response.json();
+      console.log("دریافت داده‌ها:", data.record.Card);
       return data.record.Card;
     },
   });
 
   if (isPending) {
     return (
-      <div className="flex justify-center items-center h-[80vh] bg-gray-900">
-        <AiOutlineLoading3Quarters
-          size={44}
-          className="animate-spin text-gray-400"
-        />
+      <div className="flex justify-center items-center h-[80vh]">
+        <div className="relative">
+          <AiOutlineLoading3Quarters
+            size={44}
+            className="animate-spin text-blue-400"
+          />
+          <div className="absolute inset-0 blur-xl bg-blue-500/20 animate-pulse"></div>
+        </div>
       </div>
     );
   }
 
   if (isError) {
     return (
-      <div className="flex justify-center items-center h-[80vh] bg-gray-900">
-        <p className="text-red-400">Error: {error.message}</p>
+      <div className="flex justify-center items-center h-[80vh]">
+        <div className="bg-red-500/10 backdrop-blur-sm px-6 py-4 rounded-lg border border-red-500/20">
+          <p className="text-red-400">Error: {error.message}</p>
+        </div>
       </div>
     );
   }
 
+  console.log(
+    "آدرس تصاویر:",
+    card?.map((item) => item.image)
+  );
+
   return (
     <div className="pb-16">
-      <div className="container mx-auto">
-        <h2 className="text-right px-6 py-8 text-3xl sm:text-4xl font-bold text-yellow-400 border-b-2 border-yellow-400/50 max-w-7xl mx-auto">
-          چرا رایانیتا انتخاب کنیم؟
+      <div className="container mx-auto relative">
+        <h2 className="text-right px-6 py-8 text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 max-w-7xl mx-auto border-b border-blue-500/20">
+          چرا به ما بپیوندید؟
         </h2>
 
         <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {card?.map((item, idx) => (
             <div
               key={idx}
-              className="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:shadow-yellow-400/20 hover:-translate-y-2 transition-all duration-300 group"
+              className="group relative bg-white/5 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center border border-white/10 hover:border-blue-500/30 transition-all duration-300 hover:transform hover:-translate-y-2"
             >
-              <div className="relative mb-5">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+              <div className="relative mb-6">
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
                 <img
                   src={item.image}
                   alt={item.title}
                   title={item.title}
-                  className="w-20 h-20 object-cover rounded-full mb-4 border-4 border-yellow-400 shadow-lg group-hover:scale-110 transition-transform duration-300"
+                  className="w-20 h-20 object-cover rounded-full border-2 border-white/10 group-hover:border-blue-500/50 shadow-lg transition-all duration-300 relative z-10"
                   loading="lazy"
+                  onError={(e) => {
+                    console.error(`خطا در بارگذاری تصویر: ${item.image}`);
+                    e.target.src = "https://via.placeholder.com/80";
+                  }}
                 />
-                <div className="absolute inset-0 rounded-full border-2 border-yellow-400/30 animate-ping opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
-              <h3 className="text-lg font-bold text-yellow-400 mb-3 text-center w-full">
+              <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
                 {item.title}
               </h3>
 
-              <div className="w-16 h-1 bg-yellow-400 mb-4 rounded-full group-hover:w-24 transition-all duration-300"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-4 group-hover:w-24 transition-all duration-300 opacity-50 group-hover:opacity-100"></div>
 
-              <p className="text-gray-300 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+              <p className="text-slate-300/90 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                 {item.description}
               </p>
+
+              <div className="absolute -inset-px bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
             </div>
           ))}
         </div>

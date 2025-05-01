@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMedal } from "react-icons/fa";
+import { FaUsers, FaCode, FaLaptopCode } from "react-icons/fa";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useQuery } from "@tanstack/react-query";
 
@@ -12,13 +12,15 @@ const Banner = () => {
   } = useQuery({
     queryKey: ["Baner"],
     queryFn: async () => {
-      const response = await fetch(`https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`, {
-      });
-      
+      const response = await fetch(
+        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
+        {}
+      );
+
       if (!response.ok) {
         throw new Error("خطا در دریافت اطلاعات بنر");
       }
-      
+
       const data = await response.json();
       return data.record.Baner;
     },
@@ -26,67 +28,89 @@ const Banner = () => {
 
   if (isPending) {
     return (
-      <div className="flex justify-center items-center h-[80vh] bg-gray-900">
-        <AiOutlineLoading3Quarters
-          size={44}
-          className="animate-spin text-gray-400"
-        />
+      <div className="flex justify-center items-center h-[80vh]">
+        <div className="relative">
+          <AiOutlineLoading3Quarters
+            size={44}
+            className="animate-spin text-blue-400"
+          />
+          <div className="absolute inset-0 blur-xl bg-blue-500/20 animate-pulse"></div>
+        </div>
       </div>
     );
   }
 
   if (isError) {
     return (
-      <div className="flex justify-center items-center h-[80vh] bg-gray-900">
-        <p className="text-red-400">Error: {error.message}</p>
+      <div className="flex justify-center items-center h-[80vh]">
+        <div className="bg-red-500/10 backdrop-blur-sm px-6 py-4 rounded-lg border border-red-500/20">
+          <p className="text-red-400">Error: {error.message}</p>
+        </div>
       </div>
     );
   }
 
   return (
-    <div className="w-full py-12 md:py-16 lg:py-20  ">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+    <div className="relative w-full pt-12 xl:pt-32 pb-12 md:pb-16 overflow-hidden">
+      <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 xl:gap-12">
-          <div className="w-full lg:w-1/2 flex flex-col gap-4 sm:gap-5 md:gap-6 text-right order-2 lg:order-1 justify-center animate-slide-in-right">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-lg">
-              سفارش طراحی سایت - تضمین بهترین کیفیت
-            </h1>
-            <h2 className="text-lg sm:text-xl md:text-2xl text-yellow-400 font-semibold">
-              با طراحی سایت حرفه‌ای کسب و کار خود را رشد دهید!
-            </h2>
-            <p className="text-base md:text-lg text-slate-200/90">
-              سفارش طراحی سایت و توسعه انواع پلتفرم متناسب با نیاز شما
+          <div className="w-full lg:w-1/2 flex flex-col gap-6 sm:gap-7 md:gap-8 text-right order-2 lg:order-1 justify-center animate-slide-in-right">
+            <div className="space-y-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 leading-tight">
+                پلتفرم تعاملی برنامه‌نویسان
+              </h1>
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+                همکاری در پروژه‌های نرم‌افزاری
+              </h2>
+            </div>
+
+            <p className="text-lg md:text-xl text-slate-300/90 leading-relaxed">
+              محیطی امن و حرفه‌ای برای تبادل دانش، همکاری در پروژه‌ها و رشد
+              مهارت‌های برنامه‌نویسی
             </p>
 
-            <div className="flex items-center gap-3 bg-slate-100/80 backdrop-blur-sm px-4 py-3 rounded-lg text-sky-700 font-medium text-sm sm:text-base w-full lg:w-auto shadow-md">
-              <span className="relative flex h-6 w-6">
-                <FaMedal className="text-yellow-500 text-xl sm:text-2xl animate-pulse" />
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-30"></span>
-              </span>
-              <span className="text-sm sm:text-base">
-                کسب مقام برتر توسعه وب سایت مجموعه رقابت‌های تخصصی فن‌آورد در
-                سطح ملی
-              </span>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-4 bg-white/5 backdrop-blur-xl px-6 py-4 rounded-2xl border border-white/10 hover:border-blue-500/30 transition-colors shadow-lg hover:shadow-blue-500/10">
+                <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400">
+                  <FaUsers size={24} />
+                </span>
+                <span className="text-base sm:text-lg text-slate-200">
+                  بیش از 1000 برنامه‌نویس فعال در پلتفرم
+                </span>
+              </div>
+
+              <div className="flex items-center gap-4 bg-white/5 backdrop-blur-xl px-6 py-4 rounded-2xl border border-white/10 hover:border-purple-500/30 transition-colors shadow-lg hover:shadow-purple-500/10">
+                <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400">
+                  <FaCode size={24} />
+                </span>
+                <span className="text-base sm:text-lg text-slate-200">
+                  پشتیبانی از تمامی زبان‌های برنامه‌نویسی
+                </span>
+              </div>
             </div>
 
             <a
-              href="order"
-              title="سفارش طراحی سایت"
-              className="self-end lg:self-start mt-2 sm:mt-4 bg-gradient-to-r from-yellow-400 to-yellow-300 text-slate-900 px-6 sm:px-8 py-2 sm:py-3 rounded-full text-sm sm:text-base font-extrabold shadow-lg hover:shadow-2xl transition-all hover:scale-[1.04] hover:from-yellow-300 hover:to-yellow-400 border-2 border-white/80 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2"
+              href="join"
+              title="پیوستن به جامعه برنامه‌نویسان"
+              className="self-end lg:self-start mt-4 group relative inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-500 text-white font-bold text-lg shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-300 hover:scale-[1.02] overflow-hidden"
             >
-              سفارش طراحی سایت
+              <span className="relative z-10 flex items-center gap-2">
+                <FaLaptopCode className="text-xl" />
+                پیوستن به جامعه برنامه‌نویسان
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
             </a>
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2 animate-slide-in-left">
-            <div className="relative w-full max-w-md lg:max-w-none">
-              <div className="absolute -inset-2 sm:-inset-3 bg-yellow-400/20 rounded-2xl -z-10 blur-sm"></div>
+            <div className="relative w-full max-w-md lg:max-w-none group">
+              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-2xl transition-all duration-500 group-hover:blur-3xl group-hover:-inset-6 opacity-75"></div>
               {baner && baner[0]?.image && (
                 <img
                   src={baner[0].image}
-                  alt="مدال افتخار"
-                  title="مدال افتخار"
-                  className="w-full rounded-2xl shadow-2xl object-cover border-4 border-white transform rotate-1 hover:rotate-0 transition-transform duration-300 max-h-[400px] object-center"
+                  alt="همکاری برنامه‌نویسان"
+                  title="همکاری برنامه‌نویسان"
+                  className="relative w-full rounded-2xl shadow-2xl object-cover border border-white/10 transform rotate-1 hover:rotate-0 transition-all duration-500 max-h-[400px] object-center group-hover:border-blue-500/30"
                   loading="lazy"
                 />
               )}

@@ -53,25 +53,25 @@ const Header = () => {
   return (
     <>
       {/* Desktop Header */}
-      <header className="hidden xl:flex justify-center items-center py-3 relative z-30 w-full">
-        <div className="container mx-auto w-full max-w-screen-xl bg-gray-800/80 rounded-3xl shadow-2xl px-4 md:px-8 py-4 flex items-center justify-between border border-gray-700">
-          <div className="flex items-center gap-3 min-w-[80px] ml-10">
+      <header className="hidden xl:flex justify-center items-center py-3 fixed top-0 z-30 w-full">
+        <div className="container mx-auto w-full max-w-screen-xl bg-slate-900/90 rounded-3xl shadow-2xl px-4 md:px-8 py-4 flex items-center justify-between border border-slate-700/50 backdrop-blur-sm mx-4">
+          <div className="flex items-center min-w-[80px] ">
             <img
               src={logoItem.logo}
               alt={logoItem.title}
               title={logoItem.title}
-              className="h-10 w-auto transition-transform duration-200 hover:scale-105 hover:drop-shadow-lg cursor-pointer"
+              className="h-13 w-auto transition-transform duration-200 hover:scale-105 hover:drop-shadow-lg cursor-pointer"
               loading="lazy"
             />
           </div>
           <nav className="flex-1 min-w-0">
-            <ul className="flex gap-3 md:gap-5 lg:gap-7 text-gray-100 font-medium text-sm justify-center overflow-x-auto  scrollbar-thumb-gray-700 scrollbar-track-gray-900 whitespace-nowrap">
+            <ul className="flex gap-3 md:gap-5 lg:gap-7 text-slate-200 font-medium text-sm justify-center overflow-x-auto scrollbar-thumb-slate-700 scrollbar-track-slate-900 whitespace-nowrap">
               {menuItems?.map((item) => (
                 <li key={item.href} className="truncate max-w-[120px]">
                   <a
                     href={item.href}
                     title={item.title}
-                    className="whitespace-nowrap hover:text-blue-300 transition-colors duration-200 px-2 md:px-3 py-1 rounded-lg hover:bg-gray-700/60 block text-ellipsis  text-sm"
+                    className="whitespace-nowrap hover:text-blue-400 transition-colors duration-200 px-2 md:px-3 py-1 rounded-lg hover:bg-slate-800/60 block text-ellipsis text-sm"
                   >
                     {item.title}
                   </a>
@@ -79,8 +79,8 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-          <div className=" md:ml-10 mt-2 md:mt-0 mr-10">
-            <button className="flex items-center justify-center bg-gray-200 hover:bg-gray-400 text-gray-900 font-bold py-2 px-4 md:px-6 rounded-xl shadow-lg transition-all duration-200 min-w-[120px] md:min-w-[140px] text-sm">
+          <div className="md:ml-10 mt-2 md:mt-0 mr-10">
+            <button className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 md:px-6 rounded-xl shadow-lg transition-all duration-200 min-w-[120px] md:min-w-[140px] text-sm">
               درخواست مشاور
             </button>
           </div>
@@ -88,20 +88,20 @@ const Header = () => {
       </header>
 
       {/* Mobile Header */}
-      <header className="header-mobile block xl:hidden fixed z-40 w-full p-2">
-        <div className="container mx-auto w-full bg-gray-800/90 rounded-3xl shadow-2xl px-4 py-3 flex items-center justify-between border-x border-b border-gray-700 mt-2">
+      <header className="header-mobile block xl:hidden fixed top-0 z-40 w-full p-2">
+        <div className="container mx-auto w-full bg-slate-900/90 rounded-3xl shadow-2xl px-4 py-3 flex items-center justify-between border border-slate-700/50 backdrop-blur-sm mt-2">
           <div className="flex items-center gap-2 min-w-[60px]">
             <img
               src={logoItem.logo}
               alt={logoItem.title}
               title={logoItem.title}
-              className="h-9 w-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-lg cursor-pointer"
+              className="h-13 w-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-lg cursor-pointer"
               loading="lazy"
             />
           </div>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="text-3xl text-gray-100 focus:outline-none p-2 rounded-full hover:bg-gray-700/40 transition-all duration-200 shadow-md"
+            className="text-3xl text-slate-200 focus:outline-none p-2 rounded-full hover:bg-slate-800/40 transition-all duration-200 shadow-md"
             aria-label="باز کردن منو"
             style={{ boxShadow: "0 2px 8px 0 rgba(0,0,0,0.12)" }}
           >
@@ -117,12 +117,12 @@ const Header = () => {
           }`}
           style={{ boxShadow: "0 8px 32px 0 rgba(0,0,0,0.22)" }}
         >
-          <div className="bg-gray-800/90 rounded-3xl shadow-2xl p-6 mx-4 mt-3 w-auto flex flex-col gap-4 text-center border-x border-b border-gray-700">
+          <div className="bg-slate-900/90 rounded-3xl shadow-2xl p-6 mx-4 mt-3 w-auto flex flex-col gap-4 text-center border border-slate-700/50 backdrop-blur-sm">
             {menuItems?.map((item) => (
               <a
                 href={item.href}
                 title={item.title}
-                className="text-base font-semibold text-gray-100 hover:text-blue-400 transition-colors duration-200 px-4 py-3 rounded-xl hover:bg-blue-900/30 shadow-sm tracking-wide mx-2"
+                className="text-base font-semibold text-slate-200 hover:text-blue-400 transition-colors duration-200 px-4 py-3 rounded-xl hover:bg-slate-800/60 shadow-sm tracking-wide mx-2"
                 style={{ boxShadow: "0 1px 4px 0 rgba(0,0,0,0.08)" }}
                 onClick={() => setMenuOpen(false)}
               >
@@ -130,7 +130,7 @@ const Header = () => {
               </a>
             ))}
 
-            <button className="mt-2 flex items-center justify-center bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white font-bold py-3 px-7 rounded-2xl shadow-lg transition-all duration-200 min-w-[160px] text-base tracking-wide mx-auto">
+            <button className="mt-2 flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-7 rounded-2xl shadow-lg transition-all duration-200 min-w-[160px] text-base tracking-wide mx-auto">
               درخواست مشاور
             </button>
           </div>

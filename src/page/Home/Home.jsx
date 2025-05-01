@@ -135,7 +135,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="">
+      <div>
         <Header />
       </div>
       <div className="pt-15 lg:pt-8">
