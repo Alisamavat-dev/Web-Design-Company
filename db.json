@@ -1,68 +1,218 @@
 {
-    "Card": [
-      {
-        "title": "ضمانت بازگشت وجه",
-        "description": "با سفارش طراحی سایت از رایانیتا و تضمین بهترین کیفیت آسوده خاطر باشید، درصورت هرگونه نارضایتی در طول مرحله اول کار، تمام مبلغ پیش پرداخت به شما بازگشت داده خواهد شد",
-        "image": "https://pikfree.ir/wp-content/uploads/edd/2022/04/hand-holding-money-paper-flat-cartoon-illustration-Top.jpg"
-      },
-      {
-        "title": "مشاوره و پشتیبانی رایگان",
-        "description": "در تمامی مراحل طراحی و توسعه سایت می توانید با متخصصان ما در ارتباط باشید، برای تمامی سفارش های سایت پشتیبانی یک ساله رایگان ارائه می گردد",
-        "image": "https://www.sanjeshy.org/wp-content/uploads/01-2.jpg"
-      },
-      {
-        "title": "سئو پایه رایگان",
-        "description": "به دلیل اهمیت سئو، در تمامی مراحل توسعه سایت نکات سئو لحاظ می شود و میتوانید از سئو تکنیکال وب سایت خود اطمینان خاطر داشته باشید",
-        "image": "data:image/png;base64,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"
-      },
-      {
-        "title": "هاست و دامنه رایگان",
-        "description": "با سفارش از رایانیتا، علاوه بر داشتن یک سایت حرفه ای و کاملا اختصاصی، از یک دامنه و هاست رایگان پایه متناسب با نوع سفارش خود بهره مپند شوید",
-        "image": "data:image/png;base64,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"
+    "fa": {
+      "translation": {
+        "Card": [
+          {
+            "title": "ویرایش همزمان کد",
+            "description": "توسعه‌دهندگان می‌توانند در لحظه و به‌صورت همزمان روی یک پروژه کار کنند. تمام تغییرات به‌صورت زنده نمایش داده می‌شوند. تجربه‌ای شبیه Google Docs، اما برای کدنویسی حرفه‌ای.",
+            "image": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
+            "badge": "ویژگی انحصاری"
+          },
+          {
+            "title": "سیستم بازبینی هوشمند",
+            "description": "کدها را بررسی و اصلاح کنید، کامنت‌گذاری کنید و از ابزارهای یکپارچه برای اعمال مستقیم تغییرات استفاده نمایید — بدون نیاز به خروج از محیط توسعه.",
+            "image": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
+            "badge": "بهینه‌سازی شده"
+          },
+          {
+            "title": "مدیریت پروژه‌های اشتراکی",
+            "description": "وظایف را تقسیم کرده، پیشرفت تیم را رصد نمایید و با هشدارهای هوشمند از تأخیرها جلوگیری کنید. مدیریت همه‌جانبه پروژه‌ها در یک پلتفرم یکپارچه.",
+            "image": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
+            "badge": "یکپارچه"
+          },
+          {
+            "title": "کمونیتی حرفه‌ای",
+            "description": "به جامعه‌ای از توسعه‌دهندگان متخصص بپیوندید، از منتورشیپ حرفه‌ای بهره‌مند شوید، در چالش‌های کدنویسی شرکت کنید و در پروژه‌های مشترک همکاری نمایید.",
+            "image": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
+            "badge": "یادگیری جمعی"
+          }
+        ],
+        "Header": [
+          {
+            "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+            "title": "اصول همکاری",
+            "href": "/",
+            "description": "مرجع اصلی همکاری تیمی در پروژه‌های نرم‌افزاری"
+          },
+          {
+            "title": "ابزارهای توسعه",
+            "href": "/tools",
+            "description": "معرفی و آموزش ابزارهای ضروری برنامه‌نویسی مدرن"
+          },
+          {
+            "title": "روش‌های ارتباطی",
+            "href": "/communication",
+            "description": "راهکارهای موثر برای ارتباط تیمی و مدیریت پروژه"
+          },
+          {
+            "title": "مدیریت پروژه",
+            "href": "/project-management",
+            "description": "اصول و متدولوژی‌های مدیریت پروژه‌های نرم‌افزاری"
+          },
+          {
+            "title": "نمونه‌های موفق",
+            "href": "/success-stories",
+            "description": "داستان‌های موفقیت و تجربیات تیم‌های برتر"
+          },
+          {
+            "title": "آموزش‌ها",
+            "href": "/tutorials",
+            "description": "دوره‌های آموزشی تخصصی و کاربردی"
+          },
+          {
+            "title": "پرسش و پاسخ",
+            "href": "/qa",
+            "description": "پاسخ به سوالات رایج در حوزه برنامه‌نویسی"
+          }
+        ],
+        "Banner": {
+          "image": "https://uploadkon.ir/uploads/c51e01_25شغل-برنامه-نویسی-1024x683.jpg",
+          "title": "پلتفرم تخصصی توسعه‌دهندگان ایران",
+          "subtitle": "همکاری، یادگیری و رشد در کنار متخصصان برتر",
+          "description": "محیطی پویا و حرفه‌ای برای توسعه مهارت‌های فنی و نرم. دسترسی به پروژه‌های واقعی، منتورشیپ تخصصی، و شبکه گسترده متخصصان با تجربه در حوزه‌های مختلف برنامه‌نویسی",
+          "stats": {
+            "users": "بیش از 1000 توسعه‌دهنده فعال با میانگین 5 سال تجربه",
+            "languages": "پشتیبانی از 20+ زبان و فریم‌ورک محبوب برنامه‌نویسی"
+          },
+          "button": {
+            "title": "شروع همکاری حرفه‌ای",
+            "action": "join-community"
+          },
+          "features": [
+            "دسترسی به منتورهای باتجربه",
+            "شرکت در پروژه‌های واقعی",
+            "دوره‌های آموزشی تخصصی",
+            "شبکه‌سازی حرفه‌ای"
+          ]
+        },
+        "SEO": {
+          "title": "پلتفرم همکاری برنامه‌نویسان | آموزش، پروژه و شبکه‌سازی تخصصی",
+          "description": "همکاری حرفه‌ای در پروژه‌های واقعی، منتورشیپ تخصصی، دوره‌های آموزشی کاربردی و دسترسی به جامعه‌ای پویا از برنامه‌نویسان. مناسب برای توسعه‌دهندگان فرانت‌اند، بک‌اند و دواپس.",
+          "keywords": "همکاری برنامه‌نویسی, پروژه واقعی, آموزش توسعه نرم‌افزار, شبکه‌سازی برنامه‌نویسان, منتورشیپ, کدنویسی تیمی, گیت, ری‌اکت, جاوااسکریپت, دواپس, مهندسی نرم‌افزار",
+          "author": "تیم توسعه پلتفرم همکاری برنامه‌نویسان",
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "og:type": "website",
+          "og:locale": "fa_IR",
+          "twitter:card": "summary_large_image"
+        }
       }
-    ],
-    "Header": [
-      {
-        "logo": "https://rayanita.com/assets/img/rayanita/logo.png",
-        "title": "طراحی وبسایت",
-        "href": "/"
-      },
-      {
-        "title": "طراحی اپلیکیشن",
-        "href": "/products"
-      },
-      {
-        "title": "دیجیتال مارکتینگ",
-        "href": "/marketing"
-      },
-      {
-        "title": "ثبت سفارش",
-        "href": "/order"
-      },
-      {
-        "title": "نمونه کارها",
-        "href": "/portfolio"
-      },
-      {
-        "title": "آکادمی",
-        "href": "/academy"
-      },
-      {
-        "title": "ارتباط با ما",
-        "href": "/contact"
+    },
+    "en": {
+      "translation": {
+        "Card": [
+          {
+            "title": "Real-Time Collaborative Coding",
+            "description": "Multiple developers can work on the same project simultaneously with live updates. Enjoy a seamless experience similar to Google Docs but for professional coding.",
+            "image": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
+            "tags": [
+              "Live Coding",
+              "Collaboration",
+              "Realtime",
+              "Teamwork"
+            ]
+          },
+          {
+            "title": "Smart Code Review System",
+            "description": "Review, comment, and apply code changes directly within the integrated platform — no need to switch between tools. Improve team productivity with streamlined feedback loops.",
+            "image": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
+            "tags": [
+              "Code Review",
+              "Team Tools",
+              "Integrated Workflow"
+            ]
+          },
+          {
+            "title": "Collaborative Project Management",
+            "description": "Assign tasks, monitor progress, and receive smart notifications to prevent delays. Manage everything in a unified platform tailored for software teams.",
+            "image": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
+            "tags": [
+              "Project Tracking",
+              "Task Management",
+              "Team Alerts"
+            ]
+          },
+          {
+            "title": "Expert Developer Community",
+            "description": "Join a network of skilled developers. Collaborate on shared projects, participate in coding challenges, and benefit from peer mentoring and knowledge sharing.",
+            "image": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
+            "tags": [
+              "Mentorship",
+              "Community",
+              "Challenges",
+              "Networking"
+            ]
+          }
+        ],
+        "Header": [
+          {
+            "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+            "title": "Collaboration Principles",
+            "href": "/",
+            "description": "Core reference for team collaboration in software projects"
+          },
+          {
+            "title": "Development Tools",
+            "href": "/tools",
+            "description": "Essential tools and practices for modern programming"
+          },
+          {
+            "title": "Communication Methods",
+            "href": "/communication",
+            "description": "Effective strategies for team communication and project management"
+          },
+          {
+            "title": "Project Management",
+            "href": "/project-management",
+            "description": "Software project management principles and methodologies"
+          },
+          {
+            "title": "Success Stories",
+            "href": "/success-stories",
+            "description": "Success stories and experiences from top teams"
+          },
+          {
+            "title": "Tutorials",
+            "href": "/tutorials",
+            "description": "Specialized and practical training courses"
+          },
+          {
+            "title": "Q&A",
+            "href": "/qa",
+            "description": "Answers to common programming questions"
+          }
+        ],
+        "Banner": {
+          "image": "https://uploadkon.ir/uploads/c51e01_25شغل-برنامه-نویسی-1024x683.jpg",
+          "title": "Professional Developers Platform",
+          "subtitle": "Collaborate, Learn & Grow with Top Experts",
+          "description": "A dynamic and professional environment for developing technical and soft skills. Access to real projects, specialized mentorship, and an extensive network of experienced professionals across various programming domains",
+          "stats": {
+            "users": "Over 1000 active developers with 5+ years average experience",
+            "languages": "Support for 20+ popular programming languages and frameworks"
+          },
+          "button": {
+            "title": "Start Professional Collaboration",
+            "action": "join-community"
+          },
+          "features": [
+            "Access to Experienced Mentors",
+            "Real Project Participation",
+            "Specialized Training Courses",
+            "Professional Networking"
+          ]
+        },
+        "SEO": {
+          "title": "Developers Collaboration Platform | Learn, Build & Grow Together",
+          "description": "Join a thriving developer platform. Work on real-world projects, access expert mentorship, sharpen your programming skills, and grow your professional network. Ideal for front-end, back-end, and DevOps engineers.",
+          "keywords": "developer collaboration, programming education, team coding, project experience, software engineering, mentorship, React, JavaScript, DevOps, GitHub, API integration",
+          "author": "Developers Collaboration Platform Team",
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "og:type": "website",
+          "og:locale": "en_US",
+          "twitter:card": "summary_large_image"
+        }
       }
-    ],
-    "Baner": [
-      {
-        "image": "https://dl.academypython.ir/blog/12063795_4884785_6zEGTXL.jpg"
-      }
-    ],
-    "SEOHome": {
-      "title": "طراحی سایت حرفه ای و توسعه انواع پلتفرم متناسب با نیاز شما",
-      "description": "تیم حرفه ای رایانیتا آماده طراحی سایت و اپلیکیشن اختصاصی برای شماست. سئوی حرفه ای، پشتیبانی دائمی و قیمت مناسب از مزایای ماست.",
-      "keywords": "طراحی سایت, توسعه وب, طراحی سایت حرفه ای, طراحی سایت وب, طراحی سایت وب حرفه ای",
-      "author": "رایانیتا",
-      "robots": "index, follow",
-      "viewport": "width=device-width, initial-scale=1.0"
     }
   }

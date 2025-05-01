@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useQuery } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
 
 const SEO = () => {
+  const { i18n } = useTranslation();
   const {
-    data: SEOHome,
+    data: seoData,
     isPending,
     isError,
     error,
   } = useQuery({
-    queryKey: ["SEOHome"],
+    queryKey: ["SEO", i18n.language],
     queryFn: async () => {
       const response = await fetch(
         `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
@@ -25,16 +27,13 @@ const SEO = () => {
       }
 
       const data = await response.json();
-      console.log("SEO Data:", data.record.SEOHome);
-      return data.record.SEOHome;
+      return data.record[i18n.language].translation.SEO;
     },
   });
 
-  console.log("Current SEO state:", SEOHome);
-
   useEffect(() => {
-    if (SEOHome) {
-      document.title = SEOHome?.title;
+    if (seoData) {
+      document.title = seoData.title;
 
       const updateMetaTag = (name, content) => {
         let meta = document.querySelector(`meta[name="${name}"]`);
@@ -46,13 +45,13 @@ const SEO = () => {
         meta.content = content;
       };
 
-      updateMetaTag("description", SEOHome?.description);
-      updateMetaTag("keywords", SEOHome?.keywords);
-      updateMetaTag("author", SEOHome?.author);
-      updateMetaTag("robots", SEOHome?.robots);
-      updateMetaTag("viewport", SEOHome?.viewport);
+      updateMetaTag("description", seoData.description);
+      updateMetaTag("keywords", seoData.keywords);
+      updateMetaTag("author", seoData.author);
+      updateMetaTag("robots", seoData.robots);
+      updateMetaTag("viewport", seoData.viewport);
     }
-  }, [SEOHome]);
+  }, [seoData]);
 
   if (isPending) {
     return (
@@ -72,6 +71,8 @@ const SEO = () => {
       </div>
     );
   }
+
+  return null;
 };
 
 export default SEO;

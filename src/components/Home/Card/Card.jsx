@@ -1,19 +1,25 @@
 import React from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useQuery } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
 
 const Card = () => {
+  const { i18n } = useTranslation();
   const {
-    data: card,
+    data: cardData,
     isPending,
     isError,
     error,
   } = useQuery({
-    queryKey: ["Card"],
+    queryKey: ["Card", i18n.language],
     queryFn: async () => {
       const response = await fetch(
         `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
-        {}
+        {
+          headers: {
+            "X-Master-Key": import.meta.env.VITE_JSONBIN_MASTER_KEY,
+          },
+        }
       );
 
       if (!response.ok) {
@@ -21,8 +27,7 @@ const Card = () => {
       }
 
       const data = await response.json();
-      console.log("دریافت داده‌ها:", data.record.Card);
-      return data.record.Card;
+      return data.record[i18n.language].translation.Card;
     },
   });
 
@@ -50,20 +55,15 @@ const Card = () => {
     );
   }
 
-  console.log(
-    "آدرس تصاویر:",
-    card?.map((item) => item.image)
-  );
-
   return (
     <div className="pb-16">
       <div className="container mx-auto relative">
         <h2 className="text-right px-6 py-8 text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 max-w-7xl mx-auto border-b border-blue-500/20">
-          چرا به ما بپیوندید؟
+          {i18n.language === "fa" ? "چرا به ما بپیوندید؟" : "Why Join Us?"}
         </h2>
 
         <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {card?.map((item, idx) => (
+          {cardData?.map((item, idx) => (
             <div
               key={idx}
               className="group relative bg-white/5 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center border border-white/10 hover:border-blue-500/30 transition-all duration-300 hover:transform hover:-translate-y-2"
@@ -78,10 +78,6 @@ const Card = () => {
                   title={item.title}
                   className="w-20 h-20 object-cover rounded-full border-2 border-white/10 group-hover:border-blue-500/50 shadow-lg transition-all duration-300 relative z-10"
                   loading="lazy"
-                  onError={(e) => {
-                    console.error(`خطا در بارگذاری تصویر: ${item.image}`);
-                    e.target.src = "https://via.placeholder.com/80";
-                  }}
                 />
               </div>
 

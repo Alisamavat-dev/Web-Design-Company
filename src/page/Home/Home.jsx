@@ -5,6 +5,7 @@ import Card from "../../components/Home/Card/Card";
 import SEO from "../../components/Home/SEO/SEO";
 import { useQuery } from "@tanstack/react-query";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 const LoadingDots = () => {
   const [dots, setDots] = useState("");
@@ -20,13 +21,14 @@ const LoadingDots = () => {
 };
 
 const Home = () => {
+  const { i18n } = useTranslation();
   const {
     data: homeData,
     isPending,
     isError,
     error,
   } = useQuery({
-    queryKey: ["homeData"],
+    queryKey: ["homeData", i18n.language],
     queryFn: async () => {
       const response = await fetch(
         `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
@@ -42,7 +44,7 @@ const Home = () => {
       }
 
       const data = await response.json();
-      return data.record;
+      return data.record[i18n.language].translation;
     },
   });
 
@@ -94,12 +96,14 @@ const Home = () => {
           <div className="mt-12 text-center">
             <h2 className="text-3xl font-bold">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 animate-gradient">
-                در حال بارگذاری
+                {i18n.language === "fa" ? "در حال بارگذاری" : "Loading"}
               </span>
               <LoadingDots />
             </h2>
             <p className="mt-3 text-blue-300/80 text-base font-light">
-              در حال آماده‌سازی محتوا برای شما
+              {i18n.language === "fa"
+                ? "در حال آماده‌سازی محتوا برای شما"
+                : "Preparing content for you"}
             </p>
           </div>
 
@@ -119,14 +123,16 @@ const Home = () => {
       <div className="fixed inset-0 bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center p-4">
         <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl max-w-md">
           <h2 className="text-2xl font-bold text-red-400 mb-4">
-            خطا در بارگذاری اطلاعات
+            {i18n.language === "fa"
+              ? "خطا در بارگذاری اطلاعات"
+              : "Error Loading Data"}
           </h2>
           <p className="text-gray-300">{error.message}</p>
           <button
             onClick={() => window.location.reload()}
             className="mt-6 px-6 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
           >
-            تلاش مجدد
+            {i18n.language === "fa" ? "تلاش مجدد" : "Try Again"}
           </button>
         </div>
       </div>
@@ -139,12 +145,12 @@ const Home = () => {
         <Header />
       </div>
       <div className="pt-15 lg:pt-8">
-        <Baner data={homeData?.baner} />
+        <Baner />
       </div>
       <div className="lg:pt-10">
-        <Card data={homeData?.Services} />
+        <Card />
       </div>
-      <SEO data={homeData?.SEOHome} />
+      <SEO />
     </>
   );
 };

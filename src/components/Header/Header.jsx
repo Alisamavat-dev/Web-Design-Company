@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { useQuery } from "@tanstack/react-query";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "../../locales/LanguageSwitcher";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { i18n } = useTranslation();
 
   const {
     data: header,
@@ -12,19 +15,27 @@ const Header = () => {
     isError,
     error,
   } = useQuery({
-    queryKey: ["Header"],
+    queryKey: ["Header", i18n.language],
     queryFn: async () => {
       const response = await fetch(
         `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
-        {}
+        {
+          headers: {
+            "X-Master-Key": import.meta.env.VITE_JSONBIN_MASTER_KEY,
+          },
+        }
       );
 
       if (!response.ok) {
-        throw new Error("خطا در دریافت اطلاعات هدر");
+        throw new Error(
+          i18n.language === "fa"
+            ? "خطا در دریافت اطلاعات هدر"
+            : "Error loading header data"
+        );
       }
 
       const data = await response.json();
-      return data.record.Header;
+      return data.record[i18n.language].translation.Header;
     },
   });
 
@@ -54,12 +65,12 @@ const Header = () => {
     <>
       {/* Desktop Header */}
       <header className="hidden xl:flex justify-center items-center py-3 fixed top-0 z-30 w-full">
-        <div className="container mx-auto w-full max-w-screen-xl bg-slate-900/90 rounded-3xl shadow-2xl px-4 md:px-8 py-4 flex items-center justify-between border border-slate-700/50 backdrop-blur-sm mx-4">
-          <div className="flex items-center min-w-[80px] ">
+        <div className="container mx-auto w-full max-w-screen-xl bg-slate-900/90 rounded-3xl shadow-2xl px-4 md:px-8 py-4 flex items-center justify-between border border-slate-700/50 backdrop-blur-sm">
+          <div className="flex items-center min-w-[80px]">
             <img
-              src={logoItem.logo}
-              alt={logoItem.title}
-              title={logoItem.title}
+              src={logoItem?.logo}
+              alt={logoItem?.title}
+              title={logoItem?.title}
               className="h-13 w-auto transition-transform duration-200 hover:scale-105 hover:drop-shadow-lg cursor-pointer"
               loading="lazy"
             />
@@ -79,10 +90,8 @@ const Header = () => {
               ))}
             </ul>
           </nav>
-          <div className="md:ml-10 mt-2 md:mt-0 mr-10">
-            <button className="flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 md:px-6 rounded-xl shadow-lg transition-all duration-200 min-w-[120px] md:min-w-[140px] text-sm">
-              درخواست مشاور
-            </button>
+          <div className="flex items-center">
+            <LanguageSwitcher variant="desktop" />
           </div>
         </div>
       </header>
@@ -92,21 +101,24 @@ const Header = () => {
         <div className="container mx-auto w-full bg-slate-900/90 rounded-3xl shadow-2xl px-4 py-3 flex items-center justify-between border border-slate-700/50 backdrop-blur-sm mt-2">
           <div className="flex items-center gap-2 min-w-[60px]">
             <img
-              src={logoItem.logo}
-              alt={logoItem.title}
-              title={logoItem.title}
+              src={logoItem?.logo}
+              alt={logoItem?.title}
+              title={logoItem?.title}
               className="h-13 w-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-lg cursor-pointer"
               loading="lazy"
             />
           </div>
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="text-3xl text-slate-200 focus:outline-none p-2 rounded-full hover:bg-slate-800/40 transition-all duration-200 shadow-md"
-            aria-label="باز کردن منو"
-            style={{ boxShadow: "0 2px 8px 0 rgba(0,0,0,0.12)" }}
-          >
-            {menuOpen ? <FiX /> : <FiMenu />}
-          </button>
+          <div className="flex items-center gap-2">
+            <LanguageSwitcher variant="mobile" />
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="text-3xl text-slate-200 focus:outline-none p-2 rounded-full hover:bg-slate-800/40 transition-all duration-200 shadow-md"
+              aria-label={i18n.language === "fa" ? "باز کردن منو" : "Open Menu"}
+              style={{ boxShadow: "0 2px 8px 0 rgba(0,0,0,0.12)" }}
+            >
+              {menuOpen ? <FiX /> : <FiMenu />}
+            </button>
+          </div>
         </div>
 
         <div
@@ -120,6 +132,7 @@ const Header = () => {
           <div className="bg-slate-900/90 rounded-3xl shadow-2xl p-6 mx-4 mt-3 w-auto flex flex-col gap-4 text-center border border-slate-700/50 backdrop-blur-sm">
             {menuItems?.map((item) => (
               <a
+                key={item.href}
                 href={item.href}
                 title={item.title}
                 className="text-base font-semibold text-slate-200 hover:text-blue-400 transition-colors duration-200 px-4 py-3 rounded-xl hover:bg-slate-800/60 shadow-sm tracking-wide mx-2"
@@ -129,10 +142,6 @@ const Header = () => {
                 {item.title}
               </a>
             ))}
-
-            <button className="mt-2 flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-7 rounded-2xl shadow-lg transition-all duration-200 min-w-[160px] text-base tracking-wide mx-auto">
-              درخواست مشاور
-            </button>
           </div>
         </div>
 
