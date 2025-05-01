@@ -57,7 +57,7 @@ const Banner = () => {
   }
 
   return (
-    <div className="relative w-full pt-8 lg:pt-20 md:pt-12 xl:pt-25 pb-8 md:pb-12 overflow-hidden">
+    <div className="relative w-full pt-12 lg:pt-20 md:pt-12 xl:pt-25 pb-8 md:pb-12 overflow-hidden">
       <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 xl:gap-12">
           <div className="w-full lg:w-1/2 flex flex-col gap-4 md:gap-6 text-right order-2 lg:order-1 justify-center animate-slide-in-right">
