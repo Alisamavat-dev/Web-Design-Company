@@ -1,41 +1,35 @@
 import { useTranslation } from "react-i18next";
 import { IoLanguage } from "react-icons/io5";
 
-const LanguageSwitcher = ({ className = "", variant = "default" }) => {
+const buttonStyles = {
+  base: "flex items-center gap-2 transition-all duration-300 font-medium",
+  mobile:
+    "px-3 py-2 rounded-xl bg-slate-800/40 text-slate-200 hover:text-blue-400 hover:bg-slate-700/50 text-sm",
+  desktop:
+    "px-6 py-1 rounded-xl bg-slate-800/60 text-slate-200 hover:text-blue-400 hover:bg-slate-700/50 text-base border border-slate-700/50 hover:border-blue-500/30 min-w-[130px]",
+};
+
+const LanguageSwitcher = ({ className = "", variant = "desktop" }) => {
   const { i18n } = useTranslation();
+  const isEnglish = i18n.language === "en";
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === "fa" ? "en" : "fa";
+    const newLang = isEnglish ? "fa" : "en";
     i18n.changeLanguage(newLang);
-    document.documentElement.dir = newLang === "fa" ? "rtl" : "ltr";
   };
 
-  const getButtonStyle = () => {
-    const baseStyle =
-      "flex items-center gap-2 transition-all duration-300 font-medium";
-
-    switch (variant) {
-      case "mobile":
-        return `${baseStyle} px-3 py-2 rounded-xl bg-slate-800/40 text-slate-200 hover:text-blue-400 hover:bg-slate-700/50 text-sm`;
-      case "desktop":
-        return `${baseStyle} px-6 py-2 rounded-xl bg-slate-800/60 text-slate-200 hover:text-blue-400 hover:bg-slate-700/50 text-sm border border-slate-700/50 hover:border-blue-500/30 w-[130px]`;
-      default:
-        return `${baseStyle} `;
-    }
-  };
+  const buttonStyle = `${buttonStyles.base} ${buttonStyles[variant]} ${className} group`;
 
   return (
     <button
       onClick={toggleLanguage}
-      className={`${getButtonStyle()} ${className} group`}
+      className={buttonStyle}
       aria-label={
-        i18n.language === "fa"
-          ? "تغییر زبان به انگلیسی"
-          : "Change language to Persian"
+        isEnglish ? "Change language to Persian" : "تغییر زبان به انگلیسی"
       }
     >
-      <IoLanguage className="text-lg opacity-80 group-hover:opacity-100 transition-opacity" />
-      <span>{i18n.language === "fa" ? "English" : "Persin"}</span>
+      <IoLanguage className="text-xl opacity-80 group-hover:opacity-100 transition-opacity" />
+      <span>{isEnglish ? "Persian" : "English"}</span>
     </button>
   );
 };

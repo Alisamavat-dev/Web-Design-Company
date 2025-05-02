@@ -22,10 +22,6 @@ const SEO = () => {
         }
       );
 
-      if (!response.ok) {
-        throw new Error("خطا در دریافت اطلاعات SEO");
-      }
-
       const data = await response.json();
       return data.record[i18n.language].translation.SEO;
     },
@@ -51,7 +47,6 @@ const SEO = () => {
       updateMetaTag("robots", seoData.robots);
       updateMetaTag("viewport", seoData.viewport);
       updateMetaTag("og:title", seoData.ogTitle);
-      updateMetaTag("icon", seoData.icon);
     }
   }, [seoData]);
 

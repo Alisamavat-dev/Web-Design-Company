@@ -1,218 +1,430 @@
 {
-    "fa": {
-      "translation": {
-        "Card": [
-          {
-            "title": "ویرایش همزمان کد",
-            "description": "توسعه‌دهندگان می‌توانند در لحظه و به‌صورت همزمان روی یک پروژه کار کنند. تمام تغییرات به‌صورت زنده نمایش داده می‌شوند. تجربه‌ای شبیه Google Docs، اما برای کدنویسی حرفه‌ای.",
-            "image": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
-            "badge": "ویژگی انحصاری"
-          },
-          {
-            "title": "سیستم بازبینی هوشمند",
-            "description": "کدها را بررسی و اصلاح کنید، کامنت‌گذاری کنید و از ابزارهای یکپارچه برای اعمال مستقیم تغییرات استفاده نمایید — بدون نیاز به خروج از محیط توسعه.",
-            "image": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
-            "badge": "بهینه‌سازی شده"
-          },
-          {
-            "title": "مدیریت پروژه‌های اشتراکی",
-            "description": "وظایف را تقسیم کرده، پیشرفت تیم را رصد نمایید و با هشدارهای هوشمند از تأخیرها جلوگیری کنید. مدیریت همه‌جانبه پروژه‌ها در یک پلتفرم یکپارچه.",
-            "image": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
-            "badge": "یکپارچه"
-          },
-          {
-            "title": "کمونیتی حرفه‌ای",
-            "description": "به جامعه‌ای از توسعه‌دهندگان متخصص بپیوندید، از منتورشیپ حرفه‌ای بهره‌مند شوید، در چالش‌های کدنویسی شرکت کنید و در پروژه‌های مشترک همکاری نمایید.",
-            "image": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
-            "badge": "یادگیری جمعی"
-          }
-        ],
-        "Header": [
-          {
-            "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
-            "title": "اصول همکاری",
-            "href": "/",
-            "description": "مرجع اصلی همکاری تیمی در پروژه‌های نرم‌افزاری"
-          },
-          {
-            "title": "ابزارهای توسعه",
-            "href": "/tools",
-            "description": "معرفی و آموزش ابزارهای ضروری برنامه‌نویسی مدرن"
-          },
-          {
-            "title": "روش‌های ارتباطی",
-            "href": "/communication",
-            "description": "راهکارهای موثر برای ارتباط تیمی و مدیریت پروژه"
-          },
-          {
-            "title": "مدیریت پروژه",
-            "href": "/project-management",
-            "description": "اصول و متدولوژی‌های مدیریت پروژه‌های نرم‌افزاری"
-          },
-          {
-            "title": "نمونه‌های موفق",
-            "href": "/success-stories",
-            "description": "داستان‌های موفقیت و تجربیات تیم‌های برتر"
-          },
-          {
-            "title": "آموزش‌ها",
-            "href": "/tutorials",
-            "description": "دوره‌های آموزشی تخصصی و کاربردی"
-          },
-          {
-            "title": "پرسش و پاسخ",
-            "href": "/qa",
-            "description": "پاسخ به سوالات رایج در حوزه برنامه‌نویسی"
-          }
-        ],
-        "Banner": {
-          "image": "https://uploadkon.ir/uploads/c51e01_25شغل-برنامه-نویسی-1024x683.jpg",
-          "title": "پلتفرم تخصصی توسعه‌دهندگان ایران",
-          "subtitle": "همکاری، یادگیری و رشد در کنار متخصصان برتر",
-          "description": "محیطی پویا و حرفه‌ای برای توسعه مهارت‌های فنی و نرم. دسترسی به پروژه‌های واقعی، منتورشیپ تخصصی، و شبکه گسترده متخصصان با تجربه در حوزه‌های مختلف برنامه‌نویسی",
-          "stats": {
-            "users": "بیش از 1000 توسعه‌دهنده فعال با میانگین 5 سال تجربه",
-            "languages": "پشتیبانی از 20+ زبان و فریم‌ورک محبوب برنامه‌نویسی"
-          },
-          "button": {
-            "title": "شروع همکاری حرفه‌ای",
-            "action": "join-community"
+  "fa": {
+    "translation": {
+      "Card": [
+        {
+          "id": "custom-design",
+          "title": "طراحی سایت سفارشی و اختصاصی",
+          "description": "طراحی سایت حرفه‌ای با جدیدترین تکنولوژی‌های روز دنیا. تیم ما با استفاده از React، Next.js، و Tailwind CSS سایت شما را با بالاترین استانداردهای کدنویسی پیاده‌سازی می‌کند.",
+          "image": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
+          "badge": "سفارشی‌سازی حرفه‌ای",
+          "labels": {
+            "features": "ویژگی‌ها:",
+            "technologies": "تکنولوژی‌ها:"
           },
           "features": [
-            "دسترسی به منتورهای باتجربه",
-            "شرکت در پروژه‌های واقعی",
-            "دوره‌های آموزشی تخصصی",
-            "شبکه‌سازی حرفه‌ای"
-          ]
+            "طراحی واکنش‌گرا (Responsive)",
+            "بهینه‌سازی SEO",
+            "سرعت بارگذاری بالا",
+            "امنیت پیشرفته"
+          ],
+          "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js"],
+          "category": "web-design"
         },
-        "SEO": {
-          "title": "پلتفرم همکاری برنامه‌نویسان | آموزش، پروژه و شبکه‌سازی تخصصی",
-          "description": "همکاری حرفه‌ای در پروژه‌های واقعی، منتورشیپ تخصصی، دوره‌های آموزشی کاربردی و دسترسی به جامعه‌ای پویا از برنامه‌نویسان. مناسب برای توسعه‌دهندگان فرانت‌اند، بک‌اند و دواپس.",
-          "keywords": "همکاری برنامه‌نویسی, پروژه واقعی, آموزش توسعه نرم‌افزار, شبکه‌سازی برنامه‌نویسان, منتورشیپ, کدنویسی تیمی, گیت, ری‌اکت, جاوااسکریپت, دواپس, مهندسی نرم‌افزار",
-          "author": "تیم توسعه پلتفرم همکاری برنامه‌نویسان",
-          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-          "viewport": "width=device-width, initial-scale=1.0",
-          "og:type": "website",
-          "og:locale": "fa_IR",
-          "twitter:card": "summary_large_image"
+        {
+          "id": "smart-pricing",
+          "title": "قیمت‌گذاری هوشمند با هوش مصنوعی",
+          "description": "سیستم قیمت‌گذاری پیشرفته مبتنی بر AI که با تحلیل دقیق نیازهای پروژه، تکنولوژی‌های مورد نیاز و زمان‌بندی، بهترین پیشنهاد قیمت را ارائه می‌دهد.",
+          "image": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
+          "badge": "تحلیل هوشمند",
+          "features": [
+            "تخمین دقیق هزینه",
+            "برآورد زمان پروژه",
+            "پیشنهاد تکنولوژی مناسب",
+            "مقایسه قیمت‌ها"
+          ],
+          "technologies": ["AI", "Machine Learning", "Data Analytics"],
+          "category": "pricing"
+        },
+        {
+          "id": "project-management",
+          "title": "مدیریت پروژه آنلاین و حرفه‌ای",
+          "description": "سیستم مدیریت پروژه پیشرفته با امکان پیگیری لحظه‌ای پیشرفت پروژه، چت آنلاین با تیم توسعه، و دسترسی به گزارش‌های تحلیلی پروژه.",
+          "image": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
+          "badge": "مدیریت حرفه‌ای",
+          "features": [
+            "گانت چارت پیشرفته",
+            "چت آنلاین اختصاصی",
+            "گزارش‌گیری لحظه‌ای",
+            "تقویم هوشمند پروژه"
+          ],
+          "technologies": ["Jira", "Slack", "GitHub", "Trello"],
+          "category": "project-management"
+        },
+        {
+          "id": "support",
+          "title": "پشتیبانی 24/7 و نگهداری تخصصی",
+          "description": "خدمات پشتیبانی شبانه‌روزی با تیم متخصص، نگهداری مستمر سایت، بروزرسانی‌های امنیتی و پشتیبان‌گیری خودکار از اطلاعات.",
+          "image": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
+          "badge": "پشتیبانی تخصصی",
+          "features": [
+            "پشتیبانی 24/7",
+            "بروزرسانی خودکار",
+            "پشتیبان‌گیری روزانه",
+            "مانیتورینگ سرور"
+          ],
+          "technologies": ["Docker", "Kubernetes", "AWS", "CloudFlare"],
+          "category": "support"
+        }
+      ],
+      "Header": [
+        {
+          "id": "home",
+          "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+          "title": "صفحه اصلی",
+          "href": "/",
+          "description": "پلتفرم هوشمند سفارش و مدیریت پروژه‌های طراحی سایت",
+          "icon": "home"
+        },
+        {
+          "id": "order",
+          "title": "ثبت سفارش",
+          "href": "/submit-project",
+          "description": "ثبت آنلاین پروژه طراحی سایت با قیمت‌گذاری هوشمند",
+          "icon": "plus-circle",
+          "badge": "جدید"
+        },
+        {
+          "id": "developers",
+          "title": "تیم توسعه‌دهندگان",
+          "href": "/developers",
+          "description": "دسترسی به پروفایل برنامه‌نویسان حرفه‌ای و باتجربه",
+          "icon": "users"
+        },
+        {
+          "id": "pricing",
+          "title": "تعرفه خدمات",
+          "href": "/pricing",
+          "description": "لیست قیمت‌های شفاف و رقابتی خدمات طراحی سایت",
+          "icon": "credit-card"
+        },
+        {
+          "id": "portfolio",
+          "title": "نمونه کارها",
+          "href": "/portfolio",
+          "description": "گالری پروژه‌های موفق و رضایت مشتریان",
+          "icon": "collection"
+        },
+        {
+          "id": "help",
+          "title": "مرکز راهنما",
+          "href": "/help",
+          "description": "راهنمای جامع سفارش و پیگیری پروژه‌ها",
+          "icon": "question-circle"
+        },
+        {
+          "id": "contact",
+          "title": "تماس با ما",
+          "href": "/contact",
+          "description": "ارتباط مستقیم با تیم پشتیبانی و مشاوره",
+          "icon": "phone"
+        }
+      ],
+      "Banner": {
+        "id": "main-banner",
+        "image": "https://uploadkon.ir/uploads/85c401_25برنامه-نویس.png",
+        "title": "طراحی سایت تخصصی و هوشمند",
+        "subtitle": "همکاری با بهترین توسعه‌دهندگان ایران",
+        "description": "با استفاده از هوش مصنوعی و تیم متخصص، پروژه طراحی سایت شما را با بالاترین کیفیت و کمترین زمان ممکن اجرا می‌کنیم. تضمین کیفیت، قیمت رقابتی و پشتیبانی 24/7 از ویژگی‌های منحصر به فرد ماست.",
+        "stats": {
+          "users": {
+            "value": "1000+",
+            "label": "توسعه‌دهنده فعال",
+            "icon": "users"
+          },
+          "projects": {
+            "value": "500+",
+            "label": "پروژه موفق",
+            "icon": "check-circle"
+          },
+          "technologies": {
+            "value": "20+",
+            "label": "تکنولوژی مدرن",
+            "icon": "code"
+          },
+          "satisfaction": {
+            "value": "98%",
+            "label": "رضایت مشتری",
+            "icon": "star"
+          }
+        },
+        "cta": {
+          "primary": {
+            "title": "شروع پروژه جدید",
+            "href": "/submit-project",
+            "icon": "arrow-right"
+          },
+          "secondary": {
+            "title": "مشاوره رایگان",
+            "href": "/consultation",
+            "icon": "phone"
+          }
+        },
+        "features": [
+          {
+            "title": "طراحی اختصاصی",
+            "description": "طراحی منحصر به فرد مطابق با نیاز شما",
+            "icon": "palette"
+          },
+          {
+            "title": "قیمت رقابتی",
+            "description": "بهترین قیمت با بالاترین کیفیت",
+            "icon": "tag"
+          },
+          {
+            "title": "تحویل سریع",
+            "description": "اجرای پروژه در کوتاه‌ترین زمان ممکن",
+            "icon": "clock"
+          },
+          {
+            "title": "پشتیبانی دائمی",
+            "description": "پشتیبانی 24/7 حتی پس از تحویل پروژه",
+            "icon": "support"
+          }
+        ]
+      },
+      "SEO": {
+        "title": "طراحی سایت حرفه‌ای | قیمت طراحی سایت | سفارش آنلاین",
+        "description": "طراحی سایت حرفه‌ای با جدیدترین تکنولوژی‌ها، قیمت مناسب و پشتیبانی 24/7. مشاوره و قیمت‌گذاری آنلاین، تضمین کیفیت و رضایت مشتری.",
+        "keywords": [
+          "طراحی سایت",
+          "قیمت طراحی سایت",
+          "سفارش طراحی سایت",
+          "طراحی سایت شرکتی",
+          "طراحی سایت فروشگاهی",
+          "طراحی سایت شخصی",
+          "طراحی سایت ارزان",
+          "بهترین شرکت طراحی سایت"
+        ],
+        "author": {
+          "name": "محمد علی سماوات",
+          "url": "https://github.com/Alisamavat-dev"
+        },
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "og": {
+          "type": "website",
+          "locale": "fa_IR",
+          "site_name": "طراحی سایت حرفه‌ای",
+          "title": "طراحی سایت حرفه‌ای | بهترین قیمت و کیفیت",
+          "description": "طراحی انواع سایت‌های شرکتی، فروشگاهی و شخصی با بهترین کیفیت و قیمت مناسب",
+          "image": "https://example.com/og-image.jpg"
         }
       }
-    },
-    "en": {
-      "translation": {
-        "Card": [
-          {
-            "title": "Real-Time Collaborative Coding",
-            "description": "Multiple developers can work on the same project simultaneously with live updates. Enjoy a seamless experience similar to Google Docs but for professional coding.",
-            "image": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
-            "tags": [
-              "Live Coding",
-              "Collaboration",
-              "Realtime",
-              "Teamwork"
-            ]
-          },
-          {
-            "title": "Smart Code Review System",
-            "description": "Review, comment, and apply code changes directly within the integrated platform — no need to switch between tools. Improve team productivity with streamlined feedback loops.",
-            "image": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
-            "tags": [
-              "Code Review",
-              "Team Tools",
-              "Integrated Workflow"
-            ]
-          },
-          {
-            "title": "Collaborative Project Management",
-            "description": "Assign tasks, monitor progress, and receive smart notifications to prevent delays. Manage everything in a unified platform tailored for software teams.",
-            "image": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
-            "tags": [
-              "Project Tracking",
-              "Task Management",
-              "Team Alerts"
-            ]
-          },
-          {
-            "title": "Expert Developer Community",
-            "description": "Join a network of skilled developers. Collaborate on shared projects, participate in coding challenges, and benefit from peer mentoring and knowledge sharing.",
-            "image": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
-            "tags": [
-              "Mentorship",
-              "Community",
-              "Challenges",
-              "Networking"
-            ]
-          }
-        ],
-        "Header": [
-          {
-            "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
-            "title": "Collaboration Principles",
-            "href": "/",
-            "description": "Core reference for team collaboration in software projects"
-          },
-          {
-            "title": "Development Tools",
-            "href": "/tools",
-            "description": "Essential tools and practices for modern programming"
-          },
-          {
-            "title": "Communication Methods",
-            "href": "/communication",
-            "description": "Effective strategies for team communication and project management"
-          },
-          {
-            "title": "Project Management",
-            "href": "/project-management",
-            "description": "Software project management principles and methodologies"
-          },
-          {
-            "title": "Success Stories",
-            "href": "/success-stories",
-            "description": "Success stories and experiences from top teams"
-          },
-          {
-            "title": "Tutorials",
-            "href": "/tutorials",
-            "description": "Specialized and practical training courses"
-          },
-          {
-            "title": "Q&A",
-            "href": "/qa",
-            "description": "Answers to common programming questions"
-          }
-        ],
-        "Banner": {
-          "image": "https://uploadkon.ir/uploads/c51e01_25شغل-برنامه-نویسی-1024x683.jpg",
-          "title": "Professional Developers Platform",
-          "subtitle": "Collaborate, Learn & Grow with Top Experts",
-          "description": "A dynamic and professional environment for developing technical and soft skills. Access to real projects, specialized mentorship, and an extensive network of experienced professionals across various programming domains",
-          "stats": {
-            "users": "Over 1000 active developers with 5+ years average experience",
-            "languages": "Support for 20+ popular programming languages and frameworks"
-          },
-          "button": {
-            "title": "Start Professional Collaboration",
-            "action": "join-community"
+    }
+  },
+  "en": {
+    "translation": {
+      "Card": [
+        {
+          "id": "custom-design",
+          "title": "Custom Website Design",
+          "description": "Professional website design using the latest technologies. Our team implements your site with React, Next.js, and Tailwind CSS following the highest coding standards.",
+          "image": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
+          "badge": "Professional Customization",
+          "labels": {
+            "features": "Features:",
+            "technologies": "Technologies:"
           },
           "features": [
-            "Access to Experienced Mentors",
-            "Real Project Participation",
-            "Specialized Training Courses",
-            "Professional Networking"
-          ]
+            "Responsive Design",
+            "SEO Optimization",
+            "Fast Loading Speed",
+            "Advanced Security"
+          ],
+          "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js"],
+          "category": "web-design"
         },
-        "SEO": {
-          "title": "Developers Collaboration Platform | Learn, Build & Grow Together",
-          "description": "Join a thriving developer platform. Work on real-world projects, access expert mentorship, sharpen your programming skills, and grow your professional network. Ideal for front-end, back-end, and DevOps engineers.",
-          "keywords": "developer collaboration, programming education, team coding, project experience, software engineering, mentorship, React, JavaScript, DevOps, GitHub, API integration",
-          "author": "Developers Collaboration Platform Team",
-          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-          "viewport": "width=device-width, initial-scale=1.0",
-          "og:type": "website",
-          "og:locale": "en_US",
-          "twitter:card": "summary_large_image"
+        {
+          "id": "smart-pricing",
+          "title": "AI-Powered Smart Pricing",
+          "description": "Advanced AI-based pricing system that analyzes project requirements, needed technologies, and timeline to provide the best price quote.",
+          "image": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
+          "badge": "Smart Analysis",
+          "features": [
+            "Accurate Cost Estimation",
+            "Project Timeline Forecast",
+            "Technology Recommendations",
+            "Price Comparisons"
+          ],
+          "technologies": ["AI", "Machine Learning", "Data Analytics"],
+          "category": "pricing"
+        },
+        {
+          "id": "project-management",
+          "title": "Professional Project Management",
+          "description": "Advanced project management system with real-time progress tracking, online chat with the development team, and access to analytical project reports.",
+          "image": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
+          "badge": "Professional Management",
+          "features": [
+            "Advanced Gantt Charts",
+            "Dedicated Online Chat",
+            "Real-time Reporting",
+            "Smart Project Calendar"
+          ],
+          "technologies": ["Jira", "Slack", "GitHub", "Trello"],
+          "category": "project-management"
+        },
+        {
+          "id": "support",
+          "title": "24/7 Support & Maintenance",
+          "description": "Round-the-clock support with expert team, continuous site maintenance, security updates, and automated data backup.",
+          "image": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
+          "badge": "Expert Support",
+          "features": [
+            "24/7 Support",
+            "Automatic Updates",
+            "Daily Backups",
+            "Server Monitoring"
+          ],
+          "technologies": ["Docker", "Kubernetes", "AWS", "CloudFlare"],
+          "category": "support"
+        }
+      ],
+      "Header": [
+        {
+          "id": "home",
+          "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+          "title": "Home",
+          "href": "/",
+          "description": "Smart platform for ordering and managing website design projects",
+          "icon": "home"
+        },
+        {
+          "id": "order",
+          "title": "Submit Project",
+          "href": "/submit-project",
+          "description": "Submit website design project online with smart pricing",
+          "icon": "plus-circle",
+          "badge": "New"
+        },
+        {
+          "id": "developers",
+          "title": "Development Team",
+          "href": "/developers",
+          "description": "Access profiles of professional and experienced programmers",
+          "icon": "users"
+        },
+        {
+          "id": "pricing",
+          "title": "Service Rates",
+          "href": "/pricing",
+          "description": "Transparent and competitive pricing for website design services",
+          "icon": "credit-card"
+        },
+        {
+          "id": "portfolio",
+          "title": "Portfolio",
+          "href": "/portfolio",
+          "description": "Gallery of successful projects and client satisfaction",
+          "icon": "collection"
+        },
+        {
+          "id": "help",
+          "title": "Help Center",
+          "href": "/help",
+          "description": "Comprehensive guide for ordering and tracking projects",
+          "icon": "question-circle"
+        },
+        {
+          "id": "contact",
+          "title": "Contact Us",
+          "href": "/contact",
+          "description": "Direct communication with support and consulting team",
+          "icon": "phone"
+        }
+      ],
+      "Banner": {
+        "id": "main-banner",
+        "image": "https://uploadkon.ir/uploads/85c401_25برنامه-نویس.png",
+        "title": "Professional & Smart Website Design",
+        "subtitle": "Collaborate with Iran's Best Developers",
+        "description": "Using AI and expert team, we execute your website design project with the highest quality in minimum time. Quality guarantee, competitive pricing, and 24/7 support are our unique features.",
+        "stats": {
+          "users": {
+            "value": "1000+",
+            "label": "Active Developers",
+            "icon": "users"
+          },
+          "projects": {
+            "value": "500+",
+            "label": "Successful Projects",
+            "icon": "check-circle"
+          },
+          "technologies": {
+            "value": "20+",
+            "label": "Modern Technologies",
+            "icon": "code"
+          },
+          "satisfaction": {
+            "value": "98%",
+            "label": "Client Satisfaction",
+            "icon": "star"
+          }
+        },
+        "cta": {
+          "primary": {
+            "title": "Start New Project",
+            "href": "/submit-project",
+            "icon": "arrow-right"
+          },
+          "secondary": {
+            "title": "Free Consultation",
+            "href": "/consultation",
+            "icon": "phone"
+          }
+        },
+        "features": [
+          {
+            "title": "Custom Design",
+            "description": "Unique design according to your needs",
+            "icon": "palette"
+          },
+          {
+            "title": "Competitive Pricing",
+            "description": "Best price with highest quality",
+            "icon": "tag"
+          },
+          {
+            "title": "Fast Delivery",
+            "description": "Project execution in minimum possible time",
+            "icon": "clock"
+          },
+          {
+            "title": "Permanent Support",
+            "description": "24/7 support even after project delivery",
+            "icon": "support"
+          }
+        ]
+      },
+      "SEO": {
+        "title": "Professional Website Design | Website Design Pricing | Online Order",
+        "description": "Professional website design with latest technologies, affordable pricing, and 24/7 support. Online consultation and pricing, quality guarantee, and customer satisfaction.",
+        "keywords": [
+          "website design",
+          "website design pricing",
+          "order website design",
+          "corporate website design",
+          "e-commerce website design",
+          "personal website design",
+          "affordable website design",
+          "best website design company"
+        ],
+        "author": {
+          "name": "Ali samavat",
+          "url": "https://github.com/Alisamavat-dev"
+        },
+        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "viewport": "width=device-width, initial-scale=1.0",
+        "og": {
+          "type": "website",
+          "locale": "en_US",
+          "site_name": "Professional Website Design",
+          "title": "Professional Website Design | Best Price & Quality",
+          "description": "Design of corporate, e-commerce, and personal websites with best quality and affordable pricing",
+          "image": "https://example.com/og-image.jpg"
         }
       }
     }
   }
+}

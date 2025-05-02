@@ -14,17 +14,8 @@ const Card = () => {
     queryKey: ["Card", i18n.language],
     queryFn: async () => {
       const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`,
-        {
-          headers: {
-            "X-Master-Key": import.meta.env.VITE_JSONBIN_MASTER_KEY,
-          },
-        }
+        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
       );
-
-      if (!response.ok) {
-        throw new Error("خطا در دریافت اطلاعات کارت");
-      }
 
       const data = await response.json();
       return data.record[i18n.language].translation.Card;
@@ -58,14 +49,14 @@ const Card = () => {
   return (
     <div className="pb-16">
       <div className="container mx-auto relative">
-        <h2 className="text-right px-6 py-8 text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 max-w-7xl mx-auto border-b border-blue-500/20">
-          {i18n.language === "fa" ? "چرا به ما بپیوندید؟" : "Why Join Us?"}
-        </h2>
+        <h1 className="text-right px-6 py-8 text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 max-w-7xl mx-auto border-b border-blue-500/20">
+          {i18n.language === "fa" ? "خدمات ما" : "Our Services"}
+        </h1>
 
         <div className="container mx-auto py-8 px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {cardData?.map((item, idx) => (
+          {cardData?.map((item) => (
             <div
-              key={idx}
+              key={item.id}
               className="group relative bg-white/5 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center border border-white/10 hover:border-blue-500/30 transition-all duration-300 hover:transform hover:-translate-y-2"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -81,15 +72,58 @@ const Card = () => {
                 />
               </div>
 
-              <h3 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
+              <span className="px-3 py-1 text-xs font-medium bg-blue-500/10 text-blue-400 rounded-full mb-4">
+                {item.badge}
+              </span>
+
+              <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 mb-4">
                 {item.title}
-              </h3>
+              </h2>
 
               <div className="w-12 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full mb-4 group-hover:w-24 transition-all duration-300 opacity-50 group-hover:opacity-100"></div>
 
-              <p className="text-slate-300/90 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+              <p className="text-slate-300/90 text-sm leading-relaxed group-hover:text-white transition-colors duration-300 mb-6">
                 {item.description}
               </p>
+
+              <div className="mt-auto space-y-4 w-full">
+                <div className="space-y-2">
+                  <h3 className="text-sm font-semibold text-blue-400">
+                    {item.labels?.features ||
+                      (i18n.language === "fa" ? "ویژگی‌ها:" : "Features:")}
+                  </h3>
+                  <ul className="space-y-1">
+                    {item.features?.map((feature, idx) => (
+                      <li
+                        key={idx}
+                        className="text-xs text-slate-400 flex items-center gap-2"
+                      >
+                        <span className="w-1 h-1 bg-blue-500 rounded-full"></span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="space-y-2">
+                  <h4 className="text-sm font-semibold text-purple-400">
+                    {item.labels?.technologies ||
+                      (i18n.language === "fa"
+                        ? "تکنولوژی‌ها:"
+                        : "Technologies:")}
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {item.technologies?.map((tech, idx) => (
+                      <span
+                        key={idx}
+                        className="px-2 py-1 text-xs bg-purple-500/10 text-purple-400 rounded-lg"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
 
               <div className="absolute -inset-px bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500"></div>
             </div>
