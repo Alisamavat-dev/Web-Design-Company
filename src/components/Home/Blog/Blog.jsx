@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
@@ -61,7 +61,7 @@ const Blog = () => {
   return (
     <div className="w-full px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
       <h2 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 mb-8 text-center border-b border-blue-500/20 max-w-4xl mx-auto">
-        {t("blog.latestArticles", "آخرین مقالات")}
+        {t("blog.title", i18n.language === "fa" ? "بلاگ" : "Blog")}
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
         {getRandomizedPosts(posts, 3).map((post) => (

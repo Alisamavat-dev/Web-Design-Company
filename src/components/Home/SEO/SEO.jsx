@@ -52,19 +52,24 @@ const SEO = () => {
 
   if (isPending) {
     return (
-      <div className="flex justify-center items-center h-[80vh] bg-gray-900">
-        <AiOutlineLoading3Quarters
-          size={44}
-          className="animate-spin text-gray-400"
-        />
+      <div className="flex justify-center items-center h-[60vh]">
+        <div className="relative">
+          <AiOutlineLoading3Quarters
+            size={44}
+            className="animate-spin text-blue-400"
+          />
+          <div className="absolute inset-0 blur-xl bg-blue-500/20 animate-pulse"></div>
+        </div>
       </div>
     );
   }
 
   if (isError) {
     return (
-      <div className="flex justify-center items-center h-[80vh] bg-gray-900">
-        <p className="text-red-400">Error: {error.message}</p>
+      <div className="flex justify-center items-center h-[60vh]">
+        <div className="bg-red-500/10 backdrop-blur-sm px-6 py-4 rounded-lg border border-red-500/20">
+          <p className="text-red-400">Error: {error.message}</p>
+        </div>
       </div>
     );
   }

@@ -7,7 +7,7 @@
             "id": "react-intro",
             "title": "آشنایی با React و مزایای آن",
             "excerpt": "React یکی از محبوب‌ترین کتابخانه‌های جاوااسکریپت برای ساخت رابط کاربری است. در این مقاله با مزایا و کاربردهای React آشنا می‌شوید.",
-            "image": "https://uploadkon.ir/uploads/7c0b02_25images.jpg",
+            "image": "https://uploadkon.ir/uploads/33f502_25react.png",
             "category": "React",
             "date": "1403/03/20",
             "author": "علی سماوات"
@@ -16,7 +16,7 @@
             "id": "nextjs-ssr",
             "title": "مزایای SSR در Next.js",
             "excerpt": "Next.js با پشتیبانی از رندر سمت سرور (SSR) باعث بهبود SEO و سرعت سایت می‌شود. در این مقاله با مزایای SSR در Next.js آشنا شوید.",
-            "image": "https://uploadkon.ir/uploads/754202_25images.jpg",
+            "image": "https://uploadkon.ir/uploads/fd2802_25next.png",
             "category": "Next.js",
             "date": "1403/03/21",
             "author": "محمد رضایی"
@@ -25,7 +25,7 @@
             "id": "nodejs-best-practices",
             "title": "بهترین شیوه‌های توسعه با Node.js",
             "excerpt": "در این مقاله با نکات و بهترین شیوه‌های توسعه اپلیکیشن‌های Node.js آشنا می‌شوید تا پروژه‌های مقیاس‌پذیر و امن‌تری بسازید.",
-            "image": "https://nodejs.org/static/images/logo.svg",
+            "image": "https://uploadkon.ir/uploads/b29502_25node.png",
             "category": "Node.js",
             "date": "1403/03/22",
             "author": "سارا احمدی"
@@ -34,7 +34,7 @@
             "id": "nestjs-vs-express",
             "title": "مقایسه NestJS و Express",
             "excerpt": "NestJS و Express دو فریم‌ورک محبوب برای توسعه بک‌اند با Node.js هستند. در این مقاله تفاوت‌ها و مزایای هرکدام را بررسی می‌کنیم.",
-            "image": "https://uploadkon.ir/uploads/b94f02_25nest-og.png",
+            "image": "https://uploadkon.ir/uploads/27bd02_25nest.png",
             "category": "NestJS",
             "date": "1403/03/23",
             "author": "علی سماوات"
@@ -250,6 +250,70 @@
           "description": "طراحی انواع سایت‌های شرکتی، فروشگاهی و شخصی با بهترین کیفیت و قیمت مناسب",
           "image": "https://example.com/og-image.jpg"
         }
+      },
+      "Comments": [
+        {
+          "id": "c1",
+          "image": "https://randomuser.me/api/portraits/men/32.jpg",
+          "title": "رضا محمدی",
+          "rating": 5,
+          "description": "پشتیبانی عالی و سرعت انجام پروژه فوق‌العاده بود. واقعاً راضی هستم!"
+        },
+        {
+          "id": "c2",
+          "image": "https://randomuser.me/api/portraits/women/44.jpg",
+          "title": "سمیه احمدی",
+          "rating": 4,
+          "description": "تیم حرفه‌ای و پاسخگو. طراحی سایت دقیقاً مطابق نیاز من انجام شد."
+        },
+        {
+          "id": "c3",
+          "image": "https://randomuser.me/api/portraits/men/65.jpg",
+          "title": "علی رضایی",
+          "rating": 5,
+          "description": "قیمت مناسب و کیفیت عالی. حتماً به دیگران پیشنهاد می‌کنم."
+        },
+        {
+          "id": "c4",
+          "image": "https://randomuser.me/api/portraits/women/68.jpg",
+          "title": "مریم موسوی",
+          "rating": 5,
+          "description": "از همکاری با این تیم بسیار خوشحالم. همه چیز عالی بود."
+        }
+      ],
+      "Footer": {
+        "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+        "siteName": "شرکت طراحی سایت",
+        "slogan": "طراحی سایت حرفه‌ای و هوشمند با بهترین قیمت و کیفیت",
+        "description": "ما با تیمی متخصص و استفاده از جدیدترین تکنولوژی‌ها، بهترین خدمات طراحی سایت را ارائه می‌دهیم.",
+        "links": [
+          { "href": "/", "label": "صفحه اصلی" },
+          { "href": "/portfolio", "label": "نمونه کارها" },
+          { "href": "/pricing", "label": "تعرفه خدمات" },
+          { "href": "/contact", "label": "تماس با ما" }
+        ],
+        "socials": [
+          { "href": "https://instagram.com/", "icon": "instagram" },
+          { "href": "https://github.com/Alisamavat-dev", "icon": "github" },
+          { "href": "https://www.linkedin.com/in/ali-samavat/", "icon": "linkedin" }
+        ],
+        "contactInfo": {
+          "address": "تهران، خیابان مثال، پلاک ۱۲۳",
+          "phone": "+98-21-12345678",
+          "email": "info@example.com",
+          "workingHours": "شنبه تا پنجشنبه ۹ تا ۱۸"
+        },
+        "newsletter": {
+          "title": "عضویت در خبرنامه",
+          "placeholder": "ایمیل خود را وارد کنید",
+          "buttonText": "عضویت"
+        },
+        "paymentMethods": [
+          {
+            "name": "زرین‌پال",
+            "icon": "https://uploadkon.ir/uploads/828202_25download-1-.png"
+          }
+        ]
       }
     }
   },
@@ -260,8 +324,8 @@
           {
             "id": "react-intro",
             "title": "Getting Started with React and Its Benefits",
-            "excerpt": "React is one of the most popular JavaScript libraries for building user interfaces. In this article, you’ll learn about its advantages and use cases.",
-            "image": "https://uploadkon.ir/uploads/7c0b02_25images.jpg",
+            "excerpt": "React is one of the most popular JavaScript libraries for building user interfaces. In this article, you'll learn about its advantages and use cases.",
+            "image": "https://uploadkon.ir/uploads/33f502_25react.png",
             "category": "React",
             "date": "2024-06-09",
             "author": "Ali Samavat"
@@ -270,7 +334,7 @@
             "id": "nextjs-ssr",
             "title": "Benefits of SSR in Next.js",
             "excerpt": "Next.js supports server-side rendering (SSR) which improves SEO and site speed. Discover the advantages of SSR in Next.js in this article.",
-            "image": "https://uploadkon.ir/uploads/754202_25images.jpg",
+            "image": "https://uploadkon.ir/uploads/27bd02_25nest.png",
             "category": "Next.js",
             "date": "2024-06-10",
             "author": "Mohammad Rezaei"
@@ -279,7 +343,7 @@
             "id": "nodejs-best-practices",
             "title": "Node.js Best Practices for Developers",
             "excerpt": "This article covers tips and best practices for developing scalable and secure Node.js applications.",
-            "image": "https://nodejs.org/static/images/logo.svg",
+            "image": "https://uploadkon.ir/uploads/b29502_25node.png",
             "category": "Node.js",
             "date": "2024-06-11",
             "author": "Sara Ahmadi"
@@ -288,7 +352,7 @@
             "id": "nestjs-vs-express",
             "title": "NestJS vs Express: A Comparison",
             "excerpt": "NestJS and Express are two popular frameworks for backend development with Node.js. This article compares their features and benefits.",
-            "image": "https://uploadkon.ir/uploads/b94f02_25nest-og.png",
+            "image": "https://uploadkon.ir/uploads/790202_25next.png",
             "category": "NestJS",
             "date": "2024-06-12",
             "author": "Ali Samavat"
@@ -504,6 +568,70 @@
           "description": "Design of corporate, e-commerce, and personal websites with best quality and affordable pricing",
           "image": "https://example.com/og-image.jpg"
         }
+      },
+      "Comments": [
+        {
+          "id": "c1",
+          "image": "https://randomuser.me/api/portraits/men/32.jpg",
+          "title": "Reza Mohammadi",
+          "rating": 5,
+          "description": "Excellent support and super-fast project delivery. I'm really satisfied!"
+        },
+        {
+          "id": "c2",
+          "image": "https://randomuser.me/api/portraits/women/44.jpg",
+          "title": "Somayeh Ahmadi",
+          "rating": 4,
+          "description": "Professional and responsive team. The website was designed exactly as I needed."
+        },
+        {
+          "id": "c3",
+          "image": "https://randomuser.me/api/portraits/men/65.jpg",
+          "title": "Ali Rezaei",
+          "rating": 5,
+          "description": "Great price and quality. I definitely recommend them to others."
+        },
+        {
+          "id": "c4",
+          "image": "https://randomuser.me/api/portraits/women/68.jpg",
+          "title": "Maryam Mousavi",
+          "rating": 5,
+          "description": "I'm very happy working with this team. Everything was perfect."
+        }
+      ],
+      "Footer": {
+        "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+        "siteName": "Web Design Company",
+        "slogan": "Professional & smart web design with the best price and quality",
+        "description": "We provide the best web design services with a professional team and the latest technologies.",
+        "links": [
+          { "href": "/", "label": "Home" },
+          { "href": "/portfolio", "label": "Portfolio" },
+          { "href": "/pricing", "label": "Pricing" },
+          { "href": "/contact", "label": "Contact" }
+        ],
+        "socials": [
+          { "href": "https://instagram.com/", "icon": "instagram" },
+          { "href": "https://github.com/Alisamavat-dev", "icon": "github" },
+          { "href": "https://www.linkedin.com/in/ali-samavat/", "icon": "linkedin" }
+        ],
+        "contactInfo": {
+          "address": "Tehran, Example St., No. 123",
+          "phone": "+98-21-12345678",
+          "email": "info@example.com",
+          "workingHours": "Sat to Thu 9am-6pm"
+        },
+        "newsletter": {
+          "title": "Subscribe to Newsletter",
+          "placeholder": "Enter your email",
+          "buttonText": "Subscribe"
+        },
+        "paymentMethods": [
+          {
+            "name": "Zarinpal",
+            "icon": "https://uploadkon.ir/uploads/828202_25download-1-.png"
+          }
+        ]
       }
     }
   }
