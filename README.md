@@ -1,6 +1,6 @@
-# Digikala (React Version)
+# wavnix (React Version)
 
-This project is a frontend implementation of the Digikala online store using React and Vite.
+This project is a frontend implementation of the wavnix online store using React and Vite.
 
 ## Technologies and Tools
 
@@ -28,7 +28,7 @@ This project is a frontend implementation of the Digikala online store using Rea
 1. First, clone the project:
 
 ```bash
-git clone https://github.com/Alisamavat-dev/Digikala-React
+git clone https://github.com/Alisamavat-dev/wavnix-React
 cd react
 ```
 
@@ -65,7 +65,7 @@ src/
 
 ## Link
 
-https://digikala-react.vercel.app/
+https://wavnix-react.vercel.app/
 
 ## Developers
 
@@ -105,7 +105,7 @@ https://digikala-react.vercel.app/
 1. ابتدا پروژه را clone کنید:
 
 ```bash
-git clone https://github.com/Alisamavat-dev/Digikala-React
+git clone https://github.com/Alisamavat-dev/wavnix-React
 cd react
 ```
 

@@ -1,6 +1,46 @@
 {
   "fa": {
     "translation": {
+      "Blog": [
+        [
+          {
+            "id": "react-intro",
+            "title": "آشنایی با React و مزایای آن",
+            "excerpt": "React یکی از محبوب‌ترین کتابخانه‌های جاوااسکریپت برای ساخت رابط کاربری است. در این مقاله با مزایا و کاربردهای React آشنا می‌شوید.",
+            "image": "https://uploadkon.ir/uploads/7c0b02_25images.jpg",
+            "category": "React",
+            "date": "1403/03/20",
+            "author": "علی سماوات"
+          },
+          {
+            "id": "nextjs-ssr",
+            "title": "مزایای SSR در Next.js",
+            "excerpt": "Next.js با پشتیبانی از رندر سمت سرور (SSR) باعث بهبود SEO و سرعت سایت می‌شود. در این مقاله با مزایای SSR در Next.js آشنا شوید.",
+            "image": "https://uploadkon.ir/uploads/754202_25images.jpg",
+            "category": "Next.js",
+            "date": "1403/03/21",
+            "author": "محمد رضایی"
+          },
+          {
+            "id": "nodejs-best-practices",
+            "title": "بهترین شیوه‌های توسعه با Node.js",
+            "excerpt": "در این مقاله با نکات و بهترین شیوه‌های توسعه اپلیکیشن‌های Node.js آشنا می‌شوید تا پروژه‌های مقیاس‌پذیر و امن‌تری بسازید.",
+            "image": "https://nodejs.org/static/images/logo.svg",
+            "category": "Node.js",
+            "date": "1403/03/22",
+            "author": "سارا احمدی"
+          },
+          {
+            "id": "nestjs-vs-express",
+            "title": "مقایسه NestJS و Express",
+            "excerpt": "NestJS و Express دو فریم‌ورک محبوب برای توسعه بک‌اند با Node.js هستند. در این مقاله تفاوت‌ها و مزایای هرکدام را بررسی می‌کنیم.",
+            "image": "https://uploadkon.ir/uploads/b94f02_25nest-og.png",
+            "category": "NestJS",
+            "date": "1403/03/23",
+            "author": "علی سماوات"
+          }
+        ]
+      ],
       "Card": [
         {
           "id": "custom-design",
@@ -215,6 +255,46 @@
   },
   "en": {
     "translation": {
+      "Blog": [
+        [
+          {
+            "id": "react-intro",
+            "title": "Getting Started with React and Its Benefits",
+            "excerpt": "React is one of the most popular JavaScript libraries for building user interfaces. In this article, you’ll learn about its advantages and use cases.",
+            "image": "https://uploadkon.ir/uploads/7c0b02_25images.jpg",
+            "category": "React",
+            "date": "2024-06-09",
+            "author": "Ali Samavat"
+          },
+          {
+            "id": "nextjs-ssr",
+            "title": "Benefits of SSR in Next.js",
+            "excerpt": "Next.js supports server-side rendering (SSR) which improves SEO and site speed. Discover the advantages of SSR in Next.js in this article.",
+            "image": "https://uploadkon.ir/uploads/754202_25images.jpg",
+            "category": "Next.js",
+            "date": "2024-06-10",
+            "author": "Mohammad Rezaei"
+          },
+          {
+            "id": "nodejs-best-practices",
+            "title": "Node.js Best Practices for Developers",
+            "excerpt": "This article covers tips and best practices for developing scalable and secure Node.js applications.",
+            "image": "https://nodejs.org/static/images/logo.svg",
+            "category": "Node.js",
+            "date": "2024-06-11",
+            "author": "Sara Ahmadi"
+          },
+          {
+            "id": "nestjs-vs-express",
+            "title": "NestJS vs Express: A Comparison",
+            "excerpt": "NestJS and Express are two popular frameworks for backend development with Node.js. This article compares their features and benefits.",
+            "image": "https://uploadkon.ir/uploads/b94f02_25nest-og.png",
+            "category": "NestJS",
+            "date": "2024-06-12",
+            "author": "Ali Samavat"
+          }
+        ]
+      ],
       "Card": [
         {
           "id": "custom-design",

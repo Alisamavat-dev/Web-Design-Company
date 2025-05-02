@@ -6,7 +6,7 @@ import SEO from "../../components/Home/SEO/SEO";
 import { useQuery } from "@tanstack/react-query";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
-
+import Blog from "../../components/Home/Blog/Blog";
 const LoadingDots = () => {
   const [dots, setDots] = useState("");
 
@@ -149,6 +149,9 @@ const Home = () => {
       </div>
       <div className="lg:pt-10">
         <Card />
+      </div>
+      <div>
+        <Blog />
       </div>
       <SEO />
     </>
