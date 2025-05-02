@@ -99,7 +99,7 @@ const Header = () => {
                   <a
                     href={item.href}
                     title={item.description}
-                    className="whitespace-nowrap hover:text-blue-400 transition-colors duration-200 px-2 md:px-3 py-1 rounded-lg hover:bg-slate-800/60 block text-ellipsis text-sm flex items-center gap-2"
+                    className="whitespace-nowrap hover:text-blue-400 transition-colors duration-200 px-2 md:px-3 py-1 rounded-lg hover:bg-slate-800/60 text-ellipsis text-sm flex items-center gap-2"
                   >
                     {getIconComponent(item.icon)}
                     <span>{item.title}</span>

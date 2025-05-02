@@ -47,7 +47,7 @@ const Card = () => {
   }
 
   return (
-    <div className="pb-16">
+    <div className="">
       <div className="container mx-auto relative">
         <h1 className="text-right px-6 py-8 text-3xl sm:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 max-w-7xl mx-auto border-b border-blue-500/20">
           {i18n.language === "fa" ? "خدمات ما" : "Our Services"}
