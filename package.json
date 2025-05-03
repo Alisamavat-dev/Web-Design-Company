@@ -6,10 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:dev": "vite build --mode dev",
-    "build": "react-scripts build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "lint": "eslint .",
     "server": "json-server --watch db.json --port 3000",
     "start": "json-server --watch db.json --port 10000"
   },
