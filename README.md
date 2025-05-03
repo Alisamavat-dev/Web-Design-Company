@@ -1,4 +1,4 @@
-# wavnix (React Version)
+# wavnix (React Version)a
 
 This project is a frontend implementation of the wavnix online store using React and Vite.
 
