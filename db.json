@@ -287,15 +287,36 @@
         "slogan": "طراحی سایت حرفه‌ای و هوشمند با بهترین قیمت و کیفیت",
         "description": "ما با تیمی متخصص و استفاده از جدیدترین تکنولوژی‌ها، بهترین خدمات طراحی سایت را ارائه می‌دهیم.",
         "links": [
-          { "href": "/", "label": "صفحه اصلی" },
-          { "href": "/portfolio", "label": "نمونه کارها" },
-          { "href": "/pricing", "label": "تعرفه خدمات" },
-          { "href": "/contact", "label": "تماس با ما" }
+          {
+            "href": "/",
+            "label": "صفحه اصلی"
+          },
+          {
+            "href": "/portfolio",
+            "label": "نمونه کارها"
+          },
+          {
+            "href": "/pricing",
+            "label": "تعرفه خدمات"
+          },
+          {
+            "href": "/contact",
+            "label": "تماس با ما"
+          }
         ],
         "socials": [
-          { "href": "https://instagram.com/", "icon": "instagram" },
-          { "href": "https://github.com/Alisamavat-dev", "icon": "github" },
-          { "href": "https://www.linkedin.com/in/ali-samavat/", "icon": "linkedin" }
+          {
+            "href": "https://instagram.com/",
+            "icon": "instagram"
+          },
+          {
+            "href": "https://github.com/Alisamavat-dev",
+            "icon": "github"
+          },
+          {
+            "href": "https://www.linkedin.com/in/ali-samavat/",
+            "icon": "linkedin"
+          }
         ],
         "contactInfo": {
           "address": "تهران، خیابان مثال، پلاک ۱۲۳",
@@ -334,7 +355,7 @@
             "id": "nextjs-ssr",
             "title": "Benefits of SSR in Next.js",
             "excerpt": "Next.js supports server-side rendering (SSR) which improves SEO and site speed. Discover the advantages of SSR in Next.js in this article.",
-            "image": "https://uploadkon.ir/uploads/27bd02_25nest.png",
+            "image": "https://uploadkon.ir/uploads/790202_25next.png",
             "category": "Next.js",
             "date": "2024-06-10",
             "author": "Mohammad Rezaei"
@@ -352,7 +373,7 @@
             "id": "nestjs-vs-express",
             "title": "NestJS vs Express: A Comparison",
             "excerpt": "NestJS and Express are two popular frameworks for backend development with Node.js. This article compares their features and benefits.",
-            "image": "https://uploadkon.ir/uploads/790202_25next.png",
+            "image": "https://uploadkon.ir/uploads/27bd02_25nest.png",
             "category": "NestJS",
             "date": "2024-06-12",
             "author": "Ali Samavat"
@@ -605,15 +626,36 @@
         "slogan": "Professional & smart web design with the best price and quality",
         "description": "We provide the best web design services with a professional team and the latest technologies.",
         "links": [
-          { "href": "/", "label": "Home" },
-          { "href": "/portfolio", "label": "Portfolio" },
-          { "href": "/pricing", "label": "Pricing" },
-          { "href": "/contact", "label": "Contact" }
+          {
+            "href": "/",
+            "label": "Home"
+          },
+          {
+            "href": "/portfolio",
+            "label": "Portfolio"
+          },
+          {
+            "href": "/pricing",
+            "label": "Pricing"
+          },
+          {
+            "href": "/contact",
+            "label": "Contact"
+          }
         ],
         "socials": [
-          { "href": "https://instagram.com/", "icon": "instagram" },
-          { "href": "https://github.com/Alisamavat-dev", "icon": "github" },
-          { "href": "https://www.linkedin.com/in/ali-samavat/", "icon": "linkedin" }
+          {
+            "href": "https://instagram.com/",
+            "icon": "instagram"
+          },
+          {
+            "href": "https://github.com/Alisamavat-dev",
+            "icon": "github"
+          },
+          {
+            "href": "https://www.linkedin.com/in/ali-samavat/",
+            "icon": "linkedin"
+          }
         ],
         "contactInfo": {
           "address": "Tehran, Example St., No. 123",
