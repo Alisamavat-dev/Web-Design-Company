@@ -3,8 +3,8 @@ import Home from "../../page/Home/Home";
 import ErrorBoundary from "../../components/Error/ErrorBoundary";
 import ManageLayout from "../../page/admin/admin";
 
-import Blog from "../../components/Home/Blog/AllBlog/AllBlog";
-import BlogPost from "../Home/Blog/BlogPost/BlogPost";
+import Blog from "../AllBlog/AllBlog";
+import BlogPost from "../BlogPost/BlogPost";
 
 export const Router = createBrowserRouter([
   {

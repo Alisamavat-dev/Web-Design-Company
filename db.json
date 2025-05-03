@@ -6,38 +6,86 @@
           {
             "id": "react-intro",
             "title": "آشنایی با React و مزایای آن",
+            "title_en": "Getting Started with React and Its Benefits",
             "excerpt": "React یکی از محبوب‌ترین کتابخانه‌های جاوااسکریپت برای ساخت رابط کاربری است. در این مقاله با مزایا و کاربردهای React آشنا می‌شوید.",
+            "content": "<p>React یک کتابخانه متن‌باز جاوااسکریپت است که توسط فیسبوک توسعه یافته و برای ساخت رابط کاربری پویا و SPAها استفاده می‌شود. مزایای اصلی React شامل سرعت بالا، قابلیت استفاده مجدد از کامپوننت‌ها، جامعه کاربری بزرگ و پشتیبانی عالی است. اگر به دنبال توسعه سریع و حرفه‌ای وب‌سایت هستید، React انتخاب مناسبی است.</p>",
             "image": "https://uploadkon.ir/uploads/33f502_25react.png",
             "category": "React",
             "date": "1403/03/20",
-            "author": "علی سماوات"
+            "author": "علی سماوات",
+            "tags": ["React", "جاوااسکریپت", "فرانت‌اند", "SPA", "UI"]
           },
           {
             "id": "nextjs-ssr",
             "title": "مزایای SSR در Next.js",
+            "title_en": "Benefits of SSR in Next.js",
             "excerpt": "Next.js با پشتیبانی از رندر سمت سرور (SSR) باعث بهبود SEO و سرعت سایت می‌شود. در این مقاله با مزایای SSR در Next.js آشنا شوید.",
+            "content": "<p>SSR یا Server Side Rendering در Next.js باعث می‌شود صفحات وب قبل از ارسال به مرورگر کاربر، روی سرور رندر شوند. این موضوع باعث بهبود سئو، افزایش سرعت بارگذاری و تجربه کاربری بهتر می‌شود. Next.js با امکاناتی مانند Static Generation و API Routes توسعه وب را ساده‌تر کرده است.</p>",
             "image": "https://uploadkon.ir/uploads/fd2802_25next.png",
             "category": "Next.js",
             "date": "1403/03/21",
-            "author": "محمد رضایی"
+            "author": "محمد رضایی",
+            "tags": ["Next.js", "SSR", "SEO", "React", "رندر سمت سرور"]
           },
           {
             "id": "nodejs-best-practices",
             "title": "بهترین شیوه‌های توسعه با Node.js",
+            "title_en": "Node.js Best Practices for Developers",
             "excerpt": "در این مقاله با نکات و بهترین شیوه‌های توسعه اپلیکیشن‌های Node.js آشنا می‌شوید تا پروژه‌های مقیاس‌پذیر و امن‌تری بسازید.",
+            "content": "<p>Node.js به دلیل معماری غیرهمزمان و مبتنی بر رویداد، برای ساخت اپلیکیشن‌های مقیاس‌پذیر بسیار مناسب است. رعایت نکاتی مانند مدیریت خطا، استفاده از async/await، تست‌نویسی و امنیت، کیفیت پروژه‌های Node.js را افزایش می‌دهد.</p>",
             "image": "https://uploadkon.ir/uploads/b29502_25node.png",
             "category": "Node.js",
             "date": "1403/03/22",
-            "author": "سارا احمدی"
+            "author": "سارا احمدی",
+            "tags": ["Node.js", "بک‌اند", "امنیت", "توسعه‌دهنده", "جاوااسکریپت"]
           },
           {
             "id": "nestjs-vs-express",
             "title": "مقایسه NestJS و Express",
+            "title_en": "NestJS vs Express: A Comparison",
             "excerpt": "NestJS و Express دو فریم‌ورک محبوب برای توسعه بک‌اند با Node.js هستند. در این مقاله تفاوت‌ها و مزایای هرکدام را بررسی می‌کنیم.",
+            "content": "<p>NestJS یک فریم‌ورک مدرن مبتنی بر TypeScript است که ساختار ماژولار و قابلیت تست‌پذیری بالایی دارد. Express ساده‌تر و سبک‌تر است و برای پروژه‌های کوچک مناسب است. انتخاب بین این دو به نیاز پروژه و تیم بستگی دارد.</p>",
             "image": "https://uploadkon.ir/uploads/27bd02_25nest.png",
             "category": "NestJS",
             "date": "1403/03/23",
-            "author": "علی سماوات"
+            "author": "علی سماوات",
+            "tags": ["NestJS", "Express", "Node.js", "TypeScript", "بک‌اند"]
+          },
+          {
+            "id": "seo-web-design",
+            "title": "نکات سئو در طراحی سایت",
+            "title_en": "SEO Tips for Web Design",
+            "excerpt": "در این مقاله با مهم‌ترین نکات سئو در طراحی سایت آشنا می‌شوید تا سایت شما رتبه بهتری در گوگل بگیرد.",
+            "content": "<p>سئو در طراحی سایت شامل بهینه‌سازی ساختار صفحات، استفاده از تگ‌های مناسب، سرعت بارگذاری بالا و ریسپانسیو بودن سایت است. همچنین تولید محتوای ارزشمند و لینک‌سازی داخلی نقش مهمی در بهبود رتبه سایت دارد.</p>",
+            "image": "https://uploadkon.ir/uploads/seo-tips.png",
+            "category": "SEO",
+            "date": "1403/03/25",
+            "author": "مینا محمدی",
+            "tags": ["سئو", "طراحی سایت", "گوگل", "بهینه‌سازی", "محتوا"]
+          },
+          {
+            "id": "tailwind-vs-bootstrap",
+            "title": "مقایسه Tailwind CSS و Bootstrap",
+            "title_en": "Tailwind CSS vs Bootstrap",
+            "excerpt": "در این مقاله تفاوت‌ها و مزایای دو فریم‌ورک محبوب استایل‌دهی یعنی Tailwind و Bootstrap را بررسی می‌کنیم.",
+            "content": "<p>Tailwind CSS یک فریم‌ورک utility-first است که انعطاف بالایی در طراحی می‌دهد. Bootstrap ساختار آماده و کامپوننت‌های زیادی دارد. انتخاب بین این دو به نیاز پروژه و سلیقه توسعه‌دهنده بستگی دارد.</p>",
+            "image": "https://uploadkon.ir/uploads/tailwind-vs-bootstrap.png",
+            "category": "CSS",
+            "date": "1403/03/26",
+            "author": "رضا شریفی",
+            "tags": ["Tailwind", "Bootstrap", "CSS", "فرانت‌اند", "استایل‌دهی"]
+          },
+          {
+            "id": "web-performance-2024",
+            "title": "افزایش سرعت سایت در سال ۱۴۰۳",
+            "title_en": "Web Performance Optimization 2024",
+            "excerpt": "در این مقاله راهکارهای افزایش سرعت سایت و بهبود تجربه کاربری در سال جدید را بررسی می‌کنیم.",
+            "content": "<p>افزایش سرعت سایت با بهینه‌سازی تصاویر، استفاده از CDN، کاهش درخواست‌های HTTP و کدنویسی بهینه امکان‌پذیر است. ابزارهایی مانند Google PageSpeed Insights می‌توانند نقاط ضعف سایت را نشان دهند.</p>",
+            "image": "https://uploadkon.ir/uploads/web-performance.png",
+            "category": "Performance",
+            "date": "1403/03/27",
+            "author": "محمد عباسی",
+            "tags": ["سرعت سایت", "بهینه‌سازی", "Performance", "CDN", "UX"]
           }
         ]
       ],

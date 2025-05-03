@@ -3,8 +3,8 @@ import { FaSearch, FaCalendarAlt, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import Footer from "../../../Footer/Footer";
-import Header from "../../../Header/Header";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import { useTranslation } from "react-i18next";
 import Search from "./search";
 

@@ -60,7 +60,6 @@ body::before {
   }
 }
 
-/* Font optimization */
 * {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
