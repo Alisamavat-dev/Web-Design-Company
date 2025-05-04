@@ -7,7 +7,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import StarRating from "./StarRating";
-import { fetchComments } from "../../../api/Home/Comments/commentsApi";
+import { fetchComments } from "../../../api/Home/comments/commentsApi";
 
 const Comments = () => {
   const { i18n } = useTranslation();
