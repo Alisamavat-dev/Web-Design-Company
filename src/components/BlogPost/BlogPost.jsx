@@ -5,7 +5,6 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { useTranslation } from "react-i18next";
-import { Helmet } from "react-helmet";
 import SEO from "./SEO/SEO";
 
 const BlogPost = () => {
@@ -62,20 +61,12 @@ const BlogPost = () => {
     <div>
       <SEO
         title={post.title}
-        title_en={post.title_en}
-        excerpt={post.excerpt}
-        content={post.content}
-        image={post.image}
+        description={
+          post.excerpt || (post.content ? post.content.slice(0, 160) : "")
+        }
+        keywords={[post.category, ...(post.tags || [])].join(", ")}
         author={post.author}
-        date={post.date}
-        category={post.category}
-        tags={post.tags}
-        lang={lang}
-        url={typeof window !== "undefined" ? window.location.href : ""}
-        canonical={typeof window !== "undefined" ? window.location.href : ""}
-        robots="index, follow"
-        publisher="Web Design Company"
-        publisherLogo="https://uploadkon.ir/uploads/fd0e01_25logo-web.png"
+        ogTitle={post.title_en}
       />
       <Header />
       <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-30">

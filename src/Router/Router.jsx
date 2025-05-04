@@ -1,5 +1,8 @@
-import { Router } from "../components/lib/lib";
+// Home Section
+import { HomeRoutes } from "./sections/HomeRoutes.jsx";
+// Blog Section
+import { BlogRoutes } from "./sections/BlogRoutes.jsx";
+// Admin Section
+import { AdminRoutes } from "./sections/AdminRoutes.jsx";
 
-
-
-export default Router;
+export const routes = [...HomeRoutes, ...BlogRoutes, ...AdminRoutes];
