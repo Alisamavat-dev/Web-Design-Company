@@ -1,5 +1,5 @@
-import Blog from "../../components/AllBlog/AllBlog";
-import BlogPost from "../../components/BlogPost/BlogPost";
+import Blog from "../../page/AllBlog/AllBlog";
+import BlogPost from "../../page/BlogPost/BlogPost";
 import ErrorBoundary from "../../components/Error/ErrorBoundary";
 
 export const BlogRoutes = [

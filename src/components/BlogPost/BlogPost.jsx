@@ -2,11 +2,9 @@ import { useParams, Link } from "react-router-dom";
 import { FaCalendarAlt, FaUser, FaArrowRight } from "react-icons/fa";
 import { useQuery } from "@tanstack/react-query";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { useTranslation } from "react-i18next";
 import SEO from "./SEO/SEO";
-
+import { fetchBlogPosts } from "../../api/BlogPost/BlogPost";
 const BlogPost = () => {
   const { id } = useParams();
   const { i18n } = useTranslation();
@@ -19,13 +17,7 @@ const BlogPost = () => {
     error,
   } = useQuery({
     queryKey: ["Blog", lang],
-    queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-      );
-      const json = await response.json();
-      return json.record[lang].translation.Blog;
-    },
+    queryFn: () => fetchBlogPosts(i18n.language),
   });
 
   let post = null;
@@ -68,7 +60,6 @@ const BlogPost = () => {
         author={post.author}
         ogTitle={post.title_en}
       />
-      <Header />
       <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-30">
         <div className="mb-8">
           <Link
@@ -133,7 +124,6 @@ const BlogPost = () => {
           </Link>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

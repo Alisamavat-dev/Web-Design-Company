@@ -340,13 +340,17 @@
           "keywords": "طراحی سایت, خدمات وب, سئو, برنامه نویسی, سایت شرکتی, سایت فروشگاهی, سایت شخصی, واونیکس",
           "author": "تیم واونیکس",
           "og": {
+            "type": "website",
+            "locale": "fa_IR",
+            "site_name": "واونیکس",
             "title": "سفارش طراحی سایت | واونیکس",
-            "description": "سفارش آنلاین طراحی سایت با تیم حرفه‌ای و پشتیبانی 24/7. طراحی اختصاصی، قیمت رقابتی و تحویل سریع.",
+            "description": "طراحی انواع سایت‌های شرکتی، فروشگاهی و شخصی با بهترین کیفیت و قیمت مناسب. سئو و پشتیبانی حرفه‌ای.",
             "image": {
               "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
               "alt": "شرکت طراحی سایت",
               "title": "/"
-            }
+            },
+            "url": "https://wavnix.ir"
           }
         },
         "blog": {
@@ -361,8 +365,9 @@
               "src": "https://uploadkon.ir/uploads/seo-tips.png",
               "alt": "نکات سئو در طراحی سایت",
               "title": "/"
-            }
-          }    
+            },
+            "url": "https://wavnix.ir/blog"
+          }
         },
         "global": {
           "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
@@ -436,6 +441,34 @@
           {
             "href": "/contact",
             "label": "تماس با ما"
+          },
+          {
+            "href": "/blog/nestjs-vs-express",
+            "label": "مقایسه NestJS و Express"
+          },
+          {
+            "href": "/blog/nextjs-ssr",
+            "label": "مزایای SSR در Next.js"
+          },
+          {
+            "href": "/blog/nodejs-best-practices",
+            "label": "بهترین شیوه‌های توسعه با Node.js"
+          },
+          {
+            "href": "/blog/react-intro",
+            "label": "آشنایی با React و مزایای آن"
+          },
+          {
+            "href": "/blog/seo-web-design",
+            "label": "نکات سئو در طراحی سایت"
+          },
+          {
+            "href": "/blog/tailwind-vs-bootstrap",
+            "label": "مقایسه Tailwind CSS و Bootstrap"
+          },
+          {
+            "href": "/blog/web-performance-2024",
+            "label": "افزایش سرعت سایت در سال ۱۴۰۳"
           }
         ],
         "socials": [
@@ -882,6 +915,34 @@
           {
             "href": "/contact",
             "label": "Contact"
+          },
+          {
+            "href": "/blog/nestjs-vs-express",
+            "label": "مقایسه NestJS و Express"
+          },
+          {
+            "href": "/blog/nextjs-ssr",
+            "label": "مزایای SSR در Next.js"
+          },
+          {
+            "href": "/blog/nodejs-best-practices",
+            "label": "بهترین شیوه‌های توسعه با Node.js"
+          },
+          {
+            "href": "/blog/react-intro",
+            "label": "آشنایی با React و مزایای آن"
+          },
+          {
+            "href": "/blog/seo-web-design",
+            "label": "نکات سئو در طراحی سایت"
+          },
+          {
+            "href": "/blog/tailwind-vs-bootstrap",
+            "label": "مقایسه Tailwind CSS و Bootstrap"
+          },
+          {
+            "href": "/blog/web-performance-2024",
+            "label": "افزایش سرعت سایت در سال ۱۴۰۳"
           }
         ],
         "socials": [

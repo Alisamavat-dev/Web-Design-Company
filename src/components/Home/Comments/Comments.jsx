@@ -7,6 +7,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import StarRating from "./StarRating";
+import { fetchComments } from "../../../api/Home/Comments/commentsApi";
 
 const Comments = () => {
   const { i18n } = useTranslation();
@@ -17,13 +18,7 @@ const Comments = () => {
     error,
   } = useQuery({
     queryKey: ["Comments", i18n.language],
-    queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-      );
-      const data = await response.json();
-      return data.record[i18n.language].translation.Comments;
-    },
+    queryFn: () => fetchComments(i18n.language),
   });
 
   if (isPending) {
@@ -51,7 +46,7 @@ const Comments = () => {
   }
 
   return (
-    <div className="py-12 bg-transparent">
+    <div className="py-12 bg-transparent max-w-[1340px] mx-auto">
       <h2 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 mb-8 text-center border-b border-blue-500/20 max-w-4xl mx-auto">
         {i18n.language === "fa"
           ? "نظرات مشتریان درباره سرویس‌دهی"

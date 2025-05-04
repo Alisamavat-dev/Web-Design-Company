@@ -3,6 +3,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 import Icon from "../../Icons";
+import { fetchBanner } from "../../../api/Home/Banner/bannerApi";
 
 const Banner = () => {
   const { i18n } = useTranslation();
@@ -13,14 +14,7 @@ const Banner = () => {
     error,
   } = useQuery({
     queryKey: ["Banner", i18n.language],
-    queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-      );
-
-      const data = await response.json();
-      return data.record[i18n.language].translation.Banner;
-    },
+    queryFn: () => fetchBanner(i18n.language),
   });
 
   if (isPending) {

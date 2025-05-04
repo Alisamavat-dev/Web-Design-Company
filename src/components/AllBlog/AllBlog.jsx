@@ -3,11 +3,10 @@ import { FaSearch, FaCalendarAlt, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { useTranslation } from "react-i18next";
 import Search from "./search";
 import SEO from "./SEO/SEO";
+import { fetchAllBlog, fetchAllBlogSEO } from "../../api/AllBlog/AllBlog";
 
 const AllBlog = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -20,14 +19,8 @@ const AllBlog = () => {
     isError,
     error,
   } = useQuery({
-    queryKey: ["Blog", lang],
-    queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-      );
-      const json = await response.json();
-      return json.record[lang].translation.Blog;
-    },
+    queryKey: ["Blog", i18n.language],
+    queryFn: () => fetchAllBlog(i18n.language),
   });
 
   const {
@@ -36,14 +29,8 @@ const AllBlog = () => {
     isError: isSeoError,
     error: seoError,
   } = useQuery({
-    queryKey: ["SEO", lang],
-    queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-      );
-      const json = await response.json();
-      return json.record[lang].translation.SEO;
-    },
+    queryKey: ["SEO", i18n.language],
+    queryFn: () => fetchAllBlogSEO(i18n.language),
   });
 
   const posts = useMemo(() => {
@@ -66,7 +53,6 @@ const AllBlog = () => {
         author={seoData?.blog?.author}
         ogTitle={seoData?.blog?.title}
       />
-      <Header />
       <Search
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
@@ -142,7 +128,6 @@ const AllBlog = () => {
           ))}
         </div>
       )}
-      <Footer />
     </div>
   );
 };

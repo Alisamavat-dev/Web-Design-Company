@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../../locales/LanguageSwitcher";
+import { fetchHeader } from "../../api/Header/headerApi";
 import {
   FaHome,
   FaPlusCircle,
@@ -25,14 +26,7 @@ const Header = () => {
     error,
   } = useQuery({
     queryKey: ["Header", i18n.language],
-    queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-      );
-
-      const data = await response.json();
-      return data.record[i18n.language].translation.Header;
-    },
+    queryFn: () => fetchHeader(i18n.language),
   });
 
   const getIconComponent = (iconName) => {
@@ -82,11 +76,14 @@ const Header = () => {
       <header className="hidden xl:flex justify-center items-center py-3 fixed top-0 z-30 w-full">
         <div className="container mx-auto w-full max-w-screen-xl bg-slate-900/90 rounded-3xl shadow-2xl px-4 md:px-8 py-4 flex items-center justify-between border border-slate-700/50 backdrop-blur-sm">
           <div className="flex items-center min-w-[80px]">
-            <a href={logoItem?.href} title={logoItem?.title}>
+            <a
+              href={logoItem?.href}
+              title={logoItem?.logo?.title || logoItem?.title || "صفحه اصلی"}
+            >
               <img
-                src={logoItem?.logo?.src}
-                alt={logoItem?.logo?.alt}
-                title={logoItem?.logo?.title}
+                src={logoItem?.logo?.src || logoItem?.logo}
+                alt={logoItem?.logo?.alt || logoItem?.title}
+                title={logoItem?.logo?.title || logoItem?.title}
                 className="h-13 w-auto transition-transform duration-200 hover:scale-105 hover:drop-shadow-lg cursor-pointer"
                 loading="lazy"
               />
@@ -98,7 +95,7 @@ const Header = () => {
                 <li key={item.href} className="truncate max-w-[120px]">
                   <a
                     href={item.href}
-                    title={item.description}
+                    title={item.description || item.title}
                     className="whitespace-nowrap hover:text-blue-400 transition-colors duration-200 px-2 md:px-3 py-1 rounded-lg hover:bg-slate-800/60 text-ellipsis text-sm flex items-center gap-2"
                   >
                     {getIconComponent(item.icon)}
@@ -123,7 +120,10 @@ const Header = () => {
       <header className="header-mobile block xl:hidden fixed top-0 z-40 w-full p-2">
         <div className="container mx-auto w-full bg-slate-900/90 rounded-3xl shadow-2xl px-4 py-3 flex items-center justify-between border border-slate-700/50 backdrop-blur-sm mt-2">
           <div className="flex items-center gap-2 min-w-[60px]">
-            <a href={logoItem?.href} title={logoItem?.title}>
+            <a
+              href={logoItem?.href}
+              title={logoItem?.logo?.title || logoItem?.title || "صفحه اصلی"}
+            >
               <img
                 src={logoItem?.logo?.src || logoItem?.logo}
                 alt={logoItem?.logo?.alt || logoItem?.title}
@@ -159,7 +159,7 @@ const Header = () => {
               <a
                 key={item.href}
                 href={item.href}
-                title={item.description}
+                title={item.description || item.title}
                 className="text-base font-semibold text-slate-200 hover:text-blue-400 transition-colors duration-200 px-4 py-3 rounded-xl hover:bg-slate-800/60 shadow-sm tracking-wide mx-2 flex items-center justify-center gap-2"
                 style={{ boxShadow: "0 1px 4px 0 rgba(0,0,0,0.08)" }}
                 onClick={() => setMenuOpen(false)}

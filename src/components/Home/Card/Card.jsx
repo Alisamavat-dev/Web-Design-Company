@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
+import { fetchCard } from "../../../api/Home/Card/cardApi";
 
 const Card = () => {
   const { i18n } = useTranslation();
@@ -12,14 +13,7 @@ const Card = () => {
     error,
   } = useQuery({
     queryKey: ["Card", i18n.language],
-    queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-      );
-
-      const data = await response.json();
-      return data.record[i18n.language].translation.Card;
-    },
+    queryFn: () => fetchCard(i18n.language),
   });
 
   if (isPending) {

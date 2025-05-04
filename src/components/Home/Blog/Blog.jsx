@@ -5,7 +5,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { FaCalendarAlt, FaUser } from "react-icons/fa";
 import getRandomizedPosts from "./Random/Random";
 import { useTranslation } from "react-i18next";
-
+import { fetchBlogPosts } from "../../../api/Home/Blog/blogApi";
 const Blog = () => {
   const { t, i18n } = useTranslation();
   const lang = i18n.language || "fa";
@@ -16,13 +16,7 @@ const Blog = () => {
     error,
   } = useQuery({
     queryKey: ["Blog", lang],
-    queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-      );
-      const data = await response.json();
-      return data.record[lang].translation.Blog;
-    },
+    queryFn: () => fetchBlogPosts(i18n.language),
   });
 
   const posts = useMemo(() => {
@@ -59,7 +53,7 @@ const Blog = () => {
   }
 
   return (
-    <div className="w-full px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12">
+    <div className="w-full px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12 max-w-[1360px] mx-auto">
       <h2 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-200 to-blue-400 mb-8 text-center border-b border-blue-500/20 max-w-4xl mx-auto">
         {t("blog.title", lang === "fa" ? "بلاگ" : "Blog")}
       </h2>
@@ -69,6 +63,7 @@ const Blog = () => {
             to={`/blog/${post.id}`}
             key={post.id}
             className="group relative bg-white/5 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center text-center border border-white/10 hover:border-blue-500/30 transition-all duration-300 hover:transform hover:-translate-y-2 shadow-lg overflow-hidden"
+            title={post.title}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative w-full mb-4 h-40 sm:h-44 md:h-48">

@@ -3,20 +3,14 @@ import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 import Icon from "../Icons";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
-
+import { fetchFooter } from "../../api/Footer/footerApi";
 const Footer = () => {
   const { i18n } = useTranslation();
   const lang = i18n.language || "fa";
 
   const { data, isPending, isError, error } = useQuery({
     queryKey: ["Footer", lang],
-    queryFn: async () => {
-      const response = await fetch(
-        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-      );
-      const json = await response.json();
-      return json.record[lang]?.translation?.Footer;
-    },
+    queryFn: () => fetchFooter(lang),
   });
 
   if (isPending) {
@@ -74,9 +68,14 @@ const Footer = () => {
                 />
               )}
               <div>
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+                <a
+                  href="#"
+                  className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text"
+                  title="شرکت طراحی سایت"
+                  aria-label="شرکت طراحی سایت"
+                >
                   {siteName}
-                </h3>
+                </a>
                 {slogan && <p className="text-sm text-blue-200">{slogan}</p>}
               </div>
             </div>
@@ -88,9 +87,14 @@ const Footer = () => {
 
             {newsletter && (
               <div className="w-full mt-4">
-                <h4 className="text-blue-300 font-medium mb-2">
+                <a
+                  href="#newsletter"
+                  className="text-blue-300 font-medium mb-2 block"
+                  title="عضویت در خبرنامه"
+                  aria-label="عضویت در خبرنامه"
+                >
                   {newsletter.title}
-                </h4>
+                </a>
                 <form className="flex gap-2">
                   <input
                     type="email"
@@ -110,15 +114,21 @@ const Footer = () => {
 
           {links && links.length > 0 && (
             <div className="flex flex-col items-center md:items-start">
-              <h3 className="text-lg font-bold text-white mb-4 border-b border-blue-500/30 pb-2 w-full">
+              <a
+                href="#quick-links"
+                className="text-lg font-bold text-white mb-4 border-b border-blue-500/30 pb-2 w-full block"
+                title="لینک‌های سریع"
+                aria-label="لینک‌های سریع"
+              >
                 {lang === "fa" ? "لینک‌های سریع" : "Quick Links"}
-              </h3>
+              </a>
               <ul className="grid grid-cols-2 gap-2 w-full">
                 {links.map((link, idx) => (
                   <li key={idx}>
                     <a
                       href={link.href}
                       className="text-blue-300 hover:text-purple-400 transition-colors duration-200 text-sm px-3 py-1.5 rounded-lg hover:bg-gray-700/50 block text-right"
+                      title={link.label}
                     >
                       {link.label}
                     </a>
@@ -130,9 +140,14 @@ const Footer = () => {
 
           {contactInfo && (
             <div className="flex flex-col items-center md:items-start">
-              <h3 className="text-lg font-bold text-white mb-4 border-b border-blue-500/30 pb-2 w-full">
+              <a
+                href="#contact-us"
+                className="text-lg font-bold text-white mb-4 border-b border-blue-500/30 pb-2 w-full block"
+                title="تماس با ما"
+                aria-label="تماس با ما"
+              >
                 {lang === "fa" ? "تماس با ما" : "Contact Us"}
-              </h3>
+              </a>
               <ul className="space-y-3 w-full">
                 {contactInfo.address && (
                   <li className="flex items-start gap-2 text-sm text-gray-300">
@@ -150,6 +165,7 @@ const Footer = () => {
                     <a
                       href={`tel:${contactInfo.phone}`}
                       className="hover:text-blue-300"
+                      title={`تماس با ${contactInfo.phone}`}
                     >
                       {contactInfo.phone}
                     </a>
@@ -163,6 +179,7 @@ const Footer = () => {
                     <a
                       href={`mailto:${contactInfo.email}`}
                       className="hover:text-blue-300"
+                      title={`ارسال ایمیل به ${contactInfo.email}`}
                     >
                       {contactInfo.email}
                     </a>
@@ -182,9 +199,14 @@ const Footer = () => {
 
           {socials && socials.length > 0 && (
             <div className="flex flex-col items-center md:items-start">
-              <h3 className="text-lg font-bold text-white mb-4 border-b border-blue-500/30 pb-2 w-full">
+              <a
+                href="#socials"
+                className="text-lg font-bold text-white mb-4 border-b border-blue-500/30 pb-2 w-full block"
+                title="ما را دنبال کنید"
+                aria-label="ما را دنبال کنید"
+              >
                 {lang === "fa" ? "ما را دنبال کنید" : "Follow Us"}
-              </h3>
+              </a>
               <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-4">
                 {socials.map((item, idx) => (
                   <a
@@ -193,7 +215,15 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-400 bg-gray-700 hover:bg-gradient-to-tr hover:from-blue-500 hover:to-purple-500 hover:text-white transition-all duration-300 rounded-full p-2 shadow-lg hover:scale-110 border border-gray-600 focus:ring-2 focus:ring-blue-400/40 focus:outline-none group"
-                    title={item.label}
+                    title={
+                      item.icon === "instagram"
+                        ? "اینستاگرام واونیکس"
+                        : item.icon === "github"
+                        ? "گیت‌هاب واونیکس"
+                        : item.icon === "linkedin"
+                        ? "لینکدین واونیکس"
+                        : item.label || item.icon
+                    }
                   >
                     <span className="text-xl group-hover:drop-shadow-[0_0_8px_rgba(139,92,246,0.7)] transition-all duration-300">
                       <Icon name={item.icon} />
@@ -204,9 +234,14 @@ const Footer = () => {
 
               {paymentMethods && paymentMethods.length > 0 && (
                 <>
-                  <h4 className="text-sm font-medium text-gray-400 mb-2 mt-4 w-full">
+                  <a
+                    href="#payment-methods"
+                    className="text-sm font-medium text-gray-400 mb-2 mt-4 w-full block"
+                    title="روش‌های پرداخت"
+                    aria-label="روش‌های پرداخت"
+                  >
                     {lang === "fa" ? "روش‌های پرداخت" : "Payment Methods"}
-                  </h4>
+                  </a>
                   <div className="flex flex-wrap gap-2 w-full">
                     {paymentMethods.map((method, idx) => (
                       <div
