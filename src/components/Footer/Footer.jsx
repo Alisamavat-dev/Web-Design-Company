@@ -67,8 +67,9 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               {logo && (
                 <img
-                  src={logo}
-                  alt={siteName}
+                  src={logo.src || logo}
+                  alt={logo.alt || siteName}
+                  title={logo.title || siteName}
                   className="w-16 h-16 rounded-xl shadow-lg border-2 border-blue-400/30 bg-white/10"
                 />
               )}
@@ -214,8 +215,9 @@ const Footer = () => {
                         title={method.name}
                       >
                         <img
-                          src={method.icon}
-                          alt={method.name}
+                          src={method.icon?.src || method.icon}
+                          alt={method.icon?.alt || method.name}
+                          title={method.icon?.title || method.name}
                           className="h-6 object-contain"
                         />
                       </div>

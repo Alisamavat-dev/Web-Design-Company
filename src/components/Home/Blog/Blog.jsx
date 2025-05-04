@@ -73,8 +73,9 @@ const Blog = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             <div className="relative w-full mb-4 h-40 sm:h-44 md:h-48">
               <img
-                src={post.image}
-                alt={post.title}
+                src={post.image?.src || post.image}
+                alt={post.image?.alt || post.title}
+                title={post.image?.title || post.title}
                 className="absolute inset-0 w-full h-full object-cover rounded-xl border-2 border-white/10 group-hover:border-blue-500/50 shadow-lg transition-all duration-300 z-10"
                 loading="lazy"
                 onError={(e) => {

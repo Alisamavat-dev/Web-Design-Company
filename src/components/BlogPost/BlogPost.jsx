@@ -83,8 +83,9 @@ const BlogPost = () => {
         <article className="overflow-hidden mx-auto">
           <div className="relative h-96">
             <img
-              src={post.image || "https://via.placeholder.com/800x400"}
-              alt={post.title}
+              src={post.image?.src || post.image}
+              alt={post.image?.alt || post.title}
+              title={post.image?.title || post.title}
               className="max-w-5xl w-full h-full object-cover mx-auto"
               onError={(e) => {
                 e.target.src = "https://via.placeholder.com/800x400";

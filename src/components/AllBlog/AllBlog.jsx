@@ -7,6 +7,7 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { useTranslation } from "react-i18next";
 import Search from "./search";
+import SEO from "./SEO/SEO";
 
 const AllBlog = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -29,6 +30,22 @@ const AllBlog = () => {
     },
   });
 
+  const {
+    data: seoData,
+    isPending: isSeoPending,
+    isError: isSeoError,
+    error: seoError,
+  } = useQuery({
+    queryKey: ["SEO", lang],
+    queryFn: async () => {
+      const response = await fetch(
+        `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
+      );
+      const json = await response.json();
+      return json.record[lang].translation.SEO;
+    },
+  });
+
   const posts = useMemo(() => {
     if (Array.isArray(blogPosts) && Array.isArray(blogPosts[0])) {
       return blogPosts[0];
@@ -42,6 +59,13 @@ const AllBlog = () => {
 
   return (
     <div>
+      <SEO
+        title={seoData?.blog?.title}
+        description={seoData?.blog?.description}
+        keywords={seoData?.blog?.keywords}
+        author={seoData?.blog?.author}
+        ogTitle={seoData?.blog?.title}
+      />
       <Header />
       <Search
         searchQuery={searchQuery}
@@ -76,8 +100,9 @@ const AllBlog = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative w-full mb-4 h-40 sm:h-44 md:h-48">
                 <img
-                  src={post.image}
-                  alt={post.title}
+                  src={post.image?.src || post.image}
+                  alt={post.image?.alt || post.title}
+                  title={post.image?.title || post.title}
                   className="absolute inset-0 w-full h-full object-cover rounded-xl border-2 border-white/10 group-hover:border-blue-500/50 shadow-lg transition-all duration-300 z-10"
                   onError={(e) => {
                     e.currentTarget.src =

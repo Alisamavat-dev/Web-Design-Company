@@ -9,7 +9,13 @@
             "title_en": "Getting Started with React and Its Benefits",
             "excerpt": "React یکی از محبوب‌ترین کتابخانه‌های جاوااسکریپت برای ساخت رابط کاربری است. در این مقاله با مزایا و کاربردهای React آشنا می‌شوید.",
             "content": "<p>React یک کتابخانه متن‌باز جاوااسکریپت است که توسط فیسبوک توسعه یافته و برای ساخت رابط کاربری پویا و SPAها استفاده می‌شود. مزایای اصلی React شامل سرعت بالا، قابلیت استفاده مجدد از کامپوننت‌ها، جامعه کاربری بزرگ و پشتیبانی عالی است. اگر به دنبال توسعه سریع و حرفه‌ای وب‌سایت هستید، React انتخاب مناسبی است.</p>",
-            "image": "https://uploadkon.ir/uploads/33f502_25react.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/33f502_25react.png",
+              "alt": "آشنایی با React و مزایای آن",
+              "title": "/",
+              "width": 400,
+              "height": 300
+            },
             "category": "React",
             "date": "1403/03/20",
             "author": "علی سماوات",
@@ -21,7 +27,13 @@
             "title_en": "Benefits of SSR in Next.js",
             "excerpt": "Next.js با پشتیبانی از رندر سمت سرور (SSR) باعث بهبود SEO و سرعت سایت می‌شود. در این مقاله با مزایای SSR در Next.js آشنا شوید.",
             "content": "<p>SSR یا Server Side Rendering در Next.js باعث می‌شود صفحات وب قبل از ارسال به مرورگر کاربر، روی سرور رندر شوند. این موضوع باعث بهبود سئو، افزایش سرعت بارگذاری و تجربه کاربری بهتر می‌شود. Next.js با امکاناتی مانند Static Generation و API Routes توسعه وب را ساده‌تر کرده است.</p>",
-            "image": "https://uploadkon.ir/uploads/fd2802_25next.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/fd2802_25next.png",
+              "alt": "مزایای SSR در Next.js",
+              "title": "/",
+              "width": 400,
+              "height": 300
+            },
             "category": "Next.js",
             "date": "1403/03/21",
             "author": "محمد رضایی",
@@ -33,7 +45,13 @@
             "title_en": "Node.js Best Practices for Developers",
             "excerpt": "در این مقاله با نکات و بهترین شیوه‌های توسعه اپلیکیشن‌های Node.js آشنا می‌شوید تا پروژه‌های مقیاس‌پذیر و امن‌تری بسازید.",
             "content": "<p>Node.js به دلیل معماری غیرهمزمان و مبتنی بر رویداد، برای ساخت اپلیکیشن‌های مقیاس‌پذیر بسیار مناسب است. رعایت نکاتی مانند مدیریت خطا، استفاده از async/await، تست‌نویسی و امنیت، کیفیت پروژه‌های Node.js را افزایش می‌دهد.</p>",
-            "image": "https://uploadkon.ir/uploads/b29502_25node.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/b29502_25node.png",
+              "alt": "بهترین شیوه‌های توسعه با Node.js",
+              "title": "/",
+              "width": 400,
+              "height": 300
+            },
             "category": "Node.js",
             "date": "1403/03/22",
             "author": "سارا احمدی",
@@ -45,7 +63,13 @@
             "title_en": "NestJS vs Express: A Comparison",
             "excerpt": "NestJS و Express دو فریم‌ورک محبوب برای توسعه بک‌اند با Node.js هستند. در این مقاله تفاوت‌ها و مزایای هرکدام را بررسی می‌کنیم.",
             "content": "<p>NestJS یک فریم‌ورک مدرن مبتنی بر TypeScript است که ساختار ماژولار و قابلیت تست‌پذیری بالایی دارد. Express ساده‌تر و سبک‌تر است و برای پروژه‌های کوچک مناسب است. انتخاب بین این دو به نیاز پروژه و تیم بستگی دارد.</p>",
-            "image": "https://uploadkon.ir/uploads/27bd02_25nest.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/27bd02_25nest.png",
+              "alt": "مقایسه NestJS و Express",
+              "title": "/",
+              "width": 400,
+              "height": 300
+            },
             "category": "NestJS",
             "date": "1403/03/23",
             "author": "علی سماوات",
@@ -57,7 +81,11 @@
             "title_en": "SEO Tips for Web Design",
             "excerpt": "در این مقاله با مهم‌ترین نکات سئو در طراحی سایت آشنا می‌شوید تا سایت شما رتبه بهتری در گوگل بگیرد.",
             "content": "<p>سئو در طراحی سایت شامل بهینه‌سازی ساختار صفحات، استفاده از تگ‌های مناسب، سرعت بارگذاری بالا و ریسپانسیو بودن سایت است. همچنین تولید محتوای ارزشمند و لینک‌سازی داخلی نقش مهمی در بهبود رتبه سایت دارد.</p>",
-            "image": "https://uploadkon.ir/uploads/seo-tips.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/seo-tips.png",
+              "alt": "نکات سئو در طراحی سایت",
+              "title": "/"
+            },
             "category": "SEO",
             "date": "1403/03/25",
             "author": "مینا محمدی",
@@ -69,7 +97,13 @@
             "title_en": "Tailwind CSS vs Bootstrap",
             "excerpt": "در این مقاله تفاوت‌ها و مزایای دو فریم‌ورک محبوب استایل‌دهی یعنی Tailwind و Bootstrap را بررسی می‌کنیم.",
             "content": "<p>Tailwind CSS یک فریم‌ورک utility-first است که انعطاف بالایی در طراحی می‌دهد. Bootstrap ساختار آماده و کامپوننت‌های زیادی دارد. انتخاب بین این دو به نیاز پروژه و سلیقه توسعه‌دهنده بستگی دارد.</p>",
-            "image": "https://uploadkon.ir/uploads/tailwind-vs-bootstrap.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/tailwind-vs-bootstrap.png",
+              "alt": "مقایسه Tailwind CSS و Bootstrap",
+              "title": "/",
+              "width": 400,
+              "height": 300
+            },
             "category": "CSS",
             "date": "1403/03/26",
             "author": "رضا شریفی",
@@ -81,7 +115,11 @@
             "title_en": "Web Performance Optimization 2024",
             "excerpt": "در این مقاله راهکارهای افزایش سرعت سایت و بهبود تجربه کاربری در سال جدید را بررسی می‌کنیم.",
             "content": "<p>افزایش سرعت سایت با بهینه‌سازی تصاویر، استفاده از CDN، کاهش درخواست‌های HTTP و کدنویسی بهینه امکان‌پذیر است. ابزارهایی مانند Google PageSpeed Insights می‌توانند نقاط ضعف سایت را نشان دهند.</p>",
-            "image": "https://uploadkon.ir/uploads/web-performance.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/web-performance.png",
+              "alt": "افزایش سرعت سایت در سال ۱۴۰۳",
+              "title": "/"
+            },
             "category": "Performance",
             "date": "1403/03/27",
             "author": "محمد عباسی",
@@ -94,7 +132,11 @@
           "id": "custom-design",
           "title": "طراحی سایت سفارشی و اختصاصی",
           "description": "طراحی سایت حرفه‌ای با جدیدترین تکنولوژی‌های روز دنیا. تیم ما با استفاده از React، Next.js، و Tailwind CSS سایت شما را با بالاترین استانداردهای کدنویسی پیاده‌سازی می‌کند.",
-          "image": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
+          "image": {
+            "src": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
+            "alt": "طراحی سایت سفارشی و اختصاصی",
+            "title": "/"
+          },
           "badge": "سفارشی‌سازی حرفه‌ای",
           "labels": {
             "features": "ویژگی‌ها:",
@@ -113,7 +155,11 @@
           "id": "smart-pricing",
           "title": "قیمت‌گذاری هوشمند با هوش مصنوعی",
           "description": "سیستم قیمت‌گذاری پیشرفته مبتنی بر AI که با تحلیل دقیق نیازهای پروژه، تکنولوژی‌های مورد نیاز و زمان‌بندی، بهترین پیشنهاد قیمت را ارائه می‌دهد.",
-          "image": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
+          "image": {
+            "src": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
+            "alt": "قیمت‌گذاری هوشمند با هوش مصنوعی",
+            "title": "/"
+          },
           "badge": "تحلیل هوشمند",
           "features": [
             "تخمین دقیق هزینه",
@@ -128,7 +174,11 @@
           "id": "project-management",
           "title": "مدیریت پروژه آنلاین و حرفه‌ای",
           "description": "سیستم مدیریت پروژه پیشرفته با امکان پیگیری لحظه‌ای پیشرفت پروژه، چت آنلاین با تیم توسعه، و دسترسی به گزارش‌های تحلیلی پروژه.",
-          "image": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
+          "image": {
+            "src": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
+            "alt": "مدیریت پروژه آنلاین و حرفه‌ای",
+            "title": "/"
+          },
           "badge": "مدیریت حرفه‌ای",
           "features": [
             "گانت چارت پیشرفته",
@@ -143,7 +193,11 @@
           "id": "support",
           "title": "پشتیبانی 24/7 و نگهداری تخصصی",
           "description": "خدمات پشتیبانی شبانه‌روزی با تیم متخصص، نگهداری مستمر سایت، بروزرسانی‌های امنیتی و پشتیبان‌گیری خودکار از اطلاعات.",
-          "image": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
+          "image": {
+            "src": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
+            "alt": "پشتیبانی 24/7 و نگهداری تخصصی",
+            "title": "/"
+          },
           "badge": "پشتیبانی تخصصی",
           "features": [
             "پشتیبانی 24/7",
@@ -158,7 +212,11 @@
       "Header": [
         {
           "id": "home",
-          "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+          "logo": {
+            "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+            "alt": "شرکت طراحی سایت",
+            "title": "/"
+          },
           "title": "صفحه اصلی",
           "href": "/",
           "description": "پلتفرم هوشمند سفارش و مدیریت پروژه‌های طراحی سایت",
@@ -210,7 +268,11 @@
       ],
       "Banner": {
         "id": "main-banner",
-        "image": "https://uploadkon.ir/uploads/85c401_25برنامه-نویس.png",
+        "image": {
+          "src": "https://uploadkon.ir/uploads/85c401_25برنامه-نویس.png",
+          "alt": "طراحی سایت تخصصی و هوشمند",
+          "title": "/"
+        },
         "title": "طراحی سایت تخصصی و هوشمند",
         "subtitle": "همکاری با بهترین توسعه‌دهندگان ایران",
         "description": "با استفاده از هوش مصنوعی و تیم متخصص، پروژه طراحی سایت شما را با بالاترین کیفیت و کمترین زمان ممکن اجرا می‌کنیم. تضمین کیفیت، قیمت رقابتی و پشتیبانی 24/7 از ویژگی‌های منحصر به فرد ماست.",
@@ -272,31 +334,51 @@
         ]
       },
       "SEO": {
-        "title": "طراحی سایت حرفه‌ای | قیمت طراحی سایت | سفارش آنلاین",
-        "description": "طراحی سایت حرفه‌ای با جدیدترین تکنولوژی‌ها، قیمت مناسب و پشتیبانی 24/7. مشاوره و قیمت‌گذاری آنلاین، تضمین کیفیت و رضایت مشتری.",
-        "keywords": [
-          "طراحی سایت",
-          "قیمت طراحی سایت",
-          "سفارش طراحی سایت",
-          "طراحی سایت شرکتی",
-          "طراحی سایت فروشگاهی",
-          "طراحی سایت شخصی",
-          "طراحی سایت ارزان",
-          "بهترین شرکت طراحی سایت"
-        ],
-        "author": {
-          "name": "محمد علی سماوات",
-          "url": "https://github.com/Alisamavat-dev"
+        "home": {
+          "title": "سفارش طراحی سایت | واونیکس",
+          "description": "سفارش آنلاین طراحی سایت شرکتی، فروشگاهی و شخصی با بهترین قیمت و تضمین کیفیت. تیم واونیکس با جدیدترین تکنولوژی‌ها و سئوی حرفه‌ای.",
+          "keywords": "طراحی سایت, خدمات وب, سئو, برنامه نویسی, سایت شرکتی, سایت فروشگاهی, سایت شخصی, واونیکس",
+          "author": "تیم واونیکس",
+          "og": {
+            "title": "سفارش طراحی سایت | واونیکس",
+            "description": "سفارش آنلاین طراحی سایت با تیم حرفه‌ای و پشتیبانی 24/7. طراحی اختصاصی، قیمت رقابتی و تحویل سریع.",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+              "alt": "شرکت طراحی سایت",
+              "title": "/"
+            }
+          }
         },
-        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-        "viewport": "width=device-width, initial-scale=1.0",
-        "og": {
-          "type": "website",
-          "locale": "fa_IR",
-          "site_name": "طراحی سایت حرفه‌ای",
-          "title": "طراحی سایت حرفه‌ای | بهترین قیمت و کیفیت",
-          "description": "طراحی انواع سایت‌های شرکتی، فروشگاهی و شخصی با بهترین کیفیت و قیمت مناسب",
-          "image": "https://example.com/og-image.jpg"
+        "blog": {
+          "title": "وبلاگ طراحی سایت | مقالات تخصصی سئو و برنامه‌نویسی",
+          "description": "جدیدترین مقالات آموزش طراحی سایت، سئو، برنامه‌نویسی و تکنولوژی روز. نکات کاربردی برای توسعه‌دهندگان و مدیران سایت.",
+          "keywords": "وبلاگ, مقالات, طراحی سایت, سئو, آموزش برنامه نویسی, توسعه وب, تکنولوژی, نکات سئو",
+          "author": "تیم واونیکس",
+          "og": {
+            "title": "وبلاگ طراحی سایت | واونیکس",
+            "description": "مقالات تخصصی طراحی سایت و سئو برای رشد کسب‌وکار آنلاین شما.",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/seo-tips.png",
+              "alt": "نکات سئو در طراحی سایت",
+              "title": "/"
+            }
+          }    
+        },
+        "global": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "og": {
+            "type": "website",
+            "locale": "fa_IR",
+            "site_name": "واونیکس",
+            "title": "سفارش طراحی سایت | واونیکس",
+            "description": "طراحی انواع سایت‌های شرکتی، فروشگاهی و شخصی با بهترین کیفیت و قیمت مناسب. سئو و پشتیبانی حرفه‌ای.",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+              "alt": "شرکت طراحی سایت",
+              "title": "/"
+            }
+          }
         }
       },
       "Comments": [
@@ -330,7 +412,11 @@
         }
       ],
       "Footer": {
-        "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+        "logo": {
+          "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+          "alt": "شرکت طراحی سایت",
+          "title": "/"
+        },
         "siteName": "شرکت طراحی سایت",
         "slogan": "طراحی سایت حرفه‌ای و هوشمند با بهترین قیمت و کیفیت",
         "description": "ما با تیمی متخصص و استفاده از جدیدترین تکنولوژی‌ها، بهترین خدمات طراحی سایت را ارائه می‌دهیم.",
@@ -380,7 +466,11 @@
         "paymentMethods": [
           {
             "name": "زرین‌پال",
-            "icon": "https://uploadkon.ir/uploads/828202_25download-1-.png"
+            "icon": {
+              "src": "https://uploadkon.ir/uploads/828202_25download-1-.png",
+              "alt": "زرین‌پال",
+              "title": "/"
+            }
           }
         ]
       }
@@ -394,7 +484,11 @@
             "id": "react-intro",
             "title": "Getting Started with React and Its Benefits",
             "excerpt": "React is one of the most popular JavaScript libraries for building user interfaces. In this article, you'll learn about its advantages and use cases.",
-            "image": "https://uploadkon.ir/uploads/33f502_25react.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/33f502_25react.png",
+              "alt": "آشنایی با React و مزایای آن",
+              "title": "/"
+            },
             "category": "React",
             "date": "2024-06-09",
             "author": "Ali Samavat"
@@ -403,7 +497,11 @@
             "id": "nextjs-ssr",
             "title": "Benefits of SSR in Next.js",
             "excerpt": "Next.js supports server-side rendering (SSR) which improves SEO and site speed. Discover the advantages of SSR in Next.js in this article.",
-            "image": "https://uploadkon.ir/uploads/790202_25next.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/790202_25next.png",
+              "alt": "مزایای SSR در Next.js",
+              "title": "/"
+            },
             "category": "Next.js",
             "date": "2024-06-10",
             "author": "Mohammad Rezaei"
@@ -412,7 +510,11 @@
             "id": "nodejs-best-practices",
             "title": "Node.js Best Practices for Developers",
             "excerpt": "This article covers tips and best practices for developing scalable and secure Node.js applications.",
-            "image": "https://uploadkon.ir/uploads/b29502_25node.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/b29502_25node.png",
+              "alt": "بهترین شیوه‌های توسعه با Node.js",
+              "title": "/"
+            },
             "category": "Node.js",
             "date": "2024-06-11",
             "author": "Sara Ahmadi"
@@ -421,10 +523,53 @@
             "id": "nestjs-vs-express",
             "title": "NestJS vs Express: A Comparison",
             "excerpt": "NestJS and Express are two popular frameworks for backend development with Node.js. This article compares their features and benefits.",
-            "image": "https://uploadkon.ir/uploads/27bd02_25nest.png",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/27bd02_25nest.png",
+              "alt": "مقایسه NestJS و Express",
+              "title": "/"
+            },
             "category": "NestJS",
             "date": "2024-06-12",
             "author": "Ali Samavat"
+          },
+          {
+            "id": "seo-web-design",
+            "title": "SEO Tips for Web Design",
+            "excerpt": "This article introduces the most important SEO tips in web design to help your site rank better on Google.",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/seo-tips.png",
+              "alt": "نکات سئو در طراحی سایت",
+              "title": "/"
+            },
+            "category": "SEO",
+            "date": "2024-06-14",
+            "author": "Mina Mohammadi"
+          },
+          {
+            "id": "tailwind-vs-bootstrap",
+            "title": "Tailwind CSS vs Bootstrap",
+            "excerpt": "This article compares the differences and advantages of the two popular styling frameworks: Tailwind and Bootstrap.",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/tailwind-vs-bootstrap.png",
+              "alt": "مقایسه Tailwind CSS و Bootstrap",
+              "title": "/"
+            },
+            "category": "CSS",
+            "date": "2024-06-15",
+            "author": "Reza Sharifi"
+          },
+          {
+            "id": "web-performance-2024",
+            "title": "Web Performance Optimization 2024",
+            "excerpt": "This article reviews solutions for increasing website speed and improving user experience in the new year.",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/web-performance.png",
+              "alt": "افزایش سرعت سایت در سال ۱۴۰۳",
+              "title": "/"
+            },
+            "category": "Performance",
+            "date": "2024-06-16",
+            "author": "Mohammad Abbasi"
           }
         ]
       ],
@@ -433,7 +578,11 @@
           "id": "custom-design",
           "title": "Custom Website Design",
           "description": "Professional website design using the latest technologies. Our team implements your site with React, Next.js, and Tailwind CSS following the highest coding standards.",
-          "image": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
+          "image": {
+            "src": "https://static.roocket.ir/public/images/2019/8/19/photo-1514996937319-344454492b37.jpg",
+            "alt": "طراحی سایت سفارشی و اختصاصی",
+            "title": "/"
+          },
           "badge": "Professional Customization",
           "labels": {
             "features": "Features:",
@@ -452,7 +601,11 @@
           "id": "smart-pricing",
           "title": "AI-Powered Smart Pricing",
           "description": "Advanced AI-based pricing system that analyzes project requirements, needed technologies, and timeline to provide the best price quote.",
-          "image": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
+          "image": {
+            "src": "https://www.shabakeh-mag.com/sites/default/files/images/main/1401/06/1661603970.jpeg",
+            "alt": "قیمت‌گذاری هوشمند با هوش مصنوعی",
+            "title": "/"
+          },
           "badge": "Smart Analysis",
           "features": [
             "Accurate Cost Estimation",
@@ -467,7 +620,11 @@
           "id": "project-management",
           "title": "Professional Project Management",
           "description": "Advanced project management system with real-time progress tracking, online chat with the development team, and access to analytical project reports.",
-          "image": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
+          "image": {
+            "src": "https://pmpiran.com/wp-content/uploads/2024/03/pm-1.webp",
+            "alt": "مدیریت پروژه آنلاین و حرفه‌ای",
+            "title": "/"
+          },
           "badge": "Professional Management",
           "features": [
             "Advanced Gantt Charts",
@@ -482,7 +639,11 @@
           "id": "support",
           "title": "24/7 Support & Maintenance",
           "description": "Round-the-clock support with expert team, continuous site maintenance, security updates, and automated data backup.",
-          "image": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
+          "image": {
+            "src": "https://maktabkhooneh.org/mag/wp-content/uploads/2024/02/word-image-37321-1-780x470.jpeg",
+            "alt": "پشتیبانی 24/7 و نگهداری تخصصی",
+            "title": "/"
+          },
           "badge": "Expert Support",
           "features": [
             "24/7 Support",
@@ -497,7 +658,11 @@
       "Header": [
         {
           "id": "home",
-          "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+          "logo": {
+            "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+            "alt": "شرکت طراحی سایت",
+            "title": "/"
+          },
           "title": "Home",
           "href": "/",
           "description": "Smart platform for ordering and managing website design projects",
@@ -549,7 +714,11 @@
       ],
       "Banner": {
         "id": "main-banner",
-        "image": "https://uploadkon.ir/uploads/85c401_25برنامه-نویس.png",
+        "image": {
+          "src": "https://uploadkon.ir/uploads/85c401_25برنامه-نویس.png",
+          "alt": "طراحی سایت تخصصی و هوشمند",
+          "title": "/"
+        },
         "title": "Professional & Smart Website Design",
         "subtitle": "Collaborate with Iran's Best Developers",
         "description": "Using AI and expert team, we execute your website design project with the highest quality in minimum time. Quality guarantee, competitive pricing, and 24/7 support are our unique features.",
@@ -611,31 +780,51 @@
         ]
       },
       "SEO": {
-        "title": "Professional Website Design | Website Design Pricing | Online Order",
-        "description": "Professional website design with latest technologies, affordable pricing, and 24/7 support. Online consultation and pricing, quality guarantee, and customer satisfaction.",
-        "keywords": [
-          "website design",
-          "website design pricing",
-          "order website design",
-          "corporate website design",
-          "e-commerce website design",
-          "personal website design",
-          "affordable website design",
-          "best website design company"
-        ],
-        "author": {
-          "name": "Ali samavat",
-          "url": "https://github.com/Alisamavat-dev"
+        "home": {
+          "title": "Order Website Design | Vavonix",
+          "description": "Order corporate, e-commerce, and personal website design online with the best price and quality guarantee. Vavonix team uses the latest technologies and professional SEO.",
+          "keywords": "web design, web services, SEO, programming, corporate website, e-commerce, personal website, Vavonix",
+          "author": "Vavonix Team",
+          "og": {
+            "title": "Order Website Design | Vavonix",
+            "description": "Order your website online with a professional team and 24/7 support. Custom design, competitive pricing, and fast delivery.",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+              "alt": "شرکت طراحی سایت",
+              "title": "/"
+            }
+          }
         },
-        "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-        "viewport": "width=device-width, initial-scale=1.0",
-        "og": {
-          "type": "website",
-          "locale": "en_US",
-          "site_name": "Professional Website Design",
-          "title": "Professional Website Design | Best Price & Quality",
-          "description": "Design of corporate, e-commerce, and personal websites with best quality and affordable pricing",
-          "image": "https://example.com/og-image.jpg"
+        "blog": {
+          "title": "Web Design Blog | SEO & Programming Articles",
+          "description": "Latest articles on web design, SEO, programming, and modern technology. Practical tips for developers and site owners.",
+          "keywords": "blog, articles, web design, SEO, programming tutorials, web development, technology, SEO tips",
+          "author": "Vavonix Team",
+          "og": {
+            "title": "Web Design Blog | Vavonix",
+            "description": "Specialized articles on web design and SEO to grow your online business.",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/seo-tips.png",
+              "alt": "نکات سئو در طراحی سایت",
+              "title": "/"
+            }
+          }
+        },
+        "global": {
+          "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "og": {
+            "type": "website",
+            "locale": "en_US",
+            "site_name": "Vavonix",
+            "title": "Order Website Design | Vavonix",
+            "description": "Design of corporate, e-commerce, and personal websites with best quality, professional SEO, and affordable pricing.",
+            "image": {
+              "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+              "alt": "شرکت طراحی سایت",
+              "title": "/"
+            }
+          }
         }
       },
       "Comments": [
@@ -669,7 +858,11 @@
         }
       ],
       "Footer": {
-        "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+        "logo": {
+          "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+          "alt": "شرکت طراحی سایت",
+          "title": "/"
+        },
         "siteName": "Web Design Company",
         "slogan": "Professional & smart web design with the best price and quality",
         "description": "We provide the best web design services with a professional team and the latest technologies.",
@@ -719,7 +912,11 @@
         "paymentMethods": [
           {
             "name": "Zarinpal",
-            "icon": "https://uploadkon.ir/uploads/828202_25download-1-.png"
+            "icon": {
+              "src": "https://uploadkon.ir/uploads/828202_25download-1-.png",
+              "alt": "زرین‌پال",
+              "title": "/"
+            }
           }
         ]
       }

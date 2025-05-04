@@ -64,9 +64,9 @@ const Card = () => {
               <div className="relative mb-6">
                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-lg opacity-0 group-hover:opacity-75 transition-opacity duration-500"></div>
                 <img
-                  src={item.image}
-                  alt={item.title}
-                  title={item.title}
+                  src={item.image?.src || item.image}
+                  alt={item.image?.alt || item.title}
+                  title={item.image?.title || item.title}
                   className="w-20 h-20 object-cover rounded-full border-2 border-white/10 group-hover:border-blue-500/50 shadow-lg transition-all duration-300 relative z-10"
                   loading="lazy"
                 />

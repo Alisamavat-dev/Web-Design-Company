@@ -84,9 +84,9 @@ const Header = () => {
           <div className="flex items-center min-w-[80px]">
             <a href={logoItem?.href} title={logoItem?.title}>
               <img
-                src={logoItem?.logo}
-                alt={logoItem?.title}
-                title={logoItem?.title}
+                src={logoItem?.logo?.src}
+                alt={logoItem?.logo?.alt}
+                title={logoItem?.logo?.title}
                 className="h-13 w-auto transition-transform duration-200 hover:scale-105 hover:drop-shadow-lg cursor-pointer"
                 loading="lazy"
               />
@@ -125,9 +125,9 @@ const Header = () => {
           <div className="flex items-center gap-2 min-w-[60px]">
             <a href={logoItem?.href} title={logoItem?.title}>
               <img
-                src={logoItem?.logo}
-                alt={logoItem?.title}
-                title={logoItem?.title}
+                src={logoItem?.logo?.src || logoItem?.logo}
+                alt={logoItem?.logo?.alt || logoItem?.title}
+                title={logoItem?.logo?.title || logoItem?.title}
                 className="h-13 w-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-lg cursor-pointer"
                 loading="lazy"
               />

@@ -117,9 +117,9 @@ const Banner = () => {
               <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl blur-2xl transition-all duration-500 group-hover:blur-3xl group-hover:-inset-6 opacity-75"></div>
               {bannerData?.image && (
                 <img
-                  src={bannerData.image}
-                  alt={bannerData?.title}
-                  title={bannerData?.title}
+                  src={bannerData.image?.src || bannerData.image}
+                  alt={bannerData.image?.alt || bannerData.title}
+                  title={bannerData.image?.title || bannerData.title}
                   className="relative w-full rounded-2xl shadow-2xl object-cover border border-white/10 transform rotate-1 hover:rotate-0 transition-all duration-500 max-h-[300px] md:max-h-[400px] object-center group-hover:border-blue-500/30"
                   loading="lazy"
                 />
