@@ -52,6 +52,7 @@ const BlogPost = () => {
   return (
     <div>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://cdn.tailwindcss.com"></script>
       <SEO
         title={post.title}
         description={
