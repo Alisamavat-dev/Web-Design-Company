@@ -76,6 +76,7 @@ const AllBlog = () => {
           </p>
         </div>
       ) : (
+      (lang === "fa" ? "‌وبلاگ" : "Blog")}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-12">
           {filteredPosts.map((post) => (
             <Link
