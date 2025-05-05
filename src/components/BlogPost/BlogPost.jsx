@@ -5,6 +5,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 import SEO from "./SEO/SEO";
 import { fetchBlogPosts } from "../../api/BlogPost/BlogPost";
+import '../../index.css';
 const BlogPost = () => {
   const { id } = useParams();
   const { i18n } = useTranslation();
