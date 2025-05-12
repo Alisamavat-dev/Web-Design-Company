@@ -72,12 +72,12 @@ const BlogPost = () => {
         </div>
 
         <article className="overflow-hidden mx-auto">
-          <div className="relative h-96">
+          <div className="relative h-[520px]">
             <img
               src={post.image?.src || post.image}
               alt={post.image?.alt || post.title}
               title={post.image?.title || post.title}
-              className="max-w-5xl w-full h-full object-cover mx-auto"
+              className="max-w-5xl w-full h-[520px] object-cover mx-auto rounded-lg"
               onError={(e) => {
                 e.target.src = "https://via.placeholder.com/800x400";
               }}
