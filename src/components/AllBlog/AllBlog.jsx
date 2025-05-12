@@ -58,6 +58,23 @@ const AllBlog = () => {
         setSearchQuery={setSearchQuery}
         lang={lang}
       />
+      <div className="mx-12 mt-[-50px] my-6 flex flex-col items-center justify-center gap-2 bg-white/5 backdrop-blur-xl border border-white/10 hover:border-blue-500/30 transition-all duration-300 rounded-2xl p-6 shadow-lg">
+        <span className="text-2xl md:text-3xl font-extrabold flex items-center gap-3 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+          <FaSearch className="text-blue-400 text-3xl drop-shadow" />
+          به وبلاگ تخصصی واونیکس خوش آمدید!
+        </span>
+        <p className="text-slate-200 mt-2 text-center max-w-xl">
+          جدیدترین مقالات آموزش طراحی سایت، سئو، برنامه‌نویسی و تکنولوژی روز را
+          اینجا بخوانید. برای جستجوی سریع‌تر، از کادر بالا استفاده کنید یا در
+          دسته‌بندی‌ها کاوش کنید.
+        </p>
+        <Link
+          to="/"
+          className="mt-3 inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-2 px-7 rounded-lg shadow-lg transition-all duration-200"
+        >
+          بازگشت به صفحه اصلی
+        </Link>
+      </div>
       {isPending ? (
         <div className="w-screen h-screen flex justify-center items-center">
           <AiOutlineLoading3Quarters
