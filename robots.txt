@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wavnix.ir/sitemap.xml
+Sitemap: https://wavnix.ir/Blog.xml 
