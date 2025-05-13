@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://wavnix.ir/blog/react-intro</loc>
+    <image:image>
+      <image:loc>https://uploadkon.ir/uploads/33f502_25react.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wavnix.ir/blog/nextjs-ssr</loc>
+    <image:image>
+      <image:loc>https://uploadkon.ir/uploads/fd2802_25next.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wavnix.ir/blog/nodejs-best-practices</loc>
+    <image:image>
+      <image:loc>https://uploadkon.ir/uploads/b29502_25node.png</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://wavnix.ir/blog/nestjs-vs-express</loc>
+    <image:image>
+      <image:loc>https://uploadkon.ir/uploads/27bd02_25nest.png</image:loc>
+    </image:image>
+  </url>
+</urlset> 
