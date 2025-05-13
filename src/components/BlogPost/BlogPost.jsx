@@ -5,7 +5,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 import SEO from "./SEO/SEO";
 import { fetchBlogPosts } from "../../api/BlogPost/BlogPost";
-import '../../index.css';
+import "../../index.css";
 const BlogPost = () => {
   const { id } = useParams();
   const { i18n } = useTranslation();
@@ -26,6 +26,13 @@ const BlogPost = () => {
     post = blogPosts[0].find((p) => String(p.id) === String(id));
   } else if (Array.isArray(blogPosts)) {
     post = blogPosts.find((p) => String(p.id) === String(id));
+  }
+
+  let otherPosts = [];
+  if (Array.isArray(blogPosts) && Array.isArray(blogPosts[0])) {
+    otherPosts = blogPosts[0].filter((p) => String(p.id) !== String(id));
+  } else if (Array.isArray(blogPosts)) {
+    otherPosts = blogPosts.filter((p) => String(p.id) !== String(id));
   }
 
   if (isPending) {
@@ -52,8 +59,6 @@ const BlogPost = () => {
 
   return (
     <div>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script src="https://cdn.tailwindcss.com"></script>
       <SEO
         title={post.title}
         description={
@@ -63,13 +68,13 @@ const BlogPost = () => {
         author={post.author}
         ogTitle={post.title_en}
       />
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-30">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 pt-12">
         <div className="mb-8">
           <Link
             to="/blog"
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200 ease-in-out"
+            className="inline-flex items-center justify-center font-bold text-white border border-slate-700 bg-slate-800 rounded-lg shadow-sm px-5 py-2 transition-all duration-200 hover:bg-blue-600 hover:border-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
-            <FaArrowRight className="ml-2" />
+            <FaArrowRight className="ml-2 text-blue-400 text-lg" />
             {lang === "fa" ? "بازگشت به لیست مقالات" : "Back to blog list"}
           </Link>
         </div>
@@ -88,9 +93,6 @@ const BlogPost = () => {
           </div>
 
           <div className="p-8 md:p-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 text-center">
-              {post.title}
-            </h1>
 
             <div className="flex items-center text-gray-500 mb-8 justify-center">
               <div className="flex items-center ml-6">
@@ -117,6 +119,39 @@ const BlogPost = () => {
             />
           </div>
         </article>
+
+        {/* مقالات پیشنهادی */}
+        {otherPosts.length > 0 && (
+          <div className="max-w-5xl mx-auto mt-12">
+            <h3 className="text-xl font-bold mb-4 text-blue-600">
+              مقالات پیشنهادی
+            </h3>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {otherPosts.slice(0, 3).map((item) => (
+                <Link
+                  key={item.id}
+                  to={`/blog/${item.id}`}
+                  className="flex items-center bg-slate-800 rounded-lg shadow p-3 hover:bg-slate-700 transition"
+                >
+                  <img
+                    src={item.image?.src || item.image}
+                    alt={item.title}
+                    className="w-16 h-16 object-cover rounded-md ml-3"
+                    onError={(e) => {
+                      e.target.src = "https://via.placeholder.com/100x100";
+                    }}
+                  />
+                  <div>
+                    <h4 className="font-semibold text-white">{item.title}</h4>
+                    <p className="text-slate-300 text-sm line-clamp-2">
+                      {item.excerpt}
+                    </p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="text-center mt-12">
           <Link
