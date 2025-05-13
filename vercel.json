@@ -1,2 +1,7 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
-    
+{
+  "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/Blog.xml", "destination": "/Blog.xml" },
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
