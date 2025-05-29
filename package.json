@@ -17,6 +17,7 @@
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "framer-motion": "^12.7.3",
+    "i18next-http-backend": "^3.0.2",
     "npm-cache": "^0.7.0",
     "prompts": "^2.4.2",
     "react": "^19.0.0",
