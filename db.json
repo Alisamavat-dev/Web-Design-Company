@@ -17,14 +17,19 @@
             "category": "React",
             "date": "1403/03/20",
             "author": "علی سماوات",
-            "tags": ["React", "جاوااسکریپت", "فرانت‌اند", "SPA", "UI"]
+            "tags": [
+              "React",
+              "جاوااسکریپت",
+              "فرانت‌اند",
+              "SPA",
+              "UI"
+            ]
           },
           {
             "id": "nextjs-ssr",
-            "title": "مزایای SSR در Next.js",
-            "title_en": "Benefits of SSR in Next.js",
+            "title": "راهنمای جامع و حرفه‌ای SSR در Next.js",
             "excerpt": "Next.js با پشتیبانی از رندر سمت سرور (SSR) باعث بهبود SEO و سرعت سایت می‌شود. در این مقاله با مزایای SSR در Next.js آشنا شوید.",
-            "content": "<section class=\"mb-10\">\n  <h1 class=\"text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-gray-900 text-center mb-4\">مزایای SSR در Next.js و React</h1>\n  <p class=\"text-slate-400 text-center mb-8 max-w-2xl mx-auto\">وقتی صحبت از توسعه وب اپلیکیشن‌ها می‌شه، سرعت و بهینه‌سازی نقش کلیدی دارن. SSR در React و Next.js به ما این امکان رو میده که کدهای جاوااسکریپت رو قبل از رسیدن به مرورگر کاربر، روی سرور اجرا کنیم و یک HTML کامل تحویل مرورگر بدیم. این مقاله همه چیز را درباره SSR، مدل‌های رندرینگ و پیاده‌سازی حرفه‌ای آن توضیح می‌دهد.</p>\n</section>\n\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-gray-400 border-r-4 border-gray-400 pr-3 mb-4\">مدل‌های مختلف رندرینگ در React و Next.js</h2>\n  <ul class=\"list-disc pr-5 text-slate-400 space-y-2 mb-4\">\n    <li><b>رندر سمت کلاینت (CSR):</b> کل اپلیکیشن در مرورگر اجرا می‌شود. مناسب برای SPA اما با سئوی ضعیف‌تر.</li>\n    <li><b>رندر سمت سرور (SSR):</b> محتوای صفحه قبل از ارسال به مرورگر روی سرور تولید می‌شود. سرعت و سئوی بهتر اما فشار بیشتر به سرور.</li>\n    <li><b>رندر استاتیک (SSG):</b> صفحات در زمان build ساخته و ذخیره می‌شوند. عالی برای سایت‌های محتوا محور.</li>\n    <li><b>رندر ترکیبی (Hybrid):</b> Next.js امکان ترکیب مدل‌ها را فراهم می‌کند.</li>\n  </ul>\n</section>\n\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-gray-400 border-r-4 border-gray-400 pr-3 mb-4\">مقدمه‌ای بر SSR و اهمیت آن</h2>\n  <p class=\"text-slate-400 mb-4\">SSR باعث می‌شود صفحات وب سریع‌تر لود شوند و تجربه کاربری بهتری داشته باشند. همچنین موتورهای جستجو صفحات HTML کامل را بهتر ایندکس می‌کنند و این به بهبود سئو کمک می‌کند.</p>\n</section>\n\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-gray-400 border-r-4 border-gray-400 pr-3 mb-4\">چطور SSR در React و Next.js کار می‌کند؟</h2>\n  <p class=\"text-slate-400 mb-4\">در React به صورت پیش‌فرض CSR فعال است. اما با Next.js می‌توانیم انتخاب کنیم که کدها روی سرور یا کلاینت رندر شوند. SSR محتوای صفحه را روی سرور تولید و HTML کامل را به مرورگر ارسال می‌کند.</p>\n</section>\n\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-gray-400 border-r-4 border-gray-400 pr-3 mb-4\">مزایا و معایب SSR</h2>\n  <div class=\"grid md:grid-cols-2 gap-6\">\n    <div class=\"bg-slate-800 rounded-xl p-5\">\n      <h3 class=\"text-gray-300 text-lg font-semibold mb-3\">مزایا</h3>\n      <ul class=\"list-disc pr-5 text-slate-400 space-y-2\">\n        <li>بهبود سرعت لود صفحه و تجربه کاربری</li>\n        <li>بهبود SEO و ایندکس بهتر در گوگل</li>\n        <li>مناسب برای سایت‌های محتوا محور و عمومی</li>\n      </ul>\n    </div>\n    <div class=\"bg-slate-800 rounded-xl p-5\">\n      <h3 class=\"text-gray-300 text-lg font-semibold mb-3\">معایب و چالش‌ها</h3>\n      <ul class=\"list-disc pr-5 text-slate-400 space-y-2\">\n        <li>هزینه بالاتر سرور و فشار بیشتر</li>\n        <li>پیچیدگی بیشتر کد و مدیریت حالت‌ها</li>\n        <li>نیاز به برنامه‌نویسی دقیق‌تر برای ترکیب SSR و CSR</li>\n      </ul>\n    </div>\n  </div>\n</section>\n\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-gray-400 border-r-4 border-gray-400 pr-3 mb-4\">چه زمانی از SSR استفاده کنیم؟</h2>\n  <ul class=\"list-disc pr-5 text-slate-400 space-y-2 mb-4\">\n    <li>اگر SEO و سرعت لود اولیه اهمیت بالایی دارد.</li>\n    <li>برای سایت‌های خبری، فروشگاهی و عمومی.</li>\n    <li>اگر پروژه بیشتر تعاملات بعد از لود اولیه دارد (مثل داشبوردها)، CSR کافی است.</li>\n  </ul>\n</section>\n\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-gray-400 border-r-4 border-gray-400 pr-3 mb-4\">نمونه کد SSR با fetch در Next.js</h2>\n  <pre class=\"bg-slate-900 p-4 rounded-lg overflow-x-auto text-sm text-slate-300\"><code>// app/page.jsx\n\nexport default async function HomePage() {\n  // استفاده از fetch برای دریافت داده‌ها از API\n  const response = await fetch('https://api.example.com/data', {\n    cache: 'no-store', // غیرفعال کردن کش برای دریافت جدیدترین داده‌ها\n  });\n  const data = await response.json();\n\n  return (\n    <div>\n      <h1>صفحه اصلی با SSR و fetch</h1>\n      <p>داده‌ها: {JSON.stringify(data)}</p>\n    </div>\n  );\n}</code></pre>\n  <p class=\"text-slate-400 mt-3 text-sm\">در این مثال، داده‌ها قبل از ارسال به مرورگر روی سرور دریافت و رندر می‌شوند.</p>\n</section>\n\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-gray-400 border-r-4 border-gray-400 pr-3 mb-4\">نکته مهم درباره هوک‌ها در SSR</h2>\n  <p class=\"text-slate-400 mb-4\">در صفحات SSR نمی‌توان از هوک‌هایی مثل useEffect یا useState استفاده کرد، چون این هوک‌ها برای مدیریت حالت و افکت در مرورگر هستند و سرور فقط HTML را تولید می‌کند.</p>\n</section>\n\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-gray-400 border-r-4 border-gray-400 pr-3 mb-4\">جمع‌بندی</h2>\n  <p class=\"text-slate-400 mb-4\">SSR در Next.js و React یکی از تکنیک‌های قدرتمند برای بهینه‌سازی وب‌اپلیکیشن‌هاست، به‌خصوص وقتی سرعت و سئو اهمیت دارند. باید بین مزایا و چالش‌های این روش تعادل برقرار کنیم تا بهترین تصمیم را برای پروژه بگیریم.</p>\n</section>\n\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-gray-400 border-r-4 border-gray-400 pr-3 mb-4\">سوالات متداول درباره SSR</h2>\n  <div class=\"divide-y divide-slate-700\">\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">SSR چیست و به چه دردی می‌خورد؟</h3>\n      <p class=\"text-slate-400\">SSR یعنی رندر شدن صفحات روی سرور و ارسال HTML کامل به مرورگر. باعث سرعت و سئوی بهتر می‌شود.</p>\n    </div>\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">فرق SSR با CSR چیه؟</h3>\n      <p class=\"text-slate-400\">در SSR، رندر روی سرور انجام می‌شود؛ در CSR، رندر در مرورگر کاربر انجام می‌شود.</p>\n    </div>\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">چرا SSR به سئو کمک می‌کند؟</h3>\n      <p class=\"text-slate-400\">چون موتورهای جستجو صفحات HTML کامل را بهتر ایندکس می‌کنند.</p>\n    </div>\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">آیا همیشه باید از SSR استفاده کنیم؟</h3>\n      <p class=\"text-slate-400\">خیر، بسته به نوع پروژه و نیازها باید انتخاب شود.</p>\n    </div>\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">هزینه‌های سرور با SSR بیشتر می‌شود؟</h3>\n      <p class=\"text-slate-400\">بله، چون سرور باید صفحات را رندر کند و فشار بیشتری دارد.</p>\n    </div>\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">چطور داده‌های داینامیک را در SSR مدیریت کنیم؟</h3>\n      <p class=\"text-slate-400\">با استفاده از fetch یا getServerSideProps داده‌ها را قبل از ارسال به مرورگر دریافت و رندر کنید.</p>\n    </div>\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">مشکلات رایج SSR چیست؟</h3>\n      <p class=\"text-slate-400\">پیچیدگی مدیریت حالت، هزینه سرور و باگ‌های احتمالی در ترکیب SSR و CSR.</p>\n    </div>\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">آیا می‌شود از ترکیبی از SSR و CSR استفاده کرد؟</h3>\n      <p class=\"text-slate-400\">بله، Next.js امکان رندر ترکیبی را فراهم می‌کند.</p>\n    </div>\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">کش کردن در SSR چطور کار می‌کند؟</h3>\n      <p class=\"text-slate-400\">می‌توانید با تنظیم cache در fetch یا استفاده از CDN، کش را مدیریت کنید.</p>\n    </div>\n    <div class=\"py-3\">\n      <h3 class=\"font-semibold text-gray-300\">SSR خطر امنیتی دارد؟</h3>\n      <p class=\"text-slate-400\">اگر داده‌ها به درستی مدیریت نشوند، ممکن است اطلاعات حساس لو برود. باید مراقب باشید.</p>\n    </div>\n  </div>\n</section>",
+            "content": "<section class=\"mb-8\">\n  <h1 class=\"text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400 text-center mb-3 leading-tight\">راهنمای جامع و حرفه‌ای SSR در Next.js</h1>\n  <p class=\"text-slate-400 text-center mb-6 max-w-full text-base sm:text-lg leading-relaxed px-2\">در این مقاله، با نگاهی عمیق و کاربردی به SSR در Next.js، از معماری و مدل‌های رندرینگ تا سئو، مثال‌های عملی، چالش‌ها و نکات حرفه‌ای را بررسی می‌کنیم. تمرکز ویژه بر تجربه کاربری، سرعت و بهینه‌سازی برای موتورهای جستجو و ریسپانسیو بودن تمام بخش‌ها دارد.</p>\n  <nav class=\"flex overflow-x-auto no-scrollbar gap-2 mb-6 px-1 text-xs sm:text-sm whitespace-nowrap\">\n    <a href=\"#intro\" class=\"text-blue-500 hover:underline px-3 py-2 rounded transition bg-slate-900/40 min-w-max\">مقدمه</a>\n    <a href=\"#architecture\" class=\"text-blue-500 hover:underline px-3 py-2 rounded transition bg-slate-900/40 min-w-max\">معماری SSR</a>\n    <a href=\"#models\" class=\"text-blue-500 hover:underline px-3 py-2 rounded transition bg-slate-900/40 min-w-max\">مدل‌های رندرینگ</a>\n    <a href=\"#seo\" class=\"text-blue-500 hover:underline px-3 py-2 rounded transition bg-slate-900/40 min-w-max\">سئو و سرعت</a>\n    <a href=\"#examples\" class=\"text-blue-500 hover:underline px-3 py-2 rounded transition bg-slate-900/40 min-w-max\">نمونه کد</a>\n    <a href=\"#advanced\" class=\"text-blue-500 hover:underline px-3 py-2 rounded transition bg-slate-900/40 min-w-max\">نکات پیشرفته</a>\n    <a href=\"#faq\" class=\"text-blue-500 hover:underline px-3 py-2 rounded transition bg-slate-900/40 min-w-max\">سوالات متداول</a>\n    <a href=\"#conclusion\" class=\"text-blue-500 hover:underline px-3 py-2 rounded transition bg-slate-900/40 min-w-max\">جمع‌بندی</a>\n  </nav>\n</section>\n\n<section id=\"intro\" class=\"mb-8 px-2\">\n  <h2 class=\"text-lg sm:text-xl font-bold text-blue-400 border-r-4 border-blue-400 pr-2 mb-3\">مقدمه SSR در Next.js</h2>\n  <p class=\"text-slate-400 mb-3 text-base sm:text-lg leading-relaxed\">SSR یا Server Side Rendering در Next.js به شما این امکان را می‌دهد که صفحات وب را قبل از رسیدن به مرورگر کاربر، روی سرور رندر و به صورت HTML کامل ارسال کنید. این کار باعث افزایش سرعت لود اولیه، بهبود سئو و تجربه کاربری بهتر می‌شود.</p>\n  <ul class=\"list-disc pr-4 text-slate-300 space-y-1 text-sm\">\n    <li>افزایش سرعت لود اولیه (TTFB پایین‌تر)</li>\n    <li>ایندکس بهتر توسط موتورهای جستجو</li>\n    <li>امکان تولید داینامیک متا تگ‌ها و داده‌های ساختاریافته</li>\n    <li>تجربه کاربری بهتر در دستگاه‌های ضعیف‌تر</li>\n  </ul>\n</section>\n\n<section id=\"architecture\" class=\"mb-8 px-2\">\n  <h2 class=\"text-lg sm:text-xl font-bold text-blue-400 border-r-4 border-blue-400 pr-2 mb-3\">معماری SSR در Next.js</h2>\n  <ul class=\"list-decimal pr-4 text-slate-300 space-y-1 text-sm mb-3\">\n    <li>درخواست کاربر به سرور Next.js ارسال می‌شود.</li>\n    <li>داده‌ها از API، دیتابیس یا منابع دیگر جمع‌آوری می‌شوند.</li>\n    <li>کامپوننت‌ها روی سرور رندر و HTML تولید می‌شود.</li>\n    <li>HTML به مرورگر ارسال و نمایش داده می‌شود.</li>\n    <li>در صورت نیاز، hydration و تعامل کلاینتی انجام می‌شود.</li>\n  </ul>\n  <div class=\"bg-slate-800 rounded-lg p-3 text-xs text-slate-400\">\n    <span class=\"font-semibold text-blue-300\">نکته فنی:</span> در SSR، کدهایی که فقط در کلاینت اجرا می‌شوند (مثل window یا document)، نباید در بخش سرور استفاده شوند. برای مدیریت این موضوع می‌توانید از dynamic import با ssr: false استفاده کنید.\n  </div>\n</section>\n\n<section id=\"models\" class=\"mb-8 px-2\">\n  <h2 class=\"text-lg sm:text-xl font-bold text-blue-400 border-r-4 border-blue-400 pr-2 mb-3\">مدل‌های رندرینگ در Next.js</h2>\n  <div class=\"overflow-x-auto rounded-xl shadow mb-3 bg-slate-800 border border-slate-700\">\n    <table class=\"w-full min-w-[500px] text-sm rounded-xl overflow-hidden\">\n      <thead>\n        <tr class=\"bg-slate-700 text-slate-200\">\n          <th class=\"p-4 font-bold text-base border-b border-slate-600 text-right\">ویژگی</th>\n          <th class=\"p-4 font-bold text-base border-b border-slate-600\">SSR</th>\n          <th class=\"p-4 font-bold text-base border-b border-slate-600\">SSG</th>\n          <th class=\"p-4 font-bold text-base border-b border-slate-600\">ISR</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr class=\"odd:bg-slate-800 even:bg-slate-900 border-b border-slate-700\">\n          <td class=\"p-4 text-slate-200 font-semibold\">سرعت لود</td>\n          <td class=\"p-4 text-slate-300\">عالی (درخواست اول)</td>\n          <td class=\"p-4 text-slate-300\">عالی (همیشه)</td>\n          <td class=\"p-4 text-slate-300\">عالی (بعد از regen)</td>\n        </tr>\n        <tr class=\"odd:bg-slate-800 even:bg-slate-900 border-b border-slate-700\">\n          <td class=\"p-4 text-slate-200 font-semibold\">سئو</td>\n          <td class=\"p-4 text-slate-300\">عالی</td>\n          <td class=\"p-4 text-slate-300\">عالی</td>\n          <td class=\"p-4 text-slate-300\">عالی</td>\n        </tr>\n        <tr class=\"odd:bg-slate-800 even:bg-slate-900 border-b border-slate-700\">\n          <td class=\"p-4 text-slate-200 font-semibold\">داده داینامیک</td>\n          <td class=\"p-4 text-slate-300\">بله</td>\n          <td class=\"p-4 text-slate-300\">خیر</td>\n          <td class=\"p-4 text-slate-300\">بله (با تاخیر)</td>\n        </tr>\n        <tr class=\"odd:bg-slate-800 even:bg-slate-900\">\n          <td class=\"p-4 text-slate-200 font-semibold\">هزینه سرور</td>\n          <td class=\"p-4 text-slate-300\">بیشتر</td>\n          <td class=\"p-4 text-slate-300\">کمتر</td>\n          <td class=\"p-4 text-slate-300\">متوسط</td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n  <ul class=\"list-disc pr-4 text-slate-300 space-y-1 text-sm mt-4\">\n    <li>SSR برای صفحات داینامیک و سئو محور عالی است.</li>\n    <li>SSG برای صفحات ثابت و بلاگ‌ها مناسب است.</li>\n    <li>ISR ترکیبی از هر دو و مناسب برای پروژه‌های بزرگ است.</li>\n  </ul>\n</section>\n\n<section id=\"seo\" class=\"mb-8 px-2\">\n  <h2 class=\"text-lg font-bold text-blue-400 border-r-4 border-blue-400 pr-2 mb-3\">سئو و سرعت در SSR</h2>\n  <ul class=\"list-disc pr-4 text-slate-300 space-y-1 text-sm mb-3\">\n    <li>HTML کامل و آماده برای ایندکس بهتر توسط موتورهای جستجو</li>\n    <li>امکان تولید داینامیک متا تگ‌ها (title, description, og, ...)</li>\n    <li>کاهش زمان لود اولیه (TTFB) و بهبود تجربه کاربری</li>\n    <li>پشتیبانی از داده‌های ساختاریافته (Structured Data)</li>\n  </ul>\n  <div class=\"bg-slate-800 rounded-lg p-3 text-xs text-slate-400\">\n    <span class=\"font-semibold text-blue-300\">نکات سئو:</span> از Head برای متا تگ‌ها و اسکیما مارک‌آپ استفاده کنید. عنوان و توضیحات را داینامیک بسازید و Open Graph را فراموش نکنید.\n  </div>\n</section>\n\n<section id=\"examples\" class=\"mb-8 px-2\">\n  <h2 class=\"text-lg font-bold text-blue-400 border-r-4 border-blue-400 pr-2 mb-3\">نمونه کد و پروژه‌های SSR در Next.js</h2>\n  <div class=\"space-y-4\">\n    <div class=\"bg-slate-800 rounded-lg p-3\">\n      <h3 class=\"text-indigo-300 text-base font-semibold mb-2\">getServerSideProps (Pages Router)</h3>\n      <pre class=\"bg-slate-900 p-3 rounded-lg overflow-x-auto text-xs text-slate-300\"><code>// pages/products/[id].js\nexport async function getServerSideProps(context) {\n  const { id } = context.params;\n  const res = await fetch(`https://api.example.com/products/${id}`);\n  const product = await res.json();\n  return { props: { product } };\n}\n\nexport default function ProductPage({ product }) {\n  return (\n    <>\n      {/* Head فقط در Next.js */}\n      {/*\n      <Head>\n        <title>{product.title} | فروشگاه</title>\n        <meta name=\"description\" content={product.description} />\n      </Head>\n      */}\n      <h1>{product.title}</h1>\n      <p>{product.description}</p>\n    </>\n  );\n}\n</code></pre>\n    </div>\n    <div class=\"bg-slate-800 rounded-lg p-3\">\n      <h3 class=\"text-indigo-300 text-base font-semibold mb-2\">Server Components (App Router)</h3>\n      <pre class=\"bg-slate-900 p-3 rounded-lg overflow-x-auto text-xs text-slate-300\"><code>// app/products/[id]/page.jsx\nexport default async function ProductPage({ params }) {\n  const res = await fetch(`https://api.example.com/products/${params.id}`, { cache: 'no-store' });\n  const product = await res.json();\n  return (\n    <div>\n      <h1>{product.title}</h1>\n      <p>{product.description}</p>\n    </div>\n  );\n}\n</code></pre>\n    </div>\n    <div class=\"bg-slate-800 rounded-lg p-3\">\n      <h3 class=\"text-blue-300 text-base font-semibold mb-2\">API Route برای SSR و سئو</h3>\n      <pre class=\"bg-slate-900 p-3 rounded-lg overflow-x-auto text-xs text-slate-300\"><code>// pages/api/products/[id].js\nexport default async function handler(req, res) {\n  const { id } = req.query;\n  const data = await fetch(`https://api.example.com/products/${id}`).then(r => r.json());\n  res.status(200).json(data);\n}\n</code></pre>\n    </div>\n  </div>\n</section>\n\n<section id=\"advanced\" class=\"mb-8 px-2\">\n  <h2 class=\"text-lg font-bold text-blue-400 border-r-4 border-blue-400 pr-2 mb-3\">نکات پیشرفته و حرفه‌ای SSR</h2>\n  <ul class=\"list-disc pr-4 text-slate-300 space-y-1 text-sm mb-3\">\n    <li>استفاده از CDN و cache-control برای کش صفحات SSR</li>\n    <li>کشینگ پیشرفته با Redis یا Vercel Edge</li>\n    <li>جلوگیری از XSS با sanitize کردن داده‌ها</li>\n    <li>عدم ارسال داده‌های حساس به کلاینت</li>\n    <li>مدیریت session و احراز هویت امن (مثلاً با کوکی و Redis)</li>\n    <li>کاهش حجم initial HTML و بارگذاری تنبل تصاویر (Lazy Loading)</li>\n    <li>استفاده از ابزارهایی مثل Google PageSpeed Insights و Lighthouse</li>\n    <li>تست SSR با Jest و ابزارهای مانیتورینگ مثل Sentry</li>\n  </ul>\n  <div class=\"bg-slate-800 rounded-lg p-3 text-xs text-slate-400\">\n    <span class=\"font-semibold text-blue-300\">ساختار پروژه:</span> پوشه‌بندی مناسب و استفاده از کامپوننت‌های مجزا برای مقیاس‌پذیری بهتر توصیه می‌شود.\n  </div>\n</section>\n\n<section id=\"faq\" class=\"mb-8 px-2\">\n  <h2 class=\"text-lg font-bold text-blue-400 border-r-4 border-blue-400 pr-2 mb-3\">سوالات متداول درباره SSR در Next.js</h2>\n  <div class=\"divide-y divide-slate-700 text-sm\">\n    <div class=\"py-2\">\n      <h3 class=\"font-semibold text-blue-300\">SSR در Next.js چیست و چه کاربردی دارد؟</h3>\n      <p class=\"text-slate-400\">SSR یعنی رندر شدن صفحات روی سرور و ارسال HTML کامل به مرورگر. برای سئو و سرعت عالی است.</p>\n    </div>\n    <div class=\"py-2\">\n      <h3 class=\"font-semibold text-blue-300\">تفاوت SSR با SSG و ISR چیست؟</h3>\n      <p class=\"text-slate-400\">SSR در هر درخواست صفحه را می‌سازد، SSG فقط یک بار در زمان build، ISR ترکیبی از هر دو است.</p>\n    </div>\n    <div class=\"py-2\">\n      <h3 class=\"font-semibold text-blue-300\">چرا SSR برای سئو مهم است؟</h3>\n      <p class=\"text-slate-400\">چون موتورهای جستجو HTML کامل را بهتر ایندکس می‌کنند و متا تگ‌ها داینامیک هستند.</p>\n    </div>\n    <div class=\"py-2\">\n      <h3 class=\"font-semibold text-blue-300\">آیا همیشه باید از SSR استفاده کنیم؟</h3>\n      <p class=\"text-slate-400\">خیر، برای صفحات داینامیک و سئو محور SSR مناسب است، اما برای صفحات ثابت SSG بهتر است.</p>\n    </div>\n    <div class=\"py-2\">\n      <h3 class=\"font-semibold text-blue-300\">چطور داده‌های داینامیک را در SSR مدیریت کنیم؟</h3>\n      <p class=\"text-slate-400\">با fetch یا getServerSideProps داده‌ها را قبل از ارسال به مرورگر دریافت و رندر کنید.</p>\n    </div>\n    <div class=\"py-2\">\n      <h3 class=\"font-semibold text-blue-300\">چالش‌های رایج SSR چیست؟</h3>\n      <p class=\"text-slate-400\">هزینه سرور، مدیریت کش، امنیت داده‌ها و پیچیدگی کد.</p>\n    </div>\n    <div class=\"py-2\">\n      <h3 class=\"font-semibold text-blue-300\">آیا می‌توان SSR و SSG را ترکیب کرد؟</h3>\n      <p class=\"text-slate-400\">بله، Next.js امکان Hybrid Rendering را فراهم می‌کند.</p>\n    </div>\n    <div class=\"py-2\">\n      <h3 class=\"font-semibold text-blue-300\">کش کردن در SSR چگونه است؟</h3>\n      <p class=\"text-slate-400\">با تنظیم cache-control و استفاده از CDN می‌توانید کش را مدیریت کنید.</p>\n    </div>\n    <div class=\"py-2\">\n      <h3 class=\"font-semibold text-blue-300\">آیا SSR خطر امنیتی دارد؟</h3>\n      <p class=\"text-slate-400\">اگر داده‌ها به درستی مدیریت نشوند، ممکن است اطلاعات حساس لو برود. باید مراقب باشید.</p>\n    </div>\n  </div>\n</section>\n\n<section id=\"conclusion\" class=\"mb-10 px-2\">\n  <h2 class=\"text-lg font-bold text-blue-400 border-r-4 border-blue-400 pr-2 mb-3\">جمع‌بندی و دعوت به تعامل</h2>\n  <div class=\"bg-slate-800 rounded-lg p-3 mb-3\">\n    <p class=\"text-slate-400 text-sm\">SSR در Next.js با معماری مدرن، سرعت بالا و سئو عالی، بهترین انتخاب برای پروژه‌های حرفه‌ای و مقیاس‌پذیر است. اگر به دنبال رشد سایت و تجربه کاربری بهتر هستید، SSR را جدی بگیرید و از ابزارهای حرفه‌ای Next.js بهره ببرید.</p>\n  </div>\n  <div class=\"bg-slate-900/50 rounded-lg p-3 border border-slate-700\">\n    <h3 class=\"text-blue-300 text-base font-semibold mb-2\">نظر شما چیست؟</h3>\n    <p class=\"text-slate-300 text-sm\">آیا تجربه کار با SSR در Next.js را داشته‌اید؟ سوال یا نکته‌ای دارید؟ همین‌جا با ما و دیگران به اشتراک بگذارید.</p>\n    <form class=\"mt-3 space-y-3\">\n      <div>\n        <label class=\"block text-slate-300 mb-1 text-xs\">نام</label>\n        <input type=\"text\" class=\"w-full bg-slate-800 border border-slate-700 rounded-lg p-2 text-slate-300 text-sm\">\n      </div>\n      <div>\n        <label class=\"block text-slate-300 mb-1 text-xs\">نظر یا سوال شما</label>\n        <textarea class=\"w-full bg-slate-800 border border-slate-700 rounded-lg p-2 text-slate-300 h-20 text-sm\"></textarea>\n      </div>\n      <button type=\"submit\" class=\"w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg transition text-base font-bold\">ارسال نظر</button>\n    </form>\n  </div>\n</section>",
             "image": {
               "src": "https://uploadkon.ir/uploads/fd2802_25next.png",
               "alt": "مزایای SSR در Next.js",
@@ -32,24 +37,14 @@
             },
             "category": "Next.js",
             "date": "1403/03/21",
-            "author": "محمد رضایی",
-            "tags": ["Next.js", "SSR", "SEO", "React", "رندر سمت سرور"]
-          },
-          {
-            "id": "nodejs-best-practices",
-            "title": "بهترین شیوه‌های توسعه با Node.js",
-            "title_en": "Node.js Best Practices for Developers",
-            "excerpt": "در این مقاله با نکات و بهترین شیوه‌های توسعه اپلیکیشن‌های Node.js آشنا می‌شوید تا پروژه‌های مقیاس‌پذیر و امن‌تری بسازید.",
-            "content": "<section class=\"mb-10\">\n  <h1 class=\"text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-600 text-center mb-4\">بهترین شیوه‌های توسعه با Node.js</h1>\n  <p class=\"text-slate-400 text-center mb-8\">در این مقاله با نکات و بهترین شیوه‌های توسعه اپلیکیشن‌های Node.js آشنا می‌شوید تا پروژه‌های مقیاس‌پذیر و امن‌تری بسازید.</p>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-green-400 border-r-4 border-green-400 pr-3 mb-4\">نکات کلیدی</h2>\n  <ul class=\"list-disc pr-5 text-slate-400 space-y-2\">\n    <li>مدیریت خطا با try/catch و middleware</li>\n    <li>استفاده از async/await برای کدنویسی تمیز</li>\n    <li>تست‌نویسی و پوشش مناسب تست</li>\n    <li>رعایت امنیت و جلوگیری از حملات رایج</li>\n    <li>ساختاردهی مناسب پروژه</li>\n  </ul>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-green-400 border-r-4 border-green-400 pr-3 mb-4\">نمونه کد مدیریت خطا</h2>\n  <pre class=\"bg-slate-900 p-4 rounded-lg overflow-x-auto text-sm text-slate-300\"><code>app.use((err, req, res, next) => {\n  res.status(500).send('خطای سرور!');\n});</code></pre>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-green-400 border-r-4 border-green-400 pr-3 mb-4\">نتیجه‌گیری</h2>\n  <p class=\"text-slate-400\">با رعایت این نکات، اپلیکیشن‌های Node.js شما سریع‌تر، امن‌تر و قابل نگهداری‌تر خواهند بود.</p>\n</section>",
-            "image": {
-              "src": "https://uploadkon.ir/uploads/b29502_25node.png",
-              "alt": "بهترین شیوه‌های توسعه با Node.js",
-              "title": "/"
-            },
-            "category": "Node.js",
-            "date": "1403/03/22",
-            "author": "سارا احمدی",
-            "tags": ["Node.js", "بک‌اند", "امنیت", "توسعه‌دهنده", "جاوااسکریپت"]
+            "author": "محمد علی سماوات",
+            "tags": [
+              "Next.js",
+              "SSR",
+              "SEO",
+              "React",
+              "رندر سمت سرور"
+            ]
           },
           {
             "id": "nestjs-vs-express",
@@ -65,46 +60,38 @@
             "category": "NestJS",
             "date": "1403/03/23",
             "author": "علی سماوات",
-            "tags": ["NestJS", "Express", "Node.js", "TypeScript", "بک‌اند"]
+            "tags": [
+              "NestJS",
+              "Express",
+              "Node.js",
+              "TypeScript",
+              "بک‌اند"
+            ]
           },
           {
-            "id": "seo-web-design",
-            "title": "نکات سئو در طراحی سایت",
-            "title_en": "SEO Tips for Web Design",
-            "excerpt": "در این مقاله با مهم‌ترین نکات سئو در طراحی سایت آشنا می‌شوید تا سایت شما رتبه بهتری در گوگل بگیرد.",
-            "content": "<section class=\"mb-10\">\n  <h1 class=\"text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-green-400 text-center mb-4\">نکات سئو در طراحی سایت</h1>\n  <p class=\"text-slate-400 text-center mb-8\">در این مقاله با مهم‌ترین نکات سئو در طراحی سایت آشنا می‌شوید تا سایت شما رتبه بهتری در گوگل بگیرد.</p>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-green-400 border-r-4 border-green-400 pr-3 mb-4\">نکات کلیدی سئو</h2>\n  <ul class=\"list-disc pr-5 text-slate-400 space-y-2\">\n    <li>استفاده از تگ‌های عنوان و توضیحات مناسب</li>\n    <li>ساختاردهی صحیح صفحات و URLها</li>\n    <li>افزایش سرعت بارگذاری سایت</li>\n    <li>ریسپانسیو بودن و نمایش صحیح در موبایل</li>\n    <li>تولید محتوای ارزشمند و لینک‌سازی داخلی</li>\n  </ul>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-green-400 border-r-4 border-green-400 pr-3 mb-4\">نمونه کد متا تگ سئو</h2>\n  <pre class=\"bg-slate-900 p-4 rounded-lg overflow-x-auto text-sm text-slate-300\"><code>&lt;meta name=\"description\" content=\"طراحی سایت حرفه‌ای و سئو شده\" /&gt;</code></pre>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-green-400 border-r-4 border-green-400 pr-3 mb-4\">جمع‌بندی</h2>\n  <p class=\"text-slate-400\">رعایت نکات سئو در طراحی سایت باعث افزایش بازدید و موفقیت کسب‌وکار آنلاین شما می‌شود.</p>\n</section>",
+            "id": "react-helmet",
+            "title": "راهنمای جامع استفاده از React Helmet برای مدیریت Head در ReactJS",
+            "excerpt": "React Helmet کتابخانه‌ای قدرتمند برای کنترل تگ‌های head مانند title، meta و ... در پروژه‌های React است که برای SEO و SSR اهمیت زیادی دارد.",
+             "content": "<section class=\"mb-12\">\n  <h1 class=\"text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400 text-center mb-4\">راهنمای جامع استفاده از React Helmet برای مدیریت Head در ReactJS</h1>\n  <p class=\"text-slate-400 text-center mb-8 max-w-full text-base sm:text-lg leading-relaxed\">React Helmet کتابخانه‌ای ساده و مؤثر برای مدیریت محتوای تگ‌های head در پروژه‌های React است. این ابزار برای بهبود SEO، پشتیبانی از شبکه‌های اجتماعی با تگ‌های Open Graph و Twitter، مدیریت canonical tagها برای جلوگیری از محتوای تکراری و همچنین پروژه‌های دارای SSR بسیار کاربردی است.</p>\n</section>\n\n<section id=\"intro\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">چرا React Helmet مهم است؟</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">تگ‌های head اطلاعات حیاتی درباره‌ی صفحه به مرورگرها، خزنده‌های موتورهای جستجو و پلتفرم‌های شبکه‌های اجتماعی ارائه می‌دهند. با React Helmet می‌توان این تگ‌ها را به‌صورت داینامیک در SPAها یا پروژه‌های SSR مدیریت کرد تا بهینه‌سازی موتور جستجو (SEO) و اشتراک‌گذاری در شبکه‌های اجتماعی بهبود یابد. مدیریت دقیق تگ‌هایی مانند title، meta description و canonical URL تاثیر مستقیمی بر رتبه سایت در نتایج جستجو و نحوه نمایش آن در شبکه‌های اجتماعی دارد.</p>\n</section>\n\n<section id=\"getting-started\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">نصب و شروع کار</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">نصب کتابخانه از طریق npm یا yarn:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-bash text-slate-300\">npm install react-helmet</code></pre>\n    <pre><code class=\"lang-bash text-slate-300\"># یا با Yarn:\nyarn add react-helmet</code></pre>\n  </div>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">سپس در فایل‌های React آن را ایمپورت و استفاده کنید:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import { Helmet } from 'react-helmet';\n\nfunction App() {\n  return (\n    <div>\n      <Helmet>\n        <title>Turbo Todo</title>\n        <meta name=\"description\" content=\"Todos on steroid!\" />\n        <meta name=\"theme-color\" content=\"#008f68\" />\n      </Helmet>\n      {/* سایر اجزای صفحه */}\n    </div>\n  );\n}\n\nexport default App;\n</code></pre>\n  </div>\n</section>\n\n<section id=\"nested-components\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">مدیریت تگ‌ها در کامپوننت‌های تو در تو</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">React Helmet این قابلیت را دارد که تگ‌ها را در کامپوننت‌های داخلی (فرزند) بازنویسی کند. این ویژگی برای مدیریت Head در صفحات و کامپوننت‌های مختلف یک SPA که محتوا به صورت پویا تغییر می‌کند، بسیار مفید است.</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import { Helmet } from 'react-helmet';\n\nfunction Child() {\n  return (\n    <div>\n      <Helmet>\n        <title>Child Page Specific Title</title>\n        <meta name=\"description\" content=\"Description for the child page\" />\n      </Helmet>\n      <h1>صفحه فرزند</h1>\n    </div>\n  );\n}\n\nexport default Child;\n</code></pre>\n  </div>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">در این حالت، تگ title و description تعریف شده در کامپوننت <code>Child</code>، تگ‌های مشابه تعریف شده در کامپوننت والد را بازنویسی می‌کنند.</p>\n</section>\n\n<section id=\"body-html-attrs\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">نسبت دادن ویژگی به html و body</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">با React Helmet می‌توان ویژگی‌هایی مانند کلاس، زبان (lang) و سایر атриبوت‌ها را به تگ‌های <code>&lt;html&gt;</code> و <code>&lt;body&gt;</code> صفحه نسبت داد. این قابلیت برای تنظیمات کلی صفحه، مانند تغییر زبان یا اعمال تم‌های سراسری (مثل dark mode با کلاس CSS) کاربردی است.</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\"><Helmet\n  htmlAttributes={{ lang: 'fa' }}\n  bodyAttributes={{ className: 'dark-mode' }}\n>\n  {/* سایر تگ‌های Head */}\n</Helmet>\n</code></pre>\n  </div>\n</section>\n\n<section id=\"advanced-usage\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">مفاهیم پیشرفته و نکات تجربی React Helmet</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">برای استفاده حرفه‌ای‌تر از React Helmet و بهینه‌سازی هرچه بیشتر سایت، می‌توان از قابلیت‌های پیشرفته‌تر و الگوهای طراحی مناسب استفاده کرد:</p>\n  <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">تنظیم تگ‌های Open Graph و Twitter Cards</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">این تگ‌ها برای نمایش صحیح و جذاب محتوا هنگام اشتراک‌گذاری در شبکه‌های اجتماعی مانند فیسبوک، توییتر و تلگرام ضروری هستند. React Helmet امکان تعریف آسان این تگ‌ها را فراهم می‌کند:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\"><Helmet>\n  {/* Open Graph tags for Facebook */}\n  <meta property=\"og:title\" content=\"عنوان مقاله برای شبکه‌های اجتماعی\" />\n  <meta property=\"og:description\" content=\"خلاصه‌ای جذاب برای اشتراک‌گذاری\" />\n  <meta property=\"og:image\" content=\"https://yourwebsite.com/image.jpg\" />\n  <meta property=\"og:url\" content=\"https://yourwebsite.com/article-url\" />\n  <meta property=\"og:type\" content=\"article\" />\n\n  {/* Twitter Card tags */}\n  <meta name=\"twitter:card\" content=\"summary_large_image\" />\n  <meta name=\"twitter:site\" content=\"@yourhandle\" />\n  <meta name=\"twitter:title\" content=\"عنوان مقاله برای توییتر\" />\n  <meta name=\"twitter:description\" content=\"خلاصه‌ای کوتاه برای توییتر\" />\n  <meta name=\"twitter:image\" content=\"https://yourwebsite.com/image.jpg\" />\n</Helmet>\n</code></pre>\n  </div>\n\n  <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">استفاده از داده‌های پویا</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">در برنامه‌های واقعی، معمولاً عنوان، توضیحات و سایر متا تگ‌ها بر اساس داده‌های صفحه (مثلاً اطلاعات یک محصول یا مقاله خاص) تعیین می‌شوند. می‌توانید از state، props یا داده‌های فچ شده برای پر کردن محتوای تگ‌های Helmet استفاده کنید:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import React, { useState, useEffect } from 'react';\nimport { Helmet } from 'react-helmet';\n\nfunction ArticlePage({ articleId }) {\n  const [article, setArticle] = useState(null);\n\n  useEffect(() => {\n    // فرض کنید داده مقاله از یک API فچ می‌شود\n    fetch(`/api/articles/${articleId}`)\n      .then(res => res.json())\n      .then(data => setArticle(data));\n  }, [articleId]);\n\n  if (!article) {\n    return &lt;div&gt;در حال بارگذاری...&lt;/div&gt;;\n  }\n\n  return (\n    &lt;div&gt;\n      &lt;Helmet&gt;\n        &lt;title&gt;{article.title} | وبلاگ من&lt;/title&gt;\n        &lt;meta name=\"description\" content={article.excerpt} /&gt;\n        &lt;meta property=\"og:title\" content={article.title} /&gt;\n        &lt;meta property=\"og:image\" content={article.imageUrl} /&gt;\n        {/* سایر تگ‌های پویا بر اساس article */}\n      &lt;/Helmet&gt;\n      &lt;h1&gt;{article.title}&lt;/h1&gt;\n      &lt;p&gt;{article.content}&lt;/p&gt;\n    &lt;/div&gt;\n  );\n}\n\nexport default ArticlePage;\n</code></pre>\n  </div>\n\n  <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">ساخت کامپوننت SEO قابل استفاده مجدد</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">برای جلوگیری از تکرار کد تگ‌های Head در صفحات مختلف، می‌توانید یک کامپوننت کوچک برای مدیریت SEO ایجاد کنید که Props لازم را دریافت و تگ‌های Helmet را بر اساس آن‌ها رندر کند:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import React from 'react';\nimport { Helmet } from 'react-helmet';\n\nfunction SEO({\n  title,\n  description,\n  keywords,\n  author,\n  ogTitle,\n  ogDescription,\n  ogImage,\n  ogUrl,\n  twitterCard,\n  twitterSite,\n  twitterTitle,\n  twitterDescription,\n  twitterImage,\n}) {\n  return (\n    &lt;Helmet&gt;\n      &lt;title&gt;{title}&lt;/title&gt;\n      &lt;meta name=\"description\" content={description} /&gt;\n      {keywords && &lt;meta name=\"keywords\" content={keywords.join(', ')} /&gt;}\n      {author && &lt;meta name=\"author\" content={author} /&gt;}\n\n      {/* Open Graph */}\n      {ogTitle && &lt;meta property=\"og:title\" content={ogTitle} /&gt;}\n      {ogDescription && &lt;meta property=\"og:description\" content={ogDescription} /&gt;}\n      {ogImage && &lt;meta property=\"og:image\" content={ogImage} /&gt;}\n      {ogUrl && &lt;meta property=\"og:url\" content={ogUrl} /&gt;}\n      &lt;meta property=\"og:type\" content=\"website\" /&gt; {/* یا article برای مقالات */}\n\n      {/* Twitter */}\n      {twitterCard && &lt;meta name=\"twitter:card\" content={twitterCard} /&gt;}\n      {twitterSite && &lt;meta name=\"twitter:site\" content={twitterSite} /&gt;}\n      {twitterTitle && &lt;meta name=\"twitter:title\" content={twitterTitle} /&gt;}\n      {twitterDescription && &lt;meta name=\"twitter:description\" content={twitterDescription} /&gt;}\n      {twitterImage && &lt;meta name=\"twitter:image\" content={twitterImage} /&gt;}\n    &lt;/Helmet&gt;\n  );\n}\n\nexport default SEO;\n</code></pre>\n  </div>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">حالا می‌توانید در هر صفحه به سادگی از این کامپوننت استفاده کنید:</p>\n   <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import SEO from '../components/SEO'; // مسیردهی صحیح به کامپوننت SEO\n\nfunction HomePage() {\n  return (\n    &lt;div&gt;\n      &lt;SEO\n        title=\"صفحه اصلی سایت\"\n        description=\"توضیحات مربوط به صفحه اصلی برای سئو\"\n        ogImage=\"https://yourwebsite.com/home-image.jpg\"\n        twitterCard=\"summary_large_image\"\n      /&gt;\n      &lt;h1&gt;به سایت ما خوش آمدید!&lt;/h1&gt;\n      {/* سایر محتوای صفحه اصلی */}\n    &lt;/div&gt;\n  );\n}\n\nexport default HomePage;\n</code></pre>\n  </div>\n\n   <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">React Helmet Async برای SSR</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">اگر از Server-Side Rendering (SSR) استفاده می‌کنید، ممکن است با کتابخانه اصلی <code>react-helmet</code> به دلیل ماهیت همگام آن با چالش‌هایی روبرو شوید. کتابخانه <code>react-helmet-async</code> جایگزین مناسب‌تری برای SSR است که به صورت ناهمگام عمل کرده و مشکلات مربوط به مدیریت Head در محیط سرور را حل می‌کند. برای استفاده از آن، باید اپلیکیشن خود را با <code>HelmetProvider</code> رپ کنید.</p>\n</section>\n\n<section id=\"conclusion\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">جمع‌بندی</h2>\n  <div class=\"bg-slate-800 rounded-xl p-5\">\n    <p class=\"text-slate-400 text-sm\">React Helmet ابزاری بسیار قدرتمند و انعطاف‌پذیر برای مدیریت Head در پروژه‌های React، به‌ویژه در SPAها و پروژه‌های SSR است. با استفاده از قابلیت‌های پایه‌ای و پیشرفته آن مانند تنظیم تگ‌های Open Graph و Twitter، استفاده از داده‌های پویا و ساخت کامپوننت‌های قابل استفاده مجدد، می‌توانید بهینه‌سازی سایت خود برای موتورهای جستجو و شبکه‌های اجتماعی را به طرز چشمگیری بهبود بخشیده و تجربه‌ی کاربری بهتری ارائه دهید. توجه به جایگزین‌هایی مانند <code>react-helmet-async</code> برای SSR نیز در پروژه‌های بزرگ توصیه می‌شود.</p>\n  </div>\n</section>",
             "image": {
-              "src": "https://uploadkon.ir/uploads/seo-tips.png",
-              "alt": "نکات سئو در طراحی سایت",
-              "title": "/"
+              "src": "https://uploadkon.ir/uploads/cc2528_25seo.png",
+              "alt": "React Helmet",
+              "title": "React Helmet"
             },
-            "category": "SEO",
-            "date": "1403/03/25",
-            "author": "مینا محمدی",
-            "tags": ["سئو", "طراحی سایت", "گوگل", "بهینه‌سازی", "محتوا"]
-          },
-          {
-            "id": "tailwind-vs-bootstrap",
-            "title": "مقایسه Tailwind CSS و Bootstrap",
-            "title_en": "Tailwind CSS vs Bootstrap",
-            "excerpt": "در این مقاله تفاوت‌ها و مزایای دو فریم‌ورک محبوب استایل‌دهی یعنی Tailwind و Bootstrap را بررسی می‌کنیم.",
-            "content": "<section class=\"mb-10\">\n  <h1 class=\"text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 text-center mb-4\">مقایسه Tailwind CSS و Bootstrap</h1>\n  <p class=\"text-slate-400 text-center mb-8\">در این مقاله تفاوت‌ها و مزایای دو فریم‌ورک محبوب استایل‌دهی یعنی Tailwind و Bootstrap را بررسی می‌کنیم.</p>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-cyan-400 border-r-4 border-cyan-400 pr-3 mb-4\">مقایسه ویژگی‌ها</h2>\n  <table class=\"w-full bg-slate-800 rounded-lg overflow-hidden\">\n    <thead>\n      <tr class=\"bg-slate-700 text-slate-300\">\n        <th class=\"p-4 text-right\">ویژگی</th>\n        <th class=\"p-4 text-right\">Tailwind</th>\n        <th class=\"p-4 text-right\">Bootstrap</th>\n      </tr>\n    </thead>\n    <tbody class=\"divide-y divide-slate-700\">\n      <tr>\n        <td class=\"p-4 font-medium\">سبک طراحی</td>\n        <td class=\"p-4 text-slate-400\">utility-first</td>\n        <td class=\"p-4 text-slate-400\">کامپوننت‌محور</td>\n      </tr>\n      <tr>\n        <td class=\"p-4 font-medium\">شخصی‌سازی</td>\n        <td class=\"p-4 text-slate-400\">بسیار بالا</td>\n        <td class=\"p-4 text-slate-400\">محدودتر</td>\n      </tr>\n      <tr>\n        <td class=\"p-4 font-medium\">یادگیری</td>\n        <td class=\"p-4 text-slate-400\">متوسط</td>\n        <td class=\"p-4 text-slate-400\">آسان</td>\n      </tr>\n    </tbody>\n  </table>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-cyan-400 border-r-4 border-cyan-400 pr-3 mb-4\">جمع‌بندی</h2>\n  <p class=\"text-slate-400\">Tailwind برای پروژه‌های سفارشی و طراحی خاص عالی است، Bootstrap برای شروع سریع و پروژه‌های ساده‌تر مناسب‌تر است.</p>\n</section>",
-            "image": {
-              "src": "https://uploadkon.ir/uploads/tailwind-vs-bootstrap.png",
-              "alt": "مقایسه Tailwind CSS و Bootstrap",
-              "title": "/"
-            },
-            "category": "CSS",
-            "date": "1403/03/26",
-            "author": "رضا شریفی",
-            "tags": ["Tailwind", "Bootstrap", "CSS", "فرانت‌اند", "استایل‌دهی"]
-          },
-          {
-            "id": "web-performance-2024",
-            "title": "افزایش سرعت سایت در سال ۱۴۰۳",
-            "title_en": "Web Performance Optimization 2024",
-            "excerpt": "در این مقاله راهکارهای افزایش سرعت سایت و بهبود تجربه کاربری در سال جدید را بررسی می‌کنیم.",
-            "content": "<section class=\"mb-10\">\n  <h1 class=\"text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-orange-400 text-center mb-4\">افزایش سرعت سایت در سال ۱۴۰۳</h1>\n  <p class=\"text-slate-400 text-center mb-8\">در این مقاله راهکارهای افزایش سرعت سایت و بهبود تجربه کاربری در سال جدید را بررسی می‌کنیم.</p>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-orange-400 border-r-4 border-orange-400 pr-3 mb-4\">راهکارهای کلیدی</h2>\n  <ul class=\"list-disc pr-5 text-slate-400 space-y-2\">\n    <li>بهینه‌سازی تصاویر و استفاده از فرمت‌های جدید</li>\n    <li>استفاده از CDN برای بارگذاری سریع‌تر</li>\n    <li>کاهش درخواست‌های HTTP</li>\n    <li>کدنویسی بهینه و حذف کدهای اضافی</li>\n    <li>استفاده از ابزارهایی مثل Google PageSpeed Insights</li>\n  </ul>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-orange-400 border-r-4 border-orange-400 pr-3 mb-4\">نمونه کد Lazy Loading تصویر</h2>\n  <pre class=\"bg-slate-900 p-4 rounded-lg overflow-x-auto text-sm text-slate-300\"><code>&lt;img src=\"image.jpg\" loading=\"lazy\" alt=\"نمونه\" /&gt;</code></pre>\n</section>\n<section class=\"mb-12\">\n  <h2 class=\"text-2xl font-bold text-orange-400 border-r-4 border-orange-400 pr-3 mb-4\">جمع‌بندی</h2>\n  <p class=\"text-slate-400\">افزایش سرعت سایت باعث بهبود تجربه کاربری و رتبه بهتر در موتورهای جستجو می‌شود.</p>\n</section>"
+            "category": "ReactJS",
+            "date": "1403/03/28",
+            "author": "محمد علی سماوات",
+            "tags": [
+              "React",
+              "React Helmet",
+              "SEO",
+              "SSR",
+              "Head Management",
+              "آموزش React",
+              "Open Graph",
+              "Twitter Cards",
+              "react-helmet-async"
+            ]
           }
         ]
       ],
@@ -129,7 +116,12 @@
             "سرعت بارگذاری بالا",
             "امنیت پیشرفته"
           ],
-          "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js"],
+          "technologies": [
+            "React",
+            "Next.js",
+            "Tailwind CSS",
+            "Node.js"
+          ],
           "category": "web-design"
         },
         {
@@ -148,7 +140,11 @@
             "پیشنهاد تکنولوژی مناسب",
             "مقایسه قیمت‌ها"
           ],
-          "technologies": ["AI", "Machine Learning", "Data Analytics"],
+          "technologies": [
+            "AI",
+            "Machine Learning",
+            "Data Analytics"
+          ],
           "category": "pricing"
         },
         {
@@ -167,7 +163,12 @@
             "گزارش‌گیری لحظه‌ای",
             "تقویم هوشمند پروژه"
           ],
-          "technologies": ["Jira", "Slack", "GitHub", "Trello"],
+          "technologies": [
+            "Jira",
+            "Slack",
+            "GitHub",
+            "Trello"
+          ],
           "category": "project-management"
         },
         {
@@ -186,7 +187,12 @@
             "پشتیبان‌گیری روزانه",
             "مانیتورینگ سرور"
           ],
-          "technologies": ["Docker", "Kubernetes", "AWS", "CloudFlare"],
+          "technologies": [
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "CloudFlare"
+          ],
           "category": "support"
         }
       ],
@@ -575,7 +581,12 @@
             "Fast Loading Speed",
             "Advanced Security"
           ],
-          "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js"],
+          "technologies": [
+            "React",
+            "Next.js",
+            "Tailwind CSS",
+            "Node.js"
+          ],
           "category": "web-design"
         },
         {
@@ -594,7 +605,11 @@
             "Technology Recommendations",
             "Price Comparisons"
           ],
-          "technologies": ["AI", "Machine Learning", "Data Analytics"],
+          "technologies": [
+            "AI",
+            "Machine Learning",
+            "Data Analytics"
+          ],
           "category": "pricing"
         },
         {
@@ -613,7 +628,12 @@
             "Real-time Reporting",
             "Smart Project Calendar"
           ],
-          "technologies": ["Jira", "Slack", "GitHub", "Trello"],
+          "technologies": [
+            "Jira",
+            "Slack",
+            "GitHub",
+            "Trello"
+          ],
           "category": "project-management"
         },
         {
@@ -632,7 +652,12 @@
             "Daily Backups",
             "Server Monitoring"
           ],
-          "technologies": ["Docker", "Kubernetes", "AWS", "CloudFlare"],
+          "technologies": [
+            "Docker",
+            "Kubernetes",
+            "AWS",
+            "CloudFlare"
+          ],
           "category": "support"
         }
       ],
