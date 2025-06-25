@@ -34,10 +34,7 @@ const AllBlog = () => {
   });
 
   const posts = useMemo(() => {
-    if (Array.isArray(blogPosts) && Array.isArray(blogPosts[0])) {
-      return blogPosts[0];
-    }
-    return blogPosts || [];
+    return blogPosts?.posts || [];
   }, [blogPosts]);
 
   const filteredPosts = posts.filter((post) =>

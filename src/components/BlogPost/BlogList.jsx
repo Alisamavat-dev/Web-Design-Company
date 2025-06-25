@@ -7,6 +7,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 const BlogList = () => {
   const { i18n } = useTranslation();
   const lang = i18n.language || "fa";
+
   const {
     data: blogPosts,
     isPending,
@@ -14,7 +15,9 @@ const BlogList = () => {
     error,
   } = useQuery({
     queryKey: ["Blog", lang],
-    queryFn: () => fetchBlogPosts(i18n.language),
+    queryFn: () => fetchBlogPosts(lang),
+    staleTime: 1000 * 60 * 5,
+    retry: 2,
   });
 
   let posts = [];
@@ -39,18 +42,18 @@ const BlogList = () => {
     return (
       <div className="w-screen h-screen flex justify-center items-center">
         <p className="text-red-500">
-          {error?.message || "خطا در دریافت مقالات"}
+          {error?.message || (lang === "fa" ? "خطا در دریافت مقالات" : "Error fetching posts")}
         </p>
       </div>
     );
   }
 
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="max-w-7xl mx-auto py-12 px-4 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => (
         <div
           key={post.id}
-          className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col"
+          className="bg-slate-800 rounded-2xl shadow-lg overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300"
         >
           <img
             src={post.image?.src || post.image}
@@ -60,16 +63,18 @@ const BlogList = () => {
               e.target.src = "https://via.placeholder.com/800x400";
             }}
           />
-          <div className="p-6 flex-1 flex flex-col">
-            <h2 className="text-xl font-bold mb-2 text-gray-800">
+          <div className="p-5 flex-1 flex flex-col">
+            <h2 className="text-lg sm:text-xl font-bold mb-2 text-white line-clamp-2">
               {post.title}
             </h2>
-            <p className="text-gray-500 mb-4 line-clamp-3">{post.excerpt}</p>
+            <p className="text-slate-300 mb-4 text-sm sm:text-base line-clamp-3">
+              {post.excerpt}
+            </p>
             <Link
               to={`/blog/${post.id}`}
-              className="mt-auto inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              className="mt-auto inline-block bg-blue-600 text-white text-center py-2 rounded-lg hover:bg-blue-700 transition-colors"
             >
-              مشاهده مقاله
+              {lang === "fa" ? "مشاهده مقاله" : "Read Article"}
             </Link>
           </div>
         </div>

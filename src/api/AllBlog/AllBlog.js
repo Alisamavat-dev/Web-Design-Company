@@ -1,15 +1,35 @@
+// api/blogService.ts
+export const fetchBlogData = async (lang = "fa") => {
+  try {
+    const response = await fetch("/api/db.json");
+
+    if (!response.ok) {
+      throw new Error("Failed to fetch blog data");
+    }
+
+    const json = await response.json();
+
+    if (!json || !json[lang]?.translation) {
+      throw new Error("Invalid data structure from API for blog data");
+    }
+
+    const data = json[lang].translation;
+
+    return {
+      posts: Array.isArray(data.Blog) ? data.Blog.flat() : [],
+      seo: data.SEO || {},
+    };
+  } catch (error) {
+    console.error("Error fetching all blog data:", error);
+    throw error;
+  }
+};
+
 export const fetchAllBlog = async (lang) => {
-  const response = await fetch(
-    `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-  );
-  const json = await response.json();
-  return json.record[lang].translation.Blog;
+  return await fetchBlogData(lang);
 };
 
 export const fetchAllBlogSEO = async (lang) => {
-  const response = await fetch(
-    `https://api.jsonbin.io/v3/b/${import.meta.env.VITE_JSONBIN_BIN_ID}`
-  );
-  const json = await response.json();
-  return json.record[lang].translation.SEO;
+  const data = await fetchBlogData(lang);
+  return data.seo;
 };
