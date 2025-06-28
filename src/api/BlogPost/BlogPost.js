@@ -1,6 +1,6 @@
 export const fetchBlogPosts = async (lang = "en") => {
   try {
-    const res = await fetch("/api/db.json");
+    const res = await fetch("https://alisamavat-dev.github.io/Web-Design-Company/db.json");
 
     if (!res.ok) {
       throw new Error("Failed to fetch blog posts");
@@ -8,7 +8,6 @@ export const fetchBlogPosts = async (lang = "en") => {
 
     const result = await res.json();
 
-    // بررسی ساختار داده دریافتی
     if (
       !result ||
       !result[lang]?.translation ||
@@ -20,6 +19,6 @@ export const fetchBlogPosts = async (lang = "en") => {
     return result[lang].translation.Blog.flat();
   } catch (error) {
     console.error("Error fetching blog posts:", error);
-    throw error;
+    return [];
   }
 };

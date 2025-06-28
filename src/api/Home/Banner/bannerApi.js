@@ -1,6 +1,6 @@
 export const fetchBanner = async (lang) => {
   try {
-    const response = await fetch("/api/db.json");
+    const response = await fetch("https://alisamavat-dev.github.io/Web-Design-Company/db.json");
 
     if (!response.ok) {
       throw new Error("Failed to fetch banner data");

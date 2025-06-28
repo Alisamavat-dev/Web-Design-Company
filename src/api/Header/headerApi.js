@@ -1,20 +1,24 @@
-export const fetchHeader = async (lang) => {
+export const fetchHeader = async (lang = 'en') => {
+  const url = "https://alisamavat-dev.github.io/Web-Design-Company/db.json";
+
   try {
-    const response = await fetch("/api/db.json");
+    const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error("Failed to fetch header data");
+      console.warn(`Fetch failed with status: ${response.status}`);
+      return null;
     }
 
-    const json = await response.json();
+    const data = await response.json();
 
-    if (!json || !json[lang]?.translation || !json[lang].translation.Header) {
-      throw new Error("Invalid data structure from API for header data");
+    if (!data?.[lang]?.translation?.Header) {
+      console.warn(`Header not found for language: ${lang}`);
+      return null;
     }
 
-    return json[lang].translation.Header;
+    return data[lang].translation.Header;
   } catch (error) {
     console.error("Error fetching header data:", error);
-    throw error;
+    return null;
   }
 };
