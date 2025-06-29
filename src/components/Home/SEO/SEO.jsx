@@ -84,7 +84,40 @@ const SEO = ({ page = "home" }) => {
       ];
       ogFields.forEach(([name, value]) => updateMetaTag(name, value));
     }
+
+    // Twitter tags
+    if (seo.twitter) {
+      const twitterFields = [
+        ["twitter:card", seo.twitter.card || "summary_large_image"],
+        ["twitter:site", seo.twitter.site],
+        ["twitter:creator", seo.twitter.creator],
+        ["twitter:title", seo.twitter.title || seo.title],
+        ["twitter:description", seo.twitter.description || seo.description],
+        ["twitter:image", seo.twitter.image || seo.og?.image?.src],
+      ];
+      twitterFields.forEach(([name, value]) => updateMetaTag(name, value));
+    }
+
     if (seo.viewport) updateMetaTag("viewport", seo.viewport);
+
+    // Schema.org
+    const updateSchemaTag = (schemaData) => {
+      if (!schemaData) return;
+
+      let schemaScript = document.querySelector(
+        "script[type='application/ld+json']"
+      );
+      if (!schemaScript) {
+        schemaScript = document.createElement("script");
+        schemaScript.setAttribute("type", "application/ld+json");
+        document.head.appendChild(schemaScript);
+      }
+      schemaScript.textContent = JSON.stringify(schemaData);
+    };
+
+    if (seo.schemaOrg) {
+      updateSchemaTag(seo.schemaOrg);
+    }
   }, [seoData, page]);
 
   return null;
