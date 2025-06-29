@@ -329,7 +329,7 @@
           "publisher": "wavnix",
           "robots": "index, follow",
           "viewport": "width=device-width, initial-scale=1.0",
-          "canonical": "https://alisamavat-dev.github.io/Web-Design-Company/",
+          "canonical": "https://wavnix.ir/",
           "og": {
             "title": "wavnix | سفارش طراحی سایت | واونیکس",
             "description": "سفارش آنلاین طراحی سایت با تیم حرفه‌ای و پشتیبانی 24/7. طراحی اختصاصی، قیمت رقابتی و تحویل سریع.",
@@ -355,7 +355,7 @@
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "wavnix",
-            "url": "https://alisamavat-dev.github.io/Web-Design-Company/",
+            "url": "https://wavnix.ir/",
             "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
             "contactPoint": {
               "@type": "ContactPoint",
