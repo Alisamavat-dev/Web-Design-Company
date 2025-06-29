@@ -322,10 +322,14 @@
       },
       "SEO": {
         "home": {
-          "title": "wavnix | سفارش طراحی سایت | واونیکس",
+          "title": "سفارش طراحی سایت | واونیکس",
           "description": "سفارش آنلاین طراحی سایت شرکتی، فروشگاهی و شخصی با بهترین قیمت و تضمین کیفیت. تیم واونیکس با جدیدترین تکنولوژی‌ها و سئوی حرفه‌ای.",
           "keywords": "طراحی سایت, خدمات وب, سئو, برنامه نویسی, سایت شرکتی, سایت فروشگاهی, سایت شخصی, واونیکس",
           "author": "تیم واونیکس",
+          "publisher": "wavnix",
+          "robots": "index, follow",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "canonical": "https://alisamavat-dev.github.io/Web-Design-Company/",
           "og": {
             "title": "سفارش طراحی سایت | واونیکس",
             "description": "سفارش آنلاین طراحی سایت با تیم حرفه‌ای و پشتیبانی 24/7. طراحی اختصاصی، قیمت رقابتی و تحویل سریع.",
@@ -333,7 +337,35 @@
               "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
               "alt": "شرکت طراحی سایت",
               "title": "/"
-            }
+            },
+            "type": "website",
+            "site_name": "wavnix",
+            "locale": "fa_IR",
+            "url": "https://alisamavat-dev.github.io/Web-Design-Company/"
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "site": "@yourtwitterhandle",
+            "creator": "@yourtwitterhandle",
+            "title": "wavnix | سفارش طراحی سایت | واونیکس",
+            "description": "سفارش آنلاین طراحی سایت شرکتی، فروشگاهی و شخصی با بهترین قیمت و تضمین کیفیت. تیم واونیکس با جدیدترین تکنولوژی‌ها و سئوی حرفه‌ای.",
+            "image": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png"
+          },
+          "schemaOrg": {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "wavnix",
+            "url": "https://alisamavat-dev.github.io/Web-Design-Company/",
+            "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+1-800-555-1212",
+              "contactType": "customer service"
+            },
+            "sameAs": [
+              "https://twitter.com/yourtwitterhandle",
+              "https://linkedin.com/company/wavnix"
+            ]
           }
         },
         "blog": {
