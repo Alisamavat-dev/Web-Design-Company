@@ -17,13 +17,7 @@
             "category": "React",
             "date": "1403/03/20",
             "author": "علی سماوات",
-            "tags": [
-              "React",
-              "جاوااسکریپت",
-              "فرانت‌اند",
-              "SPA",
-              "UI"
-            ]
+            "tags": ["React", "جاوااسکریپت", "فرانت‌اند", "SPA", "UI"]
           },
           {
             "id": "nextjs-ssr",
@@ -38,13 +32,7 @@
             "category": "Next.js",
             "date": "1403/03/21",
             "author": "محمد علی سماوات",
-            "tags": [
-              "Next.js",
-              "SSR",
-              "SEO",
-              "React",
-              "رندر سمت سرور"
-            ]
+            "tags": ["Next.js", "SSR", "SEO", "React", "رندر سمت سرور"]
           },
           {
             "id": "nestjs-vs-express",
@@ -60,19 +48,13 @@
             "category": "NestJS",
             "date": "1403/03/23",
             "author": "علی سماوات",
-            "tags": [
-              "NestJS",
-              "Express",
-              "Node.js",
-              "TypeScript",
-              "بک‌اند"
-            ]
+            "tags": ["NestJS", "Express", "Node.js", "TypeScript", "بک‌اند"]
           },
           {
             "id": "react-helmet",
             "title": "راهنمای جامع استفاده از React Helmet برای مدیریت Head در ReactJS",
             "excerpt": "React Helmet کتابخانه‌ای قدرتمند برای کنترل تگ‌های head مانند title، meta و ... در پروژه‌های React است که برای SEO و SSR اهمیت زیادی دارد.",
-             "content": "<section class=\"mb-12\">\n  <h1 class=\"text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400 text-center mb-4\">راهنمای جامع استفاده از React Helmet برای مدیریت Head در ReactJS</h1>\n  <p class=\"text-slate-400 text-center mb-8 max-w-full text-base sm:text-lg leading-relaxed\">React Helmet کتابخانه‌ای ساده و مؤثر برای مدیریت محتوای تگ‌های head در پروژه‌های React است. این ابزار برای بهبود SEO، پشتیبانی از شبکه‌های اجتماعی با تگ‌های Open Graph و Twitter، مدیریت canonical tagها برای جلوگیری از محتوای تکراری و همچنین پروژه‌های دارای SSR بسیار کاربردی است.</p>\n</section>\n\n<section id=\"intro\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">چرا React Helmet مهم است؟</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">تگ‌های head اطلاعات حیاتی درباره‌ی صفحه به مرورگرها، خزنده‌های موتورهای جستجو و پلتفرم‌های شبکه‌های اجتماعی ارائه می‌دهند. با React Helmet می‌توان این تگ‌ها را به‌صورت داینامیک در SPAها یا پروژه‌های SSR مدیریت کرد تا بهینه‌سازی موتور جستجو (SEO) و اشتراک‌گذاری در شبکه‌های اجتماعی بهبود یابد. مدیریت دقیق تگ‌هایی مانند title، meta description و canonical URL تاثیر مستقیمی بر رتبه سایت در نتایج جستجو و نحوه نمایش آن در شبکه‌های اجتماعی دارد.</p>\n</section>\n\n<section id=\"getting-started\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">نصب و شروع کار</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">نصب کتابخانه از طریق npm یا yarn:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-bash text-slate-300\">npm install react-helmet</code></pre>\n    <pre><code class=\"lang-bash text-slate-300\"># یا با Yarn:\nyarn add react-helmet</code></pre>\n  </div>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">سپس در فایل‌های React آن را ایمپورت و استفاده کنید:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import { Helmet } from 'react-helmet';\n\nfunction App() {\n  return (\n    <div>\n      <Helmet>\n        <title>Turbo Todo</title>\n        <meta name=\"description\" content=\"Todos on steroid!\" />\n        <meta name=\"theme-color\" content=\"#008f68\" />\n      </Helmet>\n      {/* سایر اجزای صفحه */}\n    </div>\n  );\n}\n\nexport default App;\n</code></pre>\n  </div>\n</section>\n\n<section id=\"nested-components\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">مدیریت تگ‌ها در کامپوننت‌های تو در تو</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">React Helmet این قابلیت را دارد که تگ‌ها را در کامپوننت‌های داخلی (فرزند) بازنویسی کند. این ویژگی برای مدیریت Head در صفحات و کامپوننت‌های مختلف یک SPA که محتوا به صورت پویا تغییر می‌کند، بسیار مفید است.</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import { Helmet } from 'react-helmet';\n\nfunction Child() {\n  return (\n    <div>\n      <Helmet>\n        <title>Child Page Specific Title</title>\n        <meta name=\"description\" content=\"Description for the child page\" />\n      </Helmet>\n      <h1>صفحه فرزند</h1>\n    </div>\n  );\n}\n\nexport default Child;\n</code></pre>\n  </div>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">در این حالت، تگ title و description تعریف شده در کامپوننت <code>Child</code>، تگ‌های مشابه تعریف شده در کامپوننت والد را بازنویسی می‌کنند.</p>\n</section>\n\n<section id=\"body-html-attrs\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">نسبت دادن ویژگی به html و body</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">با React Helmet می‌توان ویژگی‌هایی مانند کلاس، زبان (lang) و سایر атриبوت‌ها را به تگ‌های <code>&lt;html&gt;</code> و <code>&lt;body&gt;</code> صفحه نسبت داد. این قابلیت برای تنظیمات کلی صفحه، مانند تغییر زبان یا اعمال تم‌های سراسری (مثل dark mode با کلاس CSS) کاربردی است.</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\"><Helmet\n  htmlAttributes={{ lang: 'fa' }}\n  bodyAttributes={{ className: 'dark-mode' }}\n>\n  {/* سایر تگ‌های Head */}\n</Helmet>\n</code></pre>\n  </div>\n</section>\n\n<section id=\"advanced-usage\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">مفاهیم پیشرفته و نکات تجربی React Helmet</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">برای استفاده حرفه‌ای‌تر از React Helmet و بهینه‌سازی هرچه بیشتر سایت، می‌توان از قابلیت‌های پیشرفته‌تر و الگوهای طراحی مناسب استفاده کرد:</p>\n  <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">تنظیم تگ‌های Open Graph و Twitter Cards</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">این تگ‌ها برای نمایش صحیح و جذاب محتوا هنگام اشتراک‌گذاری در شبکه‌های اجتماعی مانند فیسبوک، توییتر و تلگرام ضروری هستند. React Helmet امکان تعریف آسان این تگ‌ها را فراهم می‌کند:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\"><Helmet>\n  {/* Open Graph tags for Facebook */}\n  <meta property=\"og:title\" content=\"عنوان مقاله برای شبکه‌های اجتماعی\" />\n  <meta property=\"og:description\" content=\"خلاصه‌ای جذاب برای اشتراک‌گذاری\" />\n  <meta property=\"og:image\" content=\"https://yourwebsite.com/image.jpg\" />\n  <meta property=\"og:url\" content=\"https://yourwebsite.com/article-url\" />\n  <meta property=\"og:type\" content=\"article\" />\n\n  {/* Twitter Card tags */}\n  <meta name=\"twitter:card\" content=\"summary_large_image\" />\n  <meta name=\"twitter:site\" content=\"@yourhandle\" />\n  <meta name=\"twitter:title\" content=\"عنوان مقاله برای توییتر\" />\n  <meta name=\"twitter:description\" content=\"خلاصه‌ای کوتاه برای توییتر\" />\n  <meta name=\"twitter:image\" content=\"https://yourwebsite.com/image.jpg\" />\n</Helmet>\n</code></pre>\n  </div>\n\n  <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">استفاده از داده‌های پویا</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">در برنامه‌های واقعی، معمولاً عنوان، توضیحات و سایر متا تگ‌ها بر اساس داده‌های صفحه (مثلاً اطلاعات یک محصول یا مقاله خاص) تعیین می‌شوند. می‌توانید از state، props یا داده‌های فچ شده برای پر کردن محتوای تگ‌های Helmet استفاده کنید:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import React, { useState, useEffect } from 'react';\nimport { Helmet } from 'react-helmet';\n\nfunction ArticlePage({ articleId }) {\n  const [article, setArticle] = useState(null);\n\n  useEffect(() => {\n    // فرض کنید داده مقاله از یک API فچ می‌شود\n    fetch(`/api/articles/${articleId}`)\n      .then(res => res.json())\n      .then(data => setArticle(data));\n  }, [articleId]);\n\n  if (!article) {\n    return &lt;div&gt;در حال بارگذاری...&lt;/div&gt;;\n  }\n\n  return (\n    &lt;div&gt;\n      &lt;Helmet&gt;\n        &lt;title&gt;{article.title} | وبلاگ من&lt;/title&gt;\n        &lt;meta name=\"description\" content={article.excerpt} /&gt;\n        &lt;meta property=\"og:title\" content={article.title} /&gt;\n        &lt;meta property=\"og:image\" content={article.imageUrl} /&gt;\n        {/* سایر تگ‌های پویا بر اساس article */}\n      &lt;/Helmet&gt;\n      &lt;h1&gt;{article.title}&lt;/h1&gt;\n      &lt;p&gt;{article.content}&lt;/p&gt;\n    &lt;/div&gt;\n  );\n}\n\nexport default ArticlePage;\n</code></pre>\n  </div>\n\n  <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">ساخت کامپوننت SEO قابل استفاده مجدد</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">برای جلوگیری از تکرار کد تگ‌های Head در صفحات مختلف، می‌توانید یک کامپوننت کوچک برای مدیریت SEO ایجاد کنید که Props لازم را دریافت و تگ‌های Helmet را بر اساس آن‌ها رندر کند:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import React from 'react';\nimport { Helmet } from 'react-helmet';\n\nfunction SEO({\n  title,\n  description,\n  keywords,\n  author,\n  ogTitle,\n  ogDescription,\n  ogImage,\n  ogUrl,\n  twitterCard,\n  twitterSite,\n  twitterTitle,\n  twitterDescription,\n  twitterImage,\n}) {\n  return (\n    &lt;Helmet&gt;\n      &lt;title&gt;{title}&lt;/title&gt;\n      &lt;meta name=\"description\" content={description} /&gt;\n      {keywords && &lt;meta name=\"keywords\" content={keywords.join(', ')} /&gt;}\n      {author && &lt;meta name=\"author\" content={author} /&gt;}\n\n      {/* Open Graph */}\n      {ogTitle && &lt;meta property=\"og:title\" content={ogTitle} /&gt;}\n      {ogDescription && &lt;meta property=\"og:description\" content={ogDescription} /&gt;}\n      {ogImage && &lt;meta property=\"og:image\" content={ogImage} /&gt;}\n      {ogUrl && &lt;meta property=\"og:url\" content={ogUrl} /&gt;}\n      &lt;meta property=\"og:type\" content=\"website\" /&gt; {/* یا article برای مقالات */}\n\n      {/* Twitter */}\n      {twitterCard && &lt;meta name=\"twitter:card\" content={twitterCard} /&gt;}\n      {twitterSite && &lt;meta name=\"twitter:site\" content={twitterSite} /&gt;}\n      {twitterTitle && &lt;meta name=\"twitter:title\" content={twitterTitle} /&gt;}\n      {twitterDescription && &lt;meta name=\"twitter:description\" content={twitterDescription} /&gt;}\n      {twitterImage && &lt;meta name=\"twitter:image\" content={twitterImage} /&gt;}\n    &lt;/Helmet&gt;\n  );\n}\n\nexport default SEO;\n</code></pre>\n  </div>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">حالا می‌توانید در هر صفحه به سادگی از این کامپوننت استفاده کنید:</p>\n   <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import SEO from '../components/SEO'; // مسیردهی صحیح به کامپوننت SEO\n\nfunction HomePage() {\n  return (\n    &lt;div&gt;\n      &lt;SEO\n        title=\"صفحه اصلی سایت\"\n        description=\"توضیحات مربوط به صفحه اصلی برای سئو\"\n        ogImage=\"https://yourwebsite.com/home-image.jpg\"\n        twitterCard=\"summary_large_image\"\n      /&gt;\n      &lt;h1&gt;به سایت ما خوش آمدید!&lt;/h1&gt;\n      {/* سایر محتوای صفحه اصلی */}\n    &lt;/div&gt;\n  );\n}\n\nexport default HomePage;\n</code></pre>\n  </div>\n\n   <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">React Helmet Async برای SSR</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">اگر از Server-Side Rendering (SSR) استفاده می‌کنید، ممکن است با کتابخانه اصلی <code>react-helmet</code> به دلیل ماهیت همگام آن با چالش‌هایی روبرو شوید. کتابخانه <code>react-helmet-async</code> جایگزین مناسب‌تری برای SSR است که به صورت ناهمگام عمل کرده و مشکلات مربوط به مدیریت Head در محیط سرور را حل می‌کند. برای استفاده از آن، باید اپلیکیشن خود را با <code>HelmetProvider</code> رپ کنید.</p>\n</section>\n\n<section id=\"conclusion\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">جمع‌بندی</h2>\n  <div class=\"bg-slate-800 rounded-xl p-5\">\n    <p class=\"text-slate-400 text-sm\">React Helmet ابزاری بسیار قدرتمند و انعطاف‌پذیر برای مدیریت Head در پروژه‌های React، به‌ویژه در SPAها و پروژه‌های SSR است. با استفاده از قابلیت‌های پایه‌ای و پیشرفته آن مانند تنظیم تگ‌های Open Graph و Twitter، استفاده از داده‌های پویا و ساخت کامپوننت‌های قابل استفاده مجدد، می‌توانید بهینه‌سازی سایت خود برای موتورهای جستجو و شبکه‌های اجتماعی را به طرز چشمگیری بهبود بخشیده و تجربه‌ی کاربری بهتری ارائه دهید. توجه به جایگزین‌هایی مانند <code>react-helmet-async</code> برای SSR نیز در پروژه‌های بزرگ توصیه می‌شود.</p>\n  </div>\n</section>",
+            "content": "<section class=\"mb-12\">\n  <h1 class=\"text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400 text-center mb-4\"></h1>\n  <p class=\"text-slate-400 text-center mb-8 max-w-full text-base sm:text-lg leading-relaxed\">React Helmet کتابخانه‌ای ساده و مؤثر برای مدیریت محتوای تگ‌های head در پروژه‌های React است. این ابزار برای بهبود SEO، پشتیبانی از شبکه‌های اجتماعی با تگ‌های Open Graph و Twitter، مدیریت canonical tagها برای جلوگیری از محتوای تکراری و همچنین پروژه‌های دارای SSR بسیار کاربردی است.</p>\n</section>\n\n<section id=\"intro\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">چرا React Helmet مهم است؟</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">تگ‌های head اطلاعات حیاتی درباره‌ی صفحه به مرورگرها، خزنده‌های موتورهای جستجو و پلتفرم‌های شبکه‌های اجتماعی ارائه می‌دهند. با React Helmet می‌توان این تگ‌ها را به‌صورت داینامیک در SPAها یا پروژه‌های SSR مدیریت کرد تا بهینه‌سازی موتور جستجو (SEO) و اشتراک‌گذاری در شبکه‌های اجتماعی بهبود یابد. مدیریت دقیق تگ‌هایی مانند title، meta description و canonical URL تاثیر مستقیمی بر رتبه سایت در نتایج جستجو و نحوه نمایش آن در شبکه‌های اجتماعی دارد.</p>\n</section>\n\n<section id=\"getting-started\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">نصب و شروع کار</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">نصب کتابخانه از طریق npm یا yarn:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-bash text-slate-300\">npm install react-helmet</code></pre>\n    <pre><code class=\"lang-bash text-slate-300\"># یا با Yarn:\nyarn add react-helmet</code></pre>\n  </div>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">سپس در فایل‌های React آن را ایمپورت و استفاده کنید:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import { Helmet } from 'react-helmet';\n\nfunction App() {\n  return (\n    <div>\n      <Helmet>\n        <title>Turbo Todo</title>\n        <meta name=\"description\" content=\"Todos on steroid!\" />\n        <meta name=\"theme-color\" content=\"#008f68\" />\n      </Helmet>\n      {/* سایر اجزای صفحه */}\n    </div>\n  );\n}\n\nexport default App;\n</code></pre>\n  </div>\n</section>\n\n<section id=\"nested-components\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">مدیریت تگ‌ها در کامپوننت‌های تو در تو</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">React Helmet این قابلیت را دارد که تگ‌ها را در کامپوننت‌های داخلی (فرزند) بازنویسی کند. این ویژگی برای مدیریت Head در صفحات و کامپوننت‌های مختلف یک SPA که محتوا به صورت پویا تغییر می‌کند، بسیار مفید است.</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import { Helmet } from 'react-helmet';\n\nfunction Child() {\n  return (\n    <div>\n      <Helmet>\n        <title>Child Page Specific Title</title>\n        <meta name=\"description\" content=\"Description for the child page\" />\n      </Helmet>\n      <h1>صفحه فرزند</h1>\n    </div>\n  );\n}\n\nexport default Child;\n</code></pre>\n  </div>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">در این حالت، تگ title و description تعریف شده در کامپوننت <code>Child</code>، تگ‌های مشابه تعریف شده در کامپوننت والد را بازنویسی می‌کنند.</p>\n</section>\n\n<section id=\"body-html-attrs\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">نسبت دادن ویژگی به html و body</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">با React Helmet می‌توان ویژگی‌هایی مانند کلاس، زبان (lang) و سایر атриبوت‌ها را به تگ‌های <code>&lt;html&gt;</code> و <code>&lt;body&gt;</code> صفحه نسبت داد. این قابلیت برای تنظیمات کلی صفحه، مانند تغییر زبان یا اعمال تم‌های سراسری (مثل dark mode با کلاس CSS) کاربردی است.</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\"><Helmet\n  htmlAttributes={{ lang: 'fa' }}\n  bodyAttributes={{ className: 'dark-mode' }}\n>\n  {/* سایر تگ‌های Head */}\n</Helmet>\n</code></pre>\n  </div>\n</section>\n\n<section id=\"advanced-usage\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">مفاهیم پیشرفته و نکات تجربی React Helmet</h2>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">برای استفاده حرفه‌ای‌تر از React Helmet و بهینه‌سازی هرچه بیشتر سایت، می‌توان از قابلیت‌های پیشرفته‌تر و الگوهای طراحی مناسب استفاده کرد:</p>\n  <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">تنظیم تگ‌های Open Graph و Twitter Cards</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">این تگ‌ها برای نمایش صحیح و جذاب محتوا هنگام اشتراک‌گذاری در شبکه‌های اجتماعی مانند فیسبوک، توییتر و تلگرام ضروری هستند. React Helmet امکان تعریف آسان این تگ‌ها را فراهم می‌کند:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\"><Helmet>\n  {/* Open Graph tags for Facebook */}\n  <meta property=\"og:title\" content=\"عنوان مقاله برای شبکه‌های اجتماعی\" />\n  <meta property=\"og:description\" content=\"خلاصه‌ای جذاب برای اشتراک‌گذاری\" />\n  <meta property=\"og:image\" content=\"https://yourwebsite.com/image.jpg\" />\n  <meta property=\"og:url\" content=\"https://yourwebsite.com/article-url\" />\n  <meta property=\"og:type\" content=\"article\" />\n\n  {/* Twitter Card tags */}\n  <meta name=\"twitter:card\" content=\"summary_large_image\" />\n  <meta name=\"twitter:site\" content=\"@yourhandle\" />\n  <meta name=\"twitter:title\" content=\"عنوان مقاله برای توییتر\" />\n  <meta name=\"twitter:description\" content=\"خلاصه‌ای کوتاه برای توییتر\" />\n  <meta name=\"twitter:image\" content=\"https://yourwebsite.com/image.jpg\" />\n</Helmet>\n</code></pre>\n  </div>\n\n  <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">استفاده از داده‌های پویا</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">در برنامه‌های واقعی، معمولاً عنوان، توضیحات و سایر متا تگ‌ها بر اساس داده‌های صفحه (مثلاً اطلاعات یک محصول یا مقاله خاص) تعیین می‌شوند. می‌توانید از state، props یا داده‌های فچ شده برای پر کردن محتوای تگ‌های Helmet استفاده کنید:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 mb-6 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import React, { useState, useEffect } from 'react';\nimport { Helmet } from 'react-helmet';\n\nfunction ArticlePage({ articleId }) {\n  const [article, setArticle] = useState(null);\n\n  useEffect(() => {\n    // فرض کنید داده مقاله از یک API فچ می‌شود\n    fetch(`/api/articles/${articleId}`)\n      .then(res => res.json())\n      .then(data => setArticle(data));\n  }, [articleId]);\n\n  if (!article) {\n    return &lt;div&gt;در حال بارگذاری...&lt;/div&gt;;\n  }\n\n  return (\n    &lt;div&gt;\n      &lt;Helmet&gt;\n        &lt;title&gt;{article.title} | وبلاگ من&lt;/title&gt;\n        &lt;meta name=\"description\" content={article.excerpt} /&gt;\n        &lt;meta property=\"og:title\" content={article.title} /&gt;\n        &lt;meta property=\"og:image\" content={article.imageUrl} /&gt;\n        {/* سایر تگ‌های پویا بر اساس article */}\n      &lt;/Helmet&gt;\n      &lt;h1&gt;{article.title}&lt;/h1&gt;\n      &lt;p&gt;{article.content}&lt;/p&gt;\n    &lt;/div&gt;\n  );\n}\n\nexport default ArticlePage;\n</code></pre>\n  </div>\n\n  <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">ساخت کامپوننت SEO قابل استفاده مجدد</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">برای جلوگیری از تکرار کد تگ‌های Head در صفحات مختلف، می‌توانید یک کامپوننت کوچک برای مدیریت SEO ایجاد کنید که Props لازم را دریافت و تگ‌های Helmet را بر اساس آن‌ها رندر کند:</p>\n  <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import React from 'react';\nimport { Helmet } from 'react-helmet';\n\nfunction SEO({\n  title,\n  description,\n  keywords,\n  author,\n  ogTitle,\n  ogDescription,\n  ogImage,\n  ogUrl,\n  twitterCard,\n  twitterSite,\n  twitterTitle,\n  twitterDescription,\n  twitterImage,\n}) {\n  return (\n    &lt;Helmet&gt;\n      &lt;title&gt;{title}&lt;/title&gt;\n      &lt;meta name=\"description\" content={description} /&gt;\n      {keywords && &lt;meta name=\"keywords\" content={keywords.join(', ')} /&gt;}\n      {author && &lt;meta name=\"author\" content={author} /&gt;}\n\n      {/* Open Graph */}\n      {ogTitle && &lt;meta property=\"og:title\" content={ogTitle} /&gt;}\n      {ogDescription && &lt;meta property=\"og:description\" content={ogDescription} /&gt;}\n      {ogImage && &lt;meta property=\"og:image\" content={ogImage} /&gt;}\n      {ogUrl && &lt;meta property=\"og:url\" content={ogUrl} /&gt;}\n      &lt;meta property=\"og:type\" content=\"website\" /&gt; {/* یا article برای مقالات */}\n\n      {/* Twitter */}\n      {twitterCard && &lt;meta name=\"twitter:card\" content={twitterCard} /&gt;}\n      {twitterSite && &lt;meta name=\"twitter:site\" content={twitterSite} /&gt;}\n      {twitterTitle && &lt;meta name=\"twitter:title\" content={twitterTitle} /&gt;}\n      {twitterDescription && &lt;meta name=\"twitter:description\" content={twitterDescription} /&gt;}\n      {twitterImage && &lt;meta name=\"twitter:image\" content={twitterImage} /&gt;}\n    &lt;/Helmet&gt;\n  );\n}\n\nexport default SEO;\n</code></pre>\n  </div>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">حالا می‌توانید در هر صفحه به سادگی از این کامپوننت استفاده کنید:</p>\n   <div class=\"bg-slate-900 rounded-lg p-4 overflow-x-auto text-xs sm:text-sm\">\n    <pre><code class=\"lang-jsx text-slate-300\">import SEO from '../components/SEO'; // مسیردهی صحیح به کامپوننت SEO\n\nfunction HomePage() {\n  return (\n    &lt;div&gt;\n      &lt;SEO\n        title=\"صفحه اصلی سایت\"\n        description=\"توضیحات مربوط به صفحه اصلی برای سئو\"\n        ogImage=\"https://yourwebsite.com/home-image.jpg\"\n        twitterCard=\"summary_large_image\"\n      /&gt;\n      &lt;h1&gt;به سایت ما خوش آمدید!&lt;/h1&gt;\n      {/* سایر محتوای صفحه اصلی */}\n    &lt;/div&gt;\n  );\n}\n\nexport default HomePage;\n</code></pre>\n  </div>\n\n   <h3 class=\"text-lg font-semibold text-blue-300 mb-3\">React Helmet Async برای SSR</h3>\n  <p class=\"text-slate-400 mb-4 text-base leading-relaxed\">اگر از Server-Side Rendering (SSR) استفاده می‌کنید، ممکن است با کتابخانه اصلی <code>react-helmet</code> به دلیل ماهیت همگام آن با چالش‌هایی روبرو شوید. کتابخانه <code>react-helmet-async</code> جایگزین مناسب‌تری برای SSR است که به صورت ناهمگام عمل کرده و مشکلات مربوط به مدیریت Head در محیط سرور را حل می‌کند. برای استفاده از آن، باید اپلیکیشن خود را با <code>HelmetProvider</code> رپ کنید.</p>\n</section>\n\n<section id=\"conclusion\" class=\"mb-12 px-2\">\n  <h2 class=\"text-xl sm:text-2xl font-bold text-blue-400 border-r-4 border-blue-400 pr-3 mb-4\">جمع‌بندی</h2>\n  <div class=\"bg-slate-800 rounded-xl p-5\">\n    <p class=\"text-slate-400 text-sm\">React Helmet ابزاری بسیار قدرتمند و انعطاف‌پذیر برای مدیریت Head در پروژه‌های React، به‌ویژه در SPAها و پروژه‌های SSR است. با استفاده از قابلیت‌های پایه‌ای و پیشرفته آن مانند تنظیم تگ‌های Open Graph و Twitter، استفاده از داده‌های پویا و ساخت کامپوننت‌های قابل استفاده مجدد، می‌توانید بهینه‌سازی سایت خود برای موتورهای جستجو و شبکه‌های اجتماعی را به طرز چشمگیری بهبود بخشیده و تجربه‌ی کاربری بهتری ارائه دهید. توجه به جایگزین‌هایی مانند <code>react-helmet-async</code> برای SSR نیز در پروژه‌های بزرگ توصیه می‌شود.</p>\n  </div>\n</section>",
             "image": {
               "src": "https://uploadkon.ir/uploads/cc2528_25seo.png",
               "alt": "React Helmet",
@@ -116,12 +98,7 @@
             "سرعت بارگذاری بالا",
             "امنیت پیشرفته"
           ],
-          "technologies": [
-            "React",
-            "Next.js",
-            "Tailwind CSS",
-            "Node.js"
-          ],
+          "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js"],
           "category": "web-design"
         },
         {
@@ -140,11 +117,7 @@
             "پیشنهاد تکنولوژی مناسب",
             "مقایسه قیمت‌ها"
           ],
-          "technologies": [
-            "AI",
-            "Machine Learning",
-            "Data Analytics"
-          ],
+          "technologies": ["AI", "Machine Learning", "Data Analytics"],
           "category": "pricing"
         },
         {
@@ -163,12 +136,7 @@
             "گزارش‌گیری لحظه‌ای",
             "تقویم هوشمند پروژه"
           ],
-          "technologies": [
-            "Jira",
-            "Slack",
-            "GitHub",
-            "Trello"
-          ],
+          "technologies": ["Jira", "Slack", "GitHub", "Trello"],
           "category": "project-management"
         },
         {
@@ -187,12 +155,7 @@
             "پشتیبان‌گیری روزانه",
             "مانیتورینگ سرور"
           ],
-          "technologies": [
-            "Docker",
-            "Kubernetes",
-            "AWS",
-            "CloudFlare"
-          ],
+          "technologies": ["Docker", "Kubernetes", "AWS", "CloudFlare"],
           "category": "support"
         }
       ],
@@ -329,9 +292,9 @@
           "publisher": "wavnix",
           "robots": "index, follow",
           "viewport": "width=device-width, initial-scale=1.0",
-          "canonical": "https://wavnix.ir/",
+          "canonical": "https://alisamavat-dev.github.io/Web-Design-Company/",
           "og": {
-            "title": "wavnix | سفارش طراحی سایت | واونیکس",
+            "title": "سفارش طراحی سایت | واونیکس",
             "description": "سفارش آنلاین طراحی سایت با تیم حرفه‌ای و پشتیبانی 24/7. طراحی اختصاصی، قیمت رقابتی و تحویل سریع.",
             "image": {
               "src": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
@@ -355,7 +318,7 @@
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "wavnix",
-            "url": "https://wavnix.ir/",
+            "url": "https://alisamavat-dev.github.io/Web-Design-Company/",
             "logo": "https://uploadkon.ir/uploads/fd0e01_25logo-web.png",
             "contactPoint": {
               "@type": "ContactPoint",
@@ -366,6 +329,61 @@
               "https://twitter.com/yourtwitterhandle",
               "https://linkedin.com/company/wavnix"
             ]
+          }
+        },
+        "contact": {
+          "title": "تماس با ما | واونیکس",
+          "description": "راه‌های ارتباط با تیم واونیکس برای سفارش طراحی سایت، پشتیبانی و مشاوره رایگان. پاسخگویی 24 ساعته.",
+          "keywords": "تماس با واونیکس, پشتیبانی سایت, مشاوره رایگان طراحی سایت, شماره تماس واونیکس",
+          "author": "تیم واونیکس",
+          "publisher": "wavnix",
+          "robots": "index, follow",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "canonical": "https://wavnix.com/contact",
+          "og": {
+            "title": "تماس با ما | واونیکس",
+            "description": "ارتباط مستقیم با تیم پشتیبانی واونیکس برای مشاوره و سفارش طراحی سایت",
+            "image": {
+              "src": "https://wavnix.com/images/contact-banner.jpg",
+              "alt": "تماس با تیم واونیکس",
+              "title": "پشتیبانی واونیکس"
+            },
+            "type": "website",
+            "site_name": "واونیکس | طراحی سایت حرفه‌ای",
+            "locale": "fa_IR",
+            "url": "https://wavnix.com/contact"
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "site": "@wavnix",
+            "creator": "@wavnix",
+            "title": "تماس با واونیکس | پشتیبانی طراحی سایت",
+            "description": "راه‌های ارتباط با تیم حرفه‌ای واونیکس برای مشاوره و پشتیبانی",
+            "image": "https://wavnix.com/images/contact-banner.jpg"
+          },
+          "schemaOrg": {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "تماس با واونیکس",
+            "description": "صفحه تماس با تیم طراحی سایت واونیکس",
+            "url": "https://wavnix.com/contact",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "واونیکس",
+                  "item": "https://wavnix.ir"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "تماس با ما",
+                  "item": "https://wavnix.com/contact"
+                }
+              ]
+            }
           }
         },
         "blog": {
@@ -613,12 +631,7 @@
             "Fast Loading Speed",
             "Advanced Security"
           ],
-          "technologies": [
-            "React",
-            "Next.js",
-            "Tailwind CSS",
-            "Node.js"
-          ],
+          "technologies": ["React", "Next.js", "Tailwind CSS", "Node.js"],
           "category": "web-design"
         },
         {
@@ -637,11 +650,7 @@
             "Technology Recommendations",
             "Price Comparisons"
           ],
-          "technologies": [
-            "AI",
-            "Machine Learning",
-            "Data Analytics"
-          ],
+          "technologies": ["AI", "Machine Learning", "Data Analytics"],
           "category": "pricing"
         },
         {
@@ -660,12 +669,7 @@
             "Real-time Reporting",
             "Smart Project Calendar"
           ],
-          "technologies": [
-            "Jira",
-            "Slack",
-            "GitHub",
-            "Trello"
-          ],
+          "technologies": ["Jira", "Slack", "GitHub", "Trello"],
           "category": "project-management"
         },
         {
@@ -684,12 +688,7 @@
             "Daily Backups",
             "Server Monitoring"
           ],
-          "technologies": [
-            "Docker",
-            "Kubernetes",
-            "AWS",
-            "CloudFlare"
-          ],
+          "technologies": ["Docker", "Kubernetes", "AWS", "CloudFlare"],
           "category": "support"
         }
       ],
