@@ -22,7 +22,7 @@ const ManageLayout = () => {
                     className="flex items-center gap-2 text-yellow-400 hover:text-yellow-300 font-semibold"
                   >
                     <img
-                      src="https://rayanita.com/assets/img/rayanita/logo.png"
+                      src="https://uploadkon.ir/uploads/fd0e01_25logo-web.png"
                       alt="logo"
                       className="h-8"
                       title="رایانیتا"
@@ -78,7 +78,7 @@ const ManageLayout = () => {
         <footer className="bg-white/10 backdrop-blur-md shadow-md mt-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div className="text-center text-gray-300 text-sm">
-              © پنل مدیریت رایانیتا. تمامی حقوق محفوظ است.
+              © پنل مدیریت واونیکس. تمامی حقوق محفوظ است.
             </div>
           </div>
         </footer>
