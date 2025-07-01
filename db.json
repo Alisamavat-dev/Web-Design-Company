@@ -386,6 +386,61 @@
             }
           }
         },
+        "portfolio": {
+          "title": "نمونه کارها | واونیکس",
+          "description": "پروژه‌ها و نمونه کارهای طراحی سایت، اپلیکیشن موبایل و داشبوردهای تحلیلی توسط تیم واونیکس. طراحی اختصاصی با جدیدترین تکنولوژی‌ها.",
+          "keywords": "نمونه کار واونیکس, طراحی سایت, پروژه طراحی وب, طراحی اپلیکیشن, پروژه‌های انجام‌شده",
+          "author": "تیم واونیکس",
+          "publisher": "wavnix",
+          "robots": "index, follow",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "canonical": "https://wavnix.com/portfolio",
+          "og": {
+            "title": "نمونه کارها | واونیکس",
+            "description": "مشاهده پروژه‌های انجام‌شده توسط تیم طراحی سایت واونیکس",
+            "image": {
+              "src": "https://wavnix.com/images/portfolio-banner.jpg",
+              "alt": "نمونه کار طراحی سایت و اپلیکیشن واونیکس",
+              "title": "نمونه پروژه‌های واونیکس"
+            },
+            "type": "website",
+            "site_name": "واونیکس | طراحی سایت حرفه‌ای",
+            "locale": "fa_IR",
+            "url": "https://wavnix.com/portfolio"
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "site": "@wavnix",
+            "creator": "@wavnix",
+            "title": "نمونه کارهای واونیکس | طراحی سایت حرفه‌ای",
+            "description": "با نمونه کارهای انجام شده واونیکس آشنا شوید و کیفیت طراحی ما را ببینید.",
+            "image": "https://wavnix.com/images/portfolio-banner.jpg"
+          },
+          "schemaOrg": {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "نمونه کارهای واونیکس",
+            "description": "مجموعه‌ای از پروژه‌های طراحی شده توسط تیم واونیکس",
+            "url": "https://wavnix.com/portfolio",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "واونیکس",
+                  "item": "https://wavnix.ir"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "نمونه کارها",
+                  "item": "https://wavnix.com/portfolio"
+                }
+              ]
+            }
+          }
+        },
         "blog": {
           "title": "وبلاگ طراحی سایت | مقالات تخصصی سئو و برنامه‌نویسی",
           "description": "جدیدترین مقالات آموزش طراحی سایت، سئو، برنامه‌نویسی و تکنولوژی روز. نکات کاربردی برای توسعه‌دهندگان و مدیران سایت.",

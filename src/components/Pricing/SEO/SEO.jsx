@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
-const SEO = ({ page = "help" }) => {
+const SEO = ({ page = "Pricing" }) => {
   const { i18n } = useTranslation();
   const { data: seoData } = useQuery({
     queryKey: ["SEO", i18n.language],
