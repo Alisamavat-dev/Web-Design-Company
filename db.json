@@ -441,6 +441,226 @@
             }
           }
         },
+        "pricing": {
+          "title": "تعرفه خدمات | واونیکس",
+          "description": "مشاهده تعرفه طراحی سایت، طراحی اپلیکیشن، سئو و خدمات پشتیبانی توسط تیم حرفه‌ای واونیکس. شفافیت کامل در قیمت‌ها و کیفیت بالا.",
+          "keywords": "تعرفه طراحی سایت, قیمت طراحی اپلیکیشن, هزینه سئو, قیمت پشتیبانی سایت, واونیکس",
+          "author": "تیم واونیکس",
+          "publisher": "wavnix",
+          "robots": "index, follow",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "canonical": "https://wavnix.com/pricing",
+          "og": {
+            "title": "تعرفه خدمات | واونیکس",
+            "description": "قیمت‌های شفاف و منصفانه برای طراحی سایت، اپلیکیشن و خدمات دیجیتال توسط تیم واونیکس",
+            "image": {
+              "src": "https://wavnix.com/images/pricing-banner.jpg",
+              "alt": "جدول تعرفه طراحی سایت و خدمات واونیکس",
+              "title": "تعرفه خدمات واونیکس"
+            },
+            "type": "website",
+            "site_name": "واونیکس | طراحی سایت حرفه‌ای",
+            "locale": "fa_IR",
+            "url": "https://wavnix.com/pricing"
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "site": "@wavnix",
+            "creator": "@wavnix",
+            "title": "قیمت طراحی سایت و خدمات | واونیکس",
+            "description": "تعرفه خدمات طراحی سایت و اپلیکیشن با قیمت‌های رقابتی و کیفیت تضمینی",
+            "image": "https://wavnix.com/images/pricing-banner.jpg"
+          },
+          "schemaOrg": {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "تعرفه خدمات واونیکس",
+            "description": "لیست قیمت خدمات طراحی سایت، اپلیکیشن و سئو توسط تیم واونیکس",
+            "url": "https://wavnix.com/pricing",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "واونیکس",
+                  "item": "https://wavnix.ir"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "تعرفه خدمات",
+                  "item": "https://wavnix.com/pricing"
+                }
+              ]
+            }
+          }
+        },
+        "developers": {
+          "title": "تیم توسعه‌دهندگان | واونیکس",
+          "description": "آشنایی با تیم حرفه‌ای توسعه‌دهندگان واونیکس؛ متخصصین طراحی سایت، اپلیکیشن و راهکارهای نرم‌افزاری با تجربه و تخصص بالا.",
+          "keywords": "تیم توسعه‌دهنده, برنامه نویس سایت, تیم فنی واونیکس, توسعه دهنده وب و اپلیکیشن, طراح وب",
+          "author": "تیم واونیکس",
+          "publisher": "wavnix",
+          "robots": "index, follow",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "canonical": "https://wavnix.com/developers",
+          "og": {
+            "title": "تیم توسعه‌دهندگان | واونیکس",
+            "description": "معرفی اعضای تیم توسعه‌دهنده واونیکس؛ برنامه‌نویسان متخصص در طراحی و پیاده‌سازی پروژه‌های دیجیتال",
+            "image": {
+              "src": "https://wavnix.com/images/developers-banner.jpg",
+              "alt": "تیم فنی و توسعه‌دهندگان واونیکس",
+              "title": "تیم برنامه‌نویسی واونیکس"
+            },
+            "type": "website",
+            "site_name": "واونیکس | طراحی سایت حرفه‌ای",
+            "locale": "fa_IR",
+            "url": "https://wavnix.com/developers"
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "site": "@wavnix",
+            "creator": "@wavnix",
+            "title": "تیم برنامه‌نویسان واونیکس | طراحی و توسعه نرم‌افزار",
+            "description": "توسعه‌دهندگان با تجربه در واونیکس؛ تخصص در طراحی سایت، اپلیکیشن و نرم‌افزارهای اختصاصی",
+            "image": "https://wavnix.com/images/developers-banner.jpg"
+          },
+          "schemaOrg": {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "تیم توسعه‌دهندگان واونیکس",
+            "description": "معرفی تیم توسعه‌دهنده واونیکس؛ شامل برنامه‌نویسان و توسعه‌دهندگان حرفه‌ای وب و اپلیکیشن",
+            "url": "https://wavnix.com/developers",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "واونیکس",
+                  "item": "https://wavnix.ir"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "تیم توسعه‌دهندگان",
+                  "item": "https://wavnix.com/developers"
+                }
+              ]
+            }
+          }
+        },
+        "submit-project": {
+          "title": "ثبت سفارش پروژه | واونیکس",
+          "description": "فرم ثبت سفارش طراحی سایت، اپلیکیشن و خدمات دیجیتال در واونیکس. درخواست خود را ارسال کنید و مشاوره رایگان دریافت کنید.",
+          "keywords": "ثبت سفارش طراحی سایت, سفارش پروژه, طراحی اپلیکیشن, ثبت درخواست واونیکس, خدمات طراحی سایت",
+          "author": "تیم واونیکس",
+          "publisher": "wavnix",
+          "robots": "index, follow",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "canonical": "https://wavnix.com/submit-project",
+          "og": {
+            "title": "ثبت سفارش پروژه | واونیکس",
+            "description": "ارسال سفارش طراحی سایت و اپلیکیشن با تکمیل فرم آنلاین. پاسخگویی سریع و تخصصی از تیم واونیکس.",
+            "image": {
+              "src": "https://wavnix.com/images/submit-project-banner.jpg",
+              "alt": "فرم ثبت پروژه در واونیکس",
+              "title": "سفارش پروژه جدید"
+            },
+            "type": "website",
+            "site_name": "واونیکس | طراحی سایت حرفه‌ای",
+            "locale": "fa_IR",
+            "url": "https://wavnix.com/submit-project"
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "site": "@wavnix",
+            "creator": "@wavnix",
+            "title": "فرم ثبت سفارش پروژه | واونیکس",
+            "description": "برای ثبت سفارش طراحی سایت یا اپلیکیشن فرم مربوطه را تکمیل کرده و منتظر تماس کارشناسان ما باشید.",
+            "image": "https://wavnix.com/images/submit-project-banner.jpg"
+          },
+          "schemaOrg": {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "ثبت سفارش پروژه",
+            "description": "صفحه ثبت سفارش خدمات طراحی سایت، اپلیکیشن و سئو در واونیکس",
+            "url": "https://wavnix.com/submit-project",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "واونیکس",
+                  "item": "https://wavnix.ir"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "ثبت سفارش",
+                  "item": "https://wavnix.com/submit-project"
+                }
+              ]
+            }
+          }
+        },
+        "help": {
+          "title": "چگونه می‌توانیم کمک کنیم؟ | پشتیبانی واونیکس",
+          "description": "مرکز راهنمایی واونیکس برای پاسخ به سوالات متداول، راهنمای استفاده از خدمات و دریافت پشتیبانی فنی.",
+          "keywords": "پشتیبانی واونیکس, سوالات متداول, راهنمای طراحی سایت, کمک با خدمات وب, مرکز راهنمایی واونیکس",
+          "author": "تیم واونیکس",
+          "publisher": "wavnix",
+          "robots": "index, follow",
+          "viewport": "width=device-width, initial-scale=1.0",
+          "canonical": "https://wavnix.com/help",
+          "og": {
+            "title": "مرکز راهنمایی | چگونه می‌توانیم کمک کنیم؟",
+            "description": "سوالات پرتکرار، آموزش‌ها و راه‌های ارتباط با تیم پشتیبانی واونیکس.",
+            "image": {
+              "src": "https://wavnix.com/images/help-banner.jpg",
+              "alt": "مرکز راهنمایی واونیکس",
+              "title": "پشتیبانی و آموزش"
+            },
+            "type": "website",
+            "site_name": "واونیکس | طراحی سایت و پشتیبانی حرفه‌ای",
+            "locale": "fa_IR",
+            "url": "https://wavnix.com/help"
+          },
+          "twitter": {
+            "card": "summary_large_image",
+            "site": "@wavnix",
+            "creator": "@wavnix",
+            "title": "پشتیبانی واونیکس | چگونه می‌توانیم کمک کنیم؟",
+            "description": "راهنمای جامع خدمات و پشتیبانی واونیکس. پاسخ به سوالات شما در سریع‌ترین زمان.",
+            "image": "https://wavnix.com/images/help-banner.jpg"
+          },
+          "schemaOrg": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "name": "مرکز راهنمایی واونیکس",
+            "description": "راهنمای کامل و پاسخ به سوالات متداول کاربران واونیکس",
+            "url": "https://wavnix.com/help",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "واونیکس",
+                  "item": "https://wavnix.ir"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "راهنما",
+                  "item": "https://wavnix.com/help"
+                }
+              ]
+            }
+          }
+        },
         "blog": {
           "title": "وبلاگ طراحی سایت | مقالات تخصصی سئو و برنامه‌نویسی",
           "description": "جدیدترین مقالات آموزش طراحی سایت، سئو، برنامه‌نویسی و تکنولوژی روز. نکات کاربردی برای توسعه‌دهندگان و مدیران سایت.",
