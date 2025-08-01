@@ -66,6 +66,7 @@ const SEO = ({ page = "home" }) => {
     updateMetaTag("keywords", seo.keywords);
     updateMetaTag("author", seo.author);
     updateMetaTag("publisher", seo.publisher);
+    updateMetaTag("tags", seo.tags);
     // Robots tag (default: index, follow)
     updateMetaTag("robots", seo.robots || "index, follow");
     if (seo.og) {
